@@ -30,6 +30,8 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 5px;
+    line-height: 1.8;
+    overflow-wrap: break-word;
 }
 
 .section-title::after {
@@ -56,12 +58,6 @@ body {
     padding-left: 10px;
 }
 
-@media (max-width: 768px) {
-    .section-title {
-        font-size: 1.8rem;
-    }
-}
-
 /* ヘッダー全体 */
 .header {
     background-color: #ffffff;
@@ -81,19 +77,80 @@ body {
 .header-tagline {
     font-size: 0.75rem;
     color: #666;
-    margin-bottom: 2px;
+    margin-bottom: -2px;
     font-weight: bold;
+    letter-spacing: 0.02em;
 }
 
-.logo {
-    font-size: 1.6rem;
-    letter-spacing: 0.05em;
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .header-contact {
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.contact-upper {
+    display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
+}
+
+.header-nav ul {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav a {
+    font-size: 1rem;
+    color: #555;
+    letter-spacing: -0.02em;
+}
+
+.header-nav a:hover {
+    color: #b32d2d;
+}
+
+.logo {
+    font-family: "Yu Mincho", "YuMincho", "MS PMincho", serif;
+    font-weight: 900;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.6rem;
+    letter-spacing: 0.05em;
+}
+
+.logo::before {
+    content: "侍";
+    background: #b32d2d;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 1.1rem;
+}
+
+.tel-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 1;
 }
 
 .tel-info {
@@ -101,6 +158,7 @@ body {
     display: flex;
     align-items: center;
     gap: 5px;
+    margin-bottom: -2px;
 }
 
 .icon-clock {
@@ -114,9 +172,11 @@ body {
 }
 
 .tel-number {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: #e60012;
-    margin-top: -5px;
+    font-weight: 900;
+    margin: 0;
+    letter-spacing: -0.02em;
 }
 
 .header-cta-btn {
@@ -134,57 +194,116 @@ body {
     background: #8e2424;
 }
 
-/* スマホ表示 */
-@media (max-width: 768px) {
+.menu-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2000;
+    padding: 0;
+}
 
-    .header-tagline,
-    .header-cta-btn {
-        display: none;
-    }
-
-    .tel-number {
-        font-size: 1.2rem;
-    }
+.menu-btn span {
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transition: 0.3s;
 }
 
 /* ヒーローセクション */
-.hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero.jpeg');
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.hero.top-main {
+    background: linear-gradient(rgba(212, 212, 212, 0.5), rgba(224, 224, 224, 0.5)), url('../images/hero.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    color: #fff;
-    padding: 100px 0;
-
-    min-height: 300px;
-    max-height: 800px;
-
+    min-height: 400px;
     display: flex;
     align-items: center;
-    text-align: center;
+    padding: 60px 0;
 }
 
-.main-copy {
+.hero-title-img {
     font-size: 2.5rem;
     font-weight: 900;
+    line-height: 1.2;
+    color: #333;
     margin-bottom: 20px;
 }
 
-.highlight {
-    color: #ffeb3b;
-    background: rgba(0, 0, 0, 0.3);
-    padding: 0 10px;
+.solve-text {
+    display: block;
+    color: #b32d2d;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 0 #fff, 4px 4px 0 rgba(179, 45, 45, 0.2);
 }
 
-.features {
+.target-places {
     list-style: none;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
-.features li::before {
-    content: "✔️";
-    margin-right: 8px;
+.target-places span {
+    background: #1a2a40;
+    color: #fff;
+    padding: 6px 15px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.kingaku-box {
+    background: #fff;
+    border: 3px solid #b32d2d;
+    padding: 10px 30px;
+    display: inline-flex;
+    border-radius: 10px;
+    box-shadow: 0 5px 0 #b32d2d;
+}
+
+.sagyou-label {
+    writing-mode: vertical-rl;
+    font-weight: bold;
+    color: #b32d2d;
+    margin-right: 15px;
+}
+
+.price-num {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #b32d2d;
+    font-family: 'Arial Black', sans-serif;
+}
+
+.guarantee-badge {
+    background: #b32d2d;
+    color: #fff;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    border: 4px double #fff;
+    transform: rotate(-5deg);
+}
+
+.g-text01 span {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #ffeb3b;
 }
 
 /* CTAボタン */
@@ -223,6 +342,180 @@ body {
     background: #f0f2f5;
 }
 
+/* お悩みセクション全体 */
+.onayami-section {
+    padding: 80px 0;
+    background-color: #fcfcfc;
+}
+
+.bird-types {
+    background: linear-gradient(transparent 70%, rgba(255, 235, 59, 0.8) 70%);
+    display: inline;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    padding: 0 2px;
+    font-weight: bold;
+}
+
+.onayami-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* 各アイテムのカードデザイン */
+.onayami-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 20px 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.onayami-card:hover {
+    transform: translateY(-5px);
+    border-color: #b32d2d;
+}
+
+.onayami-card h3 {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.onayami-icon {
+    font-size: 2.5rem;
+    background: #f9f9f9;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 1px solid #eee;
+}
+
+/* 対応場所セクション */
+.correspondence-section {
+    padding: 80px 0;
+    background-color: #f0f2f5;
+}
+
+.correspondence-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.corr-item {
+    background: #f9f9f9;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.corr-item:hover {
+    transform: translateY(-8px);
+}
+
+.corr-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.corr-content {
+    padding: 25px;
+}
+
+.corr-content h3 {
+    font-size: 1.25rem;
+    color: #1a2a40;
+    margin-bottom: 12px;
+    border-left: 4px solid #b32d2d;
+    padding-left: 10px;
+}
+
+.corr-content p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+.corr-footer-text {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* 対策セクション */
+.measures-section {
+    padding: 80px 0;
+    background-color: #fcfcfc;
+}
+
+.measures-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.measure-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    border-bottom: 5px solid #b32d2d;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.measure-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #1a2a40;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 4px 12px;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.measure-img img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.measure-item h3 {
+    font-size: 1.15rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.measure-item p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.measures-note {
+    background: #fff;
+    border: 1px dashed #b32d2d;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+
 /* 其の六 のポリシーカード */
 .policy-section {
     padding: 60px 0;
@@ -256,7 +549,7 @@ body {
 /* --- 比較セクション --- */
 .comparison-section {
     padding: 60px 0;
-    background: #fdfdfd;
+    background: #fcfcfc;
 }
 
 .comparison-section .section-title {
@@ -320,20 +613,10 @@ body {
     font-size: 0.9rem;
 }
 
-@media (max-width: 768px) {
-    .comparison-table {
-        min-width: 500px;
-    }
-
-    .comparison-section .section-title {
-        font-size: 1.5rem;
-    }
-}
-
 /* --- 事例セクション --- */
 .cases-section {
     padding: 80px 0;
-    background: #fff;
+    background: #f0f2f5;
 }
 
 .section-desc {
@@ -496,16 +779,10 @@ body {
     color: #fff;
 }
 
-@media (max-width: 480px) {
-    .case-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* --- レビュー --- */
 .reviews-section {
     padding: 80px 0;
-    background: #f8f9fa;
+    background: #fcfcfc;
 }
 
 .reviews-header {
@@ -620,17 +897,12 @@ body {
     border-color: #1a73e8;
 }
 
-@media (max-width: 600px) {
-    .google-rating-summary {
-        padding: 10px 20px;
-    }
-
-    .rating-score {
-        font-size: 1.5rem;
-    }
+/* --- 解決ステップ --- */
+.step-section {
+    padding: 80px 0;
+    background: #f0f2f5;
 }
 
-/* --- 解決ステップ --- */
 .step-container {
     margin: 60px 0;
     padding: 20px;
@@ -685,50 +957,11 @@ body {
     color: #666;
 }
 
-/* ステップ間の矢印（PCのみ） */
-@media (min-width: 900px) {
-    .step-item:not(:last-child)::after {
-        content: "▶";
-        position: absolute;
-        top: 50%;
-        right: -15px;
-        transform: translateY(-50%);
-        color: #ffeb3b;
-        font-size: 1.2rem;
-        z-index: 1;
-    }
-}
-
-@media (max-width: 768px) {
-    .step-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .step-item:not(:last-child) {
-        margin-bottom: 20px;
-    }
-}
-
 /* --- よくある質問 --- */
-.faq-section {
-    padding: 80px 0;
-    background: #fff;
-}
-
-.faq-container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.faq-item {
-    border-bottom: 1px solid #eee;
-    margin-bottom: 10px;
-}
-
 .faq-question {
     width: 100%;
     text-align: left;
-    padding: 20px;
+    padding: 20px 50px 20px 20px;
     background: #fdfdfd;
     border: none;
     outline: none;
@@ -736,13 +969,8 @@ body {
     font-weight: bold;
     cursor: pointer;
     position: relative;
-    display: flex;
-    align-items: center;
+    display: block;
     transition: background 0.3s;
-}
-
-.faq-question:hover {
-    background: #f5f5f5;
 }
 
 .faq-question::before {
@@ -751,6 +979,8 @@ body {
     font-size: 1.4rem;
     margin-right: 15px;
     font-weight: 900;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .faq-question::after {
@@ -759,6 +989,10 @@ body {
     right: 20px;
     font-size: 1.5rem;
     color: #999;
+}
+
+.faq-question:hover {
+    background: #f5f5f5;
 }
 
 .faq-answer {
@@ -784,8 +1018,26 @@ body {
     color: #333;
 }
 
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
 /* --- 問合せ --- */
+.contact-section {
+    padding: 80px 0;
+    background: #1a2a40;
+    color: #fff;
+    text-align: center;
+}
+
 .contact-section .contact-title {
+    display: block;
     font-size: 2.2rem;
     color: #ffeb3b;
     text-align: center;
@@ -795,35 +1047,45 @@ body {
 .contact-section .title-sub {
     color: #ffeb3b;
     letter-spacing: 0.15em;
-}
-
-.contact-section {
-    padding: 80px 0;
-    background: #1a2a40;
-    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    width: fit-content;
+    margin: 0 auto 10px;
+    border-left: 4px solid #b32d2d;
+    padding-left: 10px;
 }
 
 .contact-wrapper {
     display: flex;
-    gap: 50px;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.contact-info,
-.contact-form-container {
-    flex: 1;
-}
-
-.contact-title {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #ffeb3b;
+.contact-info {
+    width: 100%;
+    max-width: 700px;
 }
 
 .contact-desc {
     margin-bottom: 30px;
-    font-size: 1.1rem;
-    line-height: 1.6;
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+.contact-form-container {
+    width: 100%;
+    max-width: 650px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    color: #333;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* 電話カード */
@@ -1012,16 +1274,6 @@ body {
     margin-bottom: 2px;
 }
 
-@media (max-width: 768px) {
-    .bottom-cta-bar {
-        display: flex;
-    }
-
-    body {
-        padding-bottom: 70px;
-    }
-}
-
 /* フッター */
 .main-footer {
     padding: 40px 0;
@@ -1036,7 +1288,18 @@ body {
     margin-bottom: 10px;
 }
 
-@media (max-width: 900px) {
+@media (min-width: 900px) {
+    .step-item:not(:last-child)::after {
+        content: "▶";
+        position: absolute;
+        top: 50%;
+        right: -15px;
+        transform: translateY(-50%);
+        color: #ffeb3b;
+        font-size: 1.2rem;
+        z-index: 1;
+    }
+
     .contact-wrapper {
         flex-direction: column;
     }
@@ -1046,12 +1309,292 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .header-tagline,
+    .header-cta-btn {
+        display: none;
+    }
+
+    .tel-number {
+        font-size: 1.2rem;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    /* ボタンを表示 */
+    .header-tagline,
+    .header-cta-btn,
+    .tel-info {
+        display: none;
+    }
+
+    .header-flex {
+        padding: 10px 15px;
+    }
+
+    .contact-upper {
+        gap: 10px;
+    }
+
+    .tel-number {
+        font-size: 1.2rem;
+        margin: 0;
+        display: none;
+    }
+
+    /* --- ドロワーメニューのデザイン --- */
+
+    .sp-nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        height: 100vh;
+        background: #fff;
+        z-index: 10000;
+        transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 80px;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .sp-nav.active {
+        right: 0;
+        display: flex !important;
+    }
+
+    .sp-nav ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .sp-nav li {
+        border: 1px solid #eee;
+        border-radius: 8px;
+        background: #fdfdfd;
+    }
+
+    .sp-nav a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    .sp-nav li:last-child {
+        grid-column: 1 / 3;
+        border: none;
+    }
+
+    .sp-nav .sp-nav-cta {
+        background: #b32d2d;
+        color: #fff !important;
+        height: 60px;
+        border-radius: 4px;
+        margin-top: 10px;
+        font-size: 1.1rem;
+    }
+
+    .nav-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.4s;
+        z-index: 9999;
+    }
+
+    .nav-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* ボタンのアニメーション（×印に） */
+    .menu-btn.open {
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        z-index: 10001
+    }
+
+    .menu-btn.open span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-btn.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-btn.open span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .hero-title-img {
+        font-size: 1.8rem;
+    }
+
+    .solve-text {
+        font-size: 2.8rem;
+    }
+
+    .price-num {
+        font-size: 3rem;
+    }
+
+    .right {
+        order: -1;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 20px;
+    }
+
+    .right img {
+        width: 100px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .onayami-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .onayami-card {
+        padding: 15px 5px;
+    }
+
+    .onayami-icon {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 2rem;
+    }
+
+    .comparison-table {
+        min-width: 500px;
+    }
+
+    .comparison-section .section-title {
+        font-size: 1.5rem;
+    }
+
+    .step-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .step-item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .bottom-cta-bar {
+        display: flex;
+    }
+
+    body {
+        padding-bottom: 70px;
+    }
+
+    .contact-section {
+        padding: 60px 0;
+    }
+
+    .contact-section .contact-title {
+        font-size: 1.6rem;
+        word-break: keep-all;
+        overflow-wrap: normal;
+        line-height: 1.4;
+        padding: 0 10px;
+    }
+
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .tel-card {
+        padding: 40px 20px;
+        margin-bottom: 0;
+    }
+
+    .tel-btn {
+        font-size: 2rem;
+    }
+
+    .contact-form-container {
+        padding: 30px 20px;
+        width: 100%;
+    }
+
+    .form-group {
+        margin-bottom: 25px;
+    }
+
+    .form-group label {
+        margin-bottom: 12px;
+    }
+
+    .form-submit-btn {
+        padding: 18px;
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+
+    .line-banner {
+        margin: 40px 0;
+        padding: 30px 20px;
+    }
+}
+
 @media (max-width: 600px) {
+    .google-rating-summary {
+        padding: 10px 20px;
+    }
+
+    .rating-score {
+        font-size: 1.5rem;
+    }
+
     .main-copy {
         font-size: 1.8rem;
     }
 
     .cta-button {
         font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        line-height: 2.2;
+        font-size: 1.5rem;
+    }
+
+    .onayami-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .case-grid {
+        grid-template-columns: 1fr;
     }
 }

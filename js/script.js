@@ -60,3 +60,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+/**
+ * ハンバーガーメニュー
+ */
+const menuBtn = document.getElementById('menu-btn');
+const spNav = document.getElementById('sp-nav');
+const overlay = document.getElementById('nav-overlay');
+
+function toggleMenu() {
+    menuBtn.classList.toggle('open');
+    spNav.classList.toggle('active');
+    overlay.classList.toggle('active');
+}
+
+menuBtn.addEventListener('click', toggleMenu);
+overlay.addEventListener('click', toggleMenu);
+
+document.querySelectorAll('.sp-nav a').forEach(link => {
+    link.addEventListener('click', toggleMenu);
+});

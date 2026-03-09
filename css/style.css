@@ -271,11 +271,26 @@ body {
     box-shadow: 0 5px 0 #b32d2d;
 }
 
+.kingaku-box.flex {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.en-price {
+    white-space: nowrap;
+}
+
 .sagyou-label {
     writing-mode: vertical-rl;
     font-weight: bold;
     color: #b32d2d;
     margin-right: 15px;
+    font-size: 1.1rem;
+    white-space: nowrap;
 }
 
 .price-num {
@@ -283,6 +298,12 @@ body {
     font-weight: 900;
     color: #b32d2d;
     font-family: 'Arial Black', sans-serif;
+    line-height: 1;
+}
+
+.price-unit {
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .guarantee-badge {
@@ -351,10 +372,16 @@ body {
 .bird-types {
     background: linear-gradient(transparent 70%, rgba(255, 235, 59, 0.8) 70%);
     display: inline;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-    padding: 0 2px;
-    font-weight: bold;
+    width: 100%;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.bird-types::after {
+    content: "\A";
+    white-space: pre;
+    display: block;
+    height: 15px;
 }
 
 .onayami-grid {
@@ -362,6 +389,12 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     margin-top: 40px;
+}
+
+.section-title:has(.bird-types) {
+    display: block !important;
+    line-height: 1.8;
+    text-align: center;
 }
 
 /* 各アイテムのカードデザイン */
@@ -550,12 +583,6 @@ body {
 .comparison-section {
     padding: 60px 0;
     background: #fcfcfc;
-}
-
-.comparison-section .section-title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 40px;
 }
 
 .table-wrapper {
@@ -1492,10 +1519,6 @@ body {
 
     .comparison-table {
         min-width: 500px;
-    }
-
-    .comparison-section .section-title {
-        font-size: 1.5rem;
     }
 
     .step-grid {

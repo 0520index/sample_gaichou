@@ -31,7 +31,7 @@ body {
     align-items: center;
     gap: 5px;
     line-height: 1.8;
-    overflow-wrap: break-word;
+    word-break: break-all;
     justify-content: center;
 }
 
@@ -1341,11 +1341,6 @@ body {
         font-size: 1.8rem;
     }
 
-    .header-tagline,
-    .header-cta-btn {
-        display: none;
-    }
-
     .tel-number {
         font-size: 1.2rem;
     }
@@ -1395,7 +1390,6 @@ body {
 
     .sp-nav.active {
         right: 0;
-        display: flex !important;
     }
 
     .sp-nav ul {
@@ -1517,8 +1511,105 @@ body {
         font-size: 2rem;
     }
 
+    .table-wrapper {
+        overflow-x: visible;
+        padding: 0;
+    }
+
     .comparison-table {
-        min-width: 500px;
+        display: block;
+        border: none;
+        box-shadow: none;
+        background: transparent;
+    }
+
+    .comparison-table thead {
+        display: none;
+    }
+
+    .comparison-table tbody,
+    .comparison-table tr,
+    .comparison-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .comparison-table tr {
+        background: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        padding: 15px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .comparison-table td:first-child {
+        background: linear-gradient(135deg, #1a2a40 0%, #2c3e50 100%);
+        color: #ffffff;
+        font-weight: 900;
+        text-align: center;
+        padding: 10px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        font-size: 1.15rem;
+        letter-spacing: 0.05em;
+    }
+
+    .comparison-table td:not(:first-child) {
+        display: flex;
+        align-items: center;
+        padding: 12px 5px;
+        border: none;
+        text-align: left;
+    }
+
+    .comparison-table td.samurai-column-body {
+        background: #fff9f9;
+        border: 2px solid #b32d2d !important;
+        border-radius: 10px;
+        margin-bottom: 12px;
+        position: relative;
+        padding: 15px 10px;
+    }
+
+    .comparison-table td.samurai-column-body::before {
+        content: "害鳥レスキュー侍";
+        /* アイコンを追加 */
+        background: #b32d2d;
+        color: #fff;
+        font-size: 0.8rem;
+        padding: 2px 8px;
+        border-radius: 4px;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+
+    .comparison-table td:last-child {
+        color: #777;
+        font-size: 0.95rem;
+        padding-left: 10px;
+    }
+
+    .comparison-table td:last-child::before {
+        content: "他社";
+        /* 比較しやすく */
+        color: #999;
+        font-weight: bold;
+        margin-right: 10px;
+        font-size: 0.8rem;
+        border: 1px solid #ccc;
+        padding: 2px 6px;
+        border-radius: 4px;
+    }
+
+    .samurai-column-body.price,
+    .samurai-column-body.bold {
+        font-size: 1.2rem !important;
+        /* 少し大きく */
+        color: #b32d2d;
+        font-weight: 900;
     }
 
     .step-grid {
@@ -1613,7 +1704,6 @@ body {
     }
 
     .onayami-grid {
-        grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
 

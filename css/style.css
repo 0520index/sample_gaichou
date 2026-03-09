@@ -32,6 +32,7 @@ body {
     gap: 5px;
     line-height: 1.8;
     overflow-wrap: break-word;
+    justify-content: center;
 }
 
 .section-title::after {
@@ -49,9 +50,11 @@ body {
 
 .title-sub {
     display: block;
+    width: fit-content;
     font-size: 1rem;
     color: #b32d2d;
     font-weight: 700;
+    margin-inline: auto;
     margin-bottom: 8px;
     letter-spacing: 0.15em;
     border-left: 3px solid #b32d2d;
@@ -371,10 +374,7 @@ body {
 
 .bird-types {
     background: linear-gradient(transparent 70%, rgba(255, 235, 59, 0.8) 70%);
-    display: inline;
-    width: 100%;
-    padding: 0;
-    line-height: 1.6;
+    font-weight: bold;
 }
 
 .bird-types::after {

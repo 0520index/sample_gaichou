@@ -185,16 +185,24 @@ body {
 .header-cta-btn {
     background: #b32d2d;
     color: #fff;
-    padding: 8px 20px;
+    padding: 12px 20px;
     border-radius: 4px;
-    text-decoration: none;
     font-weight: bold;
-    font-size: 0.9rem;
-    transition: background 0.3s;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header-cta-btn:hover {
     background: #8e2424;
+}
+
+.header-cta-btn::before {
+    content: "✉";
+    margin-right: 8px;
+    font-size: 1.1rem;
 }
 
 .menu-btn {
@@ -319,7 +327,7 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin: 0 auto;
+    margin: 1rem auto;
     border: 4px double #fff;
     transform: rotate(-5deg);
 }
@@ -585,17 +593,6 @@ body {
     white-space: nowrap;
 }
 
-.policy-card strong::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 30px;
-    height: 2px;
-    background: #b32d2d;
-    opacity: 0.3;
-}
-
 .policy-card span {
     display: block;
     font-size: 1rem;
@@ -672,11 +669,10 @@ body {
 
 .section-desc {
     max-width: 700px;
-    margin: 0 auto 60px;
+    margin: 0 auto;
     line-height: 2;
     font-weight: 500;
     text-align: center;
-    margin-bottom: 40px;
     color: #666;
 }
 
@@ -1345,6 +1341,102 @@ body {
 }
 
 @media (min-width: 900px) {
+    .hero.top-main {
+        min-height: 85vh;
+        display: flex;
+        align-items: center;
+        padding: 60px 0;
+        background: linear-gradient(90deg, #fff 40%, rgba(255, 255, 255, 0) 100%),
+            url('../images/hero.png') center right / cover no-repeat;
+    }
+
+    .container.main_cnt {
+        max-width: 1200px;
+        width: 95%;
+    }
+
+    .cnt.flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .hero .left {
+        flex: 1.2;
+    }
+
+    .sub-tagline {
+        font-size: 1.2rem;
+        padding: 5px 15px;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    .hero-title-img {
+        font-size: 4rem;
+        line-height: 1.2;
+    }
+
+    .solve-text {
+        font-size: 6rem;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .hero .right {
+        flex: 1;
+        position: relative;
+        height: 500px;
+    }
+
+    .bird-images {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .bird-item {
+        position: absolute;
+        filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.15));
+    }
+
+    .tori01 {
+        top: 0;
+        right: 0;
+        width: 70%;
+        z-index: 2;
+    }
+
+    .tori02 {
+        bottom: 50px;
+        left: 0;
+        width: 60%;
+        z-index: 1;
+        opacity: 0.9;
+    }
+
+    .guarantee-badge {
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        width: 200px;
+        height: 200px;
+        transform: rotate(10deg);
+        box-shadow: 0 15px 35px rgba(179, 45, 45, 0.3);
+    }
+
+    .hero-cta-area {
+        margin-top: 50px;
+        text-align: left;
+    }
+
+    .cta-button {
+        font-size: 1.5rem;
+        padding: 25px 60px;
+        border-radius: 100px;
+    }
+
     .step-item:not(:last-child)::after {
         content: "▶";
         position: absolute;
@@ -1362,6 +1454,12 @@ body {
 
     .tel-btn {
         font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .sp-nav ul li a.sp-nav-cta {
+        display: none;
     }
 }
 
@@ -1509,16 +1607,8 @@ body {
         font-size: 3rem;
     }
 
-    .right {
-        order: -1;
-        margin-bottom: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        gap: 20px;
-    }
-
     .right img {
+        display: none;
         width: 100px;
         height: auto;
         object-fit: contain;
@@ -1613,7 +1703,7 @@ body {
     }
 
     .comparison-table td.samurai-column-body::before {
-        content: "害鳥レスキュー侍";
+        content: "レスキュー侍";
         background: #b32d2d;
         color: #fff;
         font-size: 0.75rem;

@@ -1524,7 +1524,6 @@ body {
     }
 
     /* ボタンを表示 */
-    .header-tagline,
     .header-cta-btn,
     .tel-info {
         display: none;

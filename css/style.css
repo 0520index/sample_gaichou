@@ -23,7 +23,7 @@ h4 {
     font-weight: bold;
     color: #333;
     margin-bottom: 15px;
-    margin-top: 25px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
 }
@@ -38,7 +38,6 @@ h4::before {
 }
 
 body {
-    font-family: 'Noto Sans JP', sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f9f9f9;
@@ -158,27 +157,21 @@ body {
 }
 
 .logo {
-    font-family: "Yu Mincho", "YuMincho", "MS PMincho", serif;
     font-weight: 900;
-    color: #333;
+    color: #1a1a1a;
     display: flex;
     align-items: center;
-    gap: 8px;
-    font-size: 1.6rem;
-    letter-spacing: 0.05em;
+    gap: 12px;
+    font-size: 2.0rem;
+    letter-spacing: -0.02em;
 }
 
-.logo::before {
-    content: "侍";
-    background: #b32d2d;
-    color: #fff;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    font-size: 1.1rem;
+.samurai-highlight {
+    color: #b32d2d;
+    font-size: 1.3em;
+    display: inline-block;
+    line-height: 1;
+    text-shadow: 1px 1px 0 rgba(179, 45, 45, 0.2);
 }
 
 .tel-group {
@@ -284,6 +277,30 @@ body {
     margin-bottom: 20px;
 }
 
+.sub-tagline {
+    display: inline-block;
+    background: #ffeb3b;
+    color: #333;
+    font-weight: 900;
+    font-size: 1.2rem;
+    padding: 8px 24px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+}
+
+.sub-tagline::before {
+    content: "特報";
+    background: #b32d2d;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    margin-right: 10px;
+    border-radius: 2px;
+    vertical-align: middle;
+}
+
 .solve-text {
     display: block;
     color: #b32d2d;
@@ -329,6 +346,10 @@ body {
     white-space: nowrap;
 }
 
+.muryou-banner {
+    margin-top: 10px;
+}
+
 .sagyou-label {
     writing-mode: vertical-rl;
     font-weight: bold;
@@ -340,11 +361,9 @@ body {
 
 .price-num {
     font-size: 4.5rem;
-    /* 少し大きく */
     letter-spacing: -0.05em;
     font-weight: 900;
     color: #b32d2d;
-    font-family: 'Arial Black', sans-serif;
     line-height: 1;
 }
 
@@ -553,8 +572,9 @@ body {
 
 .measures-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    max-width: 1000px;
     margin-top: 40px;
 }
 
@@ -1399,9 +1419,6 @@ body {
 @media (min-width: 900px) {
     .hero.top-main {
         min-height: 85vh;
-        display: flex;
-        align-items: center;
-        padding: 60px 0;
         background: linear-gradient(90deg, #fff 30%, rgba(255, 255, 255, 0) 100%),
             url('../images/hero.png') center right / cover no-repeat;
     }
@@ -1519,10 +1536,6 @@ body {
         font-size: 1.8rem;
     }
 
-    .tel-number {
-        font-size: 1.2rem;
-    }
-
     .menu-btn {
         display: flex;
     }
@@ -1549,6 +1562,15 @@ body {
 
     .target-places {
         gap: 10px;
+    }
+
+    .sub-tagline {
+        font-size: 0.95rem;
+        padding: 6px 12px;
+        margin-bottom: 15px;
+        white-space: normal;
+        line-height: 1.4;
+        display: inline-block;
     }
 
     /* --- ドロワーメニューのデザイン --- */
@@ -1666,14 +1688,12 @@ body {
     }
 
     .right img {
-        display: none;
         width: 100px;
         height: auto;
         object-fit: contain;
     }
 
     .onayami-grid {
-        grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
 
@@ -1703,10 +1723,7 @@ body {
     }
 
     .comparison-table {
-        display: block;
         border: none;
-        box-shadow: none;
-        background: transparent;
     }
 
     .comparison-table thead {
@@ -1754,7 +1771,6 @@ body {
     .comparison-table td.samurai-column-body {
         border: 2px solid #b32d2d !important;
         background: #fff9f9;
-        /* すでに設定済みですが、さらに影をつけると浮き上がります */
         box-shadow: 2px 2px 8px rgba(179, 45, 45, 0.1);
         border-radius: 10px;
         margin-bottom: 12px;
@@ -1840,7 +1856,7 @@ body {
     }
 
     .tel-btn {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .contact-form-container {
@@ -1869,6 +1885,15 @@ body {
 }
 
 @media (max-width: 600px) {
+
+    .header {
+        padding: 10px 0;
+    }
+
+    .measures-grid {
+        grid-template-columns: 1fr;
+    }
+
     .google-rating-summary {
         padding: 10px 20px;
     }
@@ -1890,6 +1915,11 @@ body {
     .section-title {
         line-height: 2.2;
         font-size: 1.5rem;
+    }
+
+    .sub-tagline {
+        font-size: 0.85rem;
+        letter-spacing: -0.02em;
     }
 
     .onayami-grid {

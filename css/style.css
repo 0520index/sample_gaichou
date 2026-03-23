@@ -1393,11 +1393,6 @@ body {
 }
 
 @media (min-width: 900px) {
-    .hero.top-main {
-        min-height: 85vh;
-        background: linear-gradient(90deg, #fff 30%, rgba(255, 255, 255, 0) 100%),
-            url('../images/hero.webp') center right / cover no-repeat;
-    }
 
     .container.main_cnt {
         max-width: 1200px;
@@ -1819,7 +1814,6 @@ body {
 
     .contact-section .contact-title {
         font-size: 1.6rem;
-        word-break: keep-all;
         overflow-wrap: normal;
         line-height: 1.4;
         padding: 0 10px;

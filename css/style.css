@@ -292,14 +292,48 @@ body {
 }
 
 .hero.top-main {
-    background: linear-gradient(rgba(212, 212, 212, 0.5), rgba(224, 224, 224, 0.5)), url('../images/hero.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+
     min-height: 400px;
     display: flex;
     align-items: center;
     padding: 60px 0;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.hero.top-main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(rgba(255, 255, 255, 0.45),
+            rgba(224, 224, 224, 0.45));
+    backdrop-filter: blur(2px);
+    z-index: 5;
+}
+
+.hero-img-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+
+    /* 画像自体のぼかしを強める */
+    /* filter: blur(3px); */
+}
+
+.container.main_cnt {
+    position: relative;
+    z-index: 10;
 }
 
 .hero-title-img {

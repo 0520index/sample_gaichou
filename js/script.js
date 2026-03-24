@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const toggleBtn = document.getElementById('toggle-cases-btn');
     const extraCases = document.querySelectorAll('.extra-case');
-    // const casesSection = document.querySelector('.cases-section'); // 戻る位置
+    const casesSection = document.querySelector('.cases-section'); // 戻る位置
 
     if (toggleBtn) {
         toggleBtn.addEventListener('click', () => {

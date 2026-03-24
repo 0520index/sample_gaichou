@@ -38,7 +38,7 @@ try {
     mb_language("Japanese");
     mb_internal_encoding("UTF-8");
 
-    $to      = "0520index@gmail.com";
+    $to      = "gisho.1011@gmail.com";
     $subject = "【害鳥レスキュー侍】サイトからお問い合わせがありました";
     
     $body = "サイトから新しいお問い合わせがありました。\n\n";
@@ -52,11 +52,33 @@ try {
     $body .= "--------------------------------------------------\n";
     $body .= "早めのご対応をお願いします。";
 
-$from_email = "postmaster@rescue-samurai.com"; // お名前.comで取ったドメイン
-$header = "From: " . $from_email . "\r\n";
-$header .= "Reply-To: " . $mail; // 返信先はお客様のアドレス
+$from_email = "postmaster@rescue-samurai.com";
+$header  = "From: " . $from_email . "\r\n";
+$header .= "Cc: ezsvrl@gmail.com, 0520index@gmail.com\r\n"; // CC（2人）
+$header .= "Reply-To: " . $mail . "\r\n";
+$header .= "X-Mailer: PHP/" . phpversion();
 
-    mb_send_mail($to, $subject, $body, $header);
+$additional_params = "-f " . $from_email;
+
+mb_send_mail($to, $subject, $body, $header, $additional_params);
+    // --- ここまで ---
+
+    // --- ここから お客様への自動返信メール送信 ---
+
+    $subject_user = "【害鳥レスキュー侍】お問い合わせを承りました";
+    
+    $body_user = $name . " 様\n\n";
+    $body_user .= "この度はお問い合わせいただき、誠にありがとうございます。\n";
+    $body_user .= "以下の内容で承りました。担当者より改めてご連絡いたします。\n\n";
+    $body_user .= "--------------------------------------------------\n";
+    $body_user .= "【お名前】: " . $name . "\n";
+    $body_user .= "【内容】: \n" . $message . "\n";
+    $body_user .= "--------------------------------------------------\n\n";
+    $body_user .= "※このメールは送信専用です。心当たりがない場合は破棄してください。";
+
+    // 送信先はお客様のアドレス ($mail)
+    mb_send_mail($mail, $subject_user, $body_user, $header, $additional_params);
+
     // --- ここまで ---
 
     echo "<h1>送信完了</h1>";

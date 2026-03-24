@@ -392,10 +392,15 @@ body {
 .kingaku-box {
     background: #fff;
     border: 3px solid #b32d2d;
-    padding: 10px 30px;
+    padding: 10px 40px;
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
     box-shadow: 0 5px 0 #b32d2d;
+    position: relative;
+    min-width: 280px;
+    margin-bottom: 20px;
 }
 
 .kingaku-box.flex {
@@ -404,13 +409,15 @@ body {
     align-items: baseline;
     justify-content: center;
     gap: 8px;
-    width: 100%;
+    width: 70%;
 }
 
 .en-price {
     display: flex;
     align-items: baseline;
+    justify-content: center;
     white-space: nowrap;
+    margin-left: 20px;
 }
 
 .muryou-banner {
@@ -421,9 +428,12 @@ body {
     writing-mode: vertical-rl;
     font-weight: bold;
     color: #b32d2d;
-    margin-right: 15px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     white-space: nowrap;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .price-num {
@@ -435,8 +445,10 @@ body {
 }
 
 .price-unit {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
+    color: #b32d2d;
+    margin-left: 5px;
 }
 
 /* CTAボタン */

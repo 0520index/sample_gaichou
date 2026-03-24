@@ -1006,9 +1006,14 @@ body {
     border: 2px solid #fff;
 }
 
-.step-icon {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
+.step-item img {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+    margin: 0 auto 15px;
+    display: block;
+    border-radius: 8px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
 }
 
 .step-item h4 {
@@ -1752,6 +1757,16 @@ body {
 
     .price-value {
         font-size: 1.8rem;
+    }
+
+    .step-item img {
+        max-width: 120px;
+        margin-bottom: 10px;
+    }
+
+    .step-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 30px 15px;
     }
 
     .onayami-card {

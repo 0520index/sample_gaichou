@@ -581,32 +581,6 @@ body {
     color: #444;
 }
 
-.price-box {
-    margin-top: auto;
-    background: #fff9f9;
-    border: 1px dashed #b32d2d;
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.price-label {
-    display: block;
-    font-size: 0.75rem;
-    color: #666;
-}
-
-.price-value {
-    font-size: 1.6rem;
-    font-weight: 900;
-    color: #b32d2d;
-}
-
-.price-value span {
-    font-size: 0.9rem;
-    margin-left: 2px;
-}
-
 /* 対応場所セクション */
 .correspondence-section {
     padding: 60px 0;
@@ -1759,14 +1733,14 @@ body {
         font-size: 1.8rem;
     }
 
-    .step-item img {
-        max-width: 120px;
-        margin-bottom: 10px;
+    .step-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
 
-    .step-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 30px 15px;
+    .step-item img {
+        max-width: 200px;
+        height: 140px;
     }
 
     .onayami-card {

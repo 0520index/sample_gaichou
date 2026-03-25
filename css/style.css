@@ -340,7 +340,7 @@ body {
     font-size: 2.5rem;
     font-weight: 900;
     line-height: 1.2;
-    color: black;
+    color: #333;
     margin-bottom: 20px;
 }
 
@@ -427,7 +427,7 @@ body {
 .sagyou-label {
     writing-mode: vertical-rl;
     font-weight: bold;
-    color: #b32d2d;
+    color: #333;
     font-size: 1rem;
     white-space: nowrap;
     position: absolute;
@@ -447,7 +447,7 @@ body {
 .price-unit {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #b32d2d;
+    color: #333;
     margin-left: 5px;
 }
 

@@ -295,7 +295,7 @@ body {
     position: relative;
     z-index: 1;
 
-    min-height: 400px;
+    min-height: 850px;
     display: flex;
     align-items: center;
     padding: 60px 0;
@@ -1551,6 +1551,11 @@ body {
 }
 
 @media (max-width: 768px) {
+
+    .hero.top-main {
+        min-height: 600px;
+    }
+
     .hero-cta-area a {
         font-size: 25px;
     }

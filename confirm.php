@@ -46,6 +46,7 @@ try {
     $body .= "【お名前】: " . $name . "\n";
     $body .= "【電話番号】: " . $tel . "\n";
     $body .= "【メール】: " . $mail . "\n";
+    $body .= "【〒】: " . $zip . "\n";
     $body .= "【住所】: " . $address . "\n";
     $body .= "【鳥の種類】: " . $type . "\n";
     $body .= "【内容】: \n" . $message . "\n";
@@ -77,7 +78,7 @@ mb_send_mail($to, $subject, $body, $header, $additional_params);
     $body_user .= "※このメールは送信専用です。心当たりがない場合は破棄してください。";
 
     $header_user  = "From: " . $from_email . "\r\n";
-    $header_user .= "Bcc: gisho.1011@gmail.com, ezsvrl@gmail.com, 0520index@gmail.com\r\n"; // BCC（お客様には見えません）
+    $header_user .= "Bcc: gisho.1011@gmail.com, ezsvrl@gmail.com, 0520index@gmail.com\r\n"; // BCC
     $header_user .= "Reply-To: " . $from_email . "\r\n";
     $header_user .= "X-Mailer: PHP/" . phpversion();
 

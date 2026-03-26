@@ -791,9 +791,8 @@ body {
 
 .case-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    gap: 30px;
-    margin-bottom: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
 }
 
 .case-card {
@@ -916,6 +915,7 @@ body {
 
 .case-cta {
     text-align: center;
+    margin-top: 10px;
 }
 
 .case-cta p {
@@ -1281,6 +1281,7 @@ body {
 }
 
 .form-title {
+    white-space: nowrap;
     text-align: center;
     margin-bottom: 25px;
     font-size: 1.5rem;
@@ -1453,6 +1454,118 @@ body {
     margin-bottom: 10px;
 }
 
+@media (max-width: 1060px) {
+    .pc-nav-list {
+        display: none;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .menu-btn.open {
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        z-index: 10001
+    }
+
+    .menu-btn.open span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-btn.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-btn.open span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .sp-nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        height: 100vh;
+        background: #fff;
+        z-index: 10000;
+        transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 80px;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .sp-nav.active {
+        right: 0;
+    }
+
+    .sp-nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sp-nav a {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        height: 65px;
+        padding: 0 25px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+
+    .sp-nav a::after {
+        content: "〉";
+        margin-left: auto;
+        color: #ccc;
+        font-size: 0.8rem;
+    }
+
+    .sp-nav li:last-child {
+        border-bottom: none;
+        padding: 20px;
+    }
+
+    .sp-nav .sp-nav-cta {
+        background: #b32d2d;
+        color: #fff !important;
+        height: 60px;
+        border-radius: 8px;
+        justify-content: center;
+        font-size: 1.1rem;
+    }
+
+    .sp-nav .sp-nav-cta::after {
+        display: none;
+    }
+
+    .nav-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.4s;
+        z-index: 9999;
+    }
+
+    .nav-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+}
+
 @media (min-width: 900px) {
 
     .container.main_cnt {
@@ -1544,11 +1657,7 @@ body {
     }
 }
 
-@media (min-width: 769px) {
-    .sp-nav ul li a.sp-nav-cta {
-        display: none;
-    }
-}
+@media (min-width: 769px) {}
 
 @media (max-width: 768px) {
 
@@ -1562,14 +1671,6 @@ body {
 
     .section-title {
         font-size: 1.8rem;
-    }
-
-    .pc-nav-list {
-        display: none;
-    }
-
-    .menu-btn {
-        display: flex;
     }
 
     .logo {
@@ -1613,110 +1714,6 @@ body {
         margin-bottom: 15px;
         white-space: normal;
         line-height: 1.4;
-    }
-
-    /* --- ドロワーメニューのデザイン --- */
-
-    .sp-nav {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 75%;
-        height: 100vh;
-        background: #fff;
-        z-index: 10000;
-        transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        padding-top: 80px;
-        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
-    }
-
-    .sp-nav.active {
-        right: 0;
-    }
-
-    .sp-nav ul {
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    .sp-nav a {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        height: 65px;
-        padding: 0 25px;
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
-        font-size: 1.1rem;
-    }
-
-    .sp-nav a::after {
-        content: "〉";
-        margin-left: auto;
-        color: #ccc;
-        font-size: 0.8rem;
-    }
-
-    .sp-nav li:last-child {
-        border-bottom: none;
-        padding: 20px;
-    }
-
-    .sp-nav .sp-nav-cta {
-        background: #b32d2d;
-        color: #fff !important;
-        height: 60px;
-        border-radius: 8px;
-        justify-content: center;
-        font-size: 1.1rem;
-    }
-
-    .sp-nav .sp-nav-cta::after {
-        display: none;
-    }
-
-    .nav-overlay {
-        position: fixed;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.5);
-        opacity: 0;
-        visibility: hidden;
-        transition: 0.4s;
-        z-index: 9999;
-    }
-
-    .nav-overlay.active {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    /* ボタンのアニメーション（×印に） */
-    .menu-btn.open {
-        position: fixed;
-        right: 20px;
-        top: 20px;
-        z-index: 10001
-    }
-
-    .menu-btn.open span:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .menu-btn.open span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .menu-btn.open span:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
     }
 
     .hero-title-img {
@@ -1878,6 +1875,21 @@ body {
         font-size: 1.2rem !important;
         color: #b32d2d;
         font-weight: 900;
+    }
+
+    .case-body h4 {
+        font-size: 1.15rem;
+        line-height: 1.4;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #333;
+        word-break: break-all;
+        overflow: visible;
+    }
+
+    .case-body {
+        padding: 20px;
+        overflow: visible;
     }
 
     .step-grid {

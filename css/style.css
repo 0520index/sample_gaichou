@@ -1537,12 +1537,20 @@ body {
     }
 
     .sp-nav .sp-nav-cta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 0 5px;
+        height: 60px;
         background: #b32d2d;
         color: #fff !important;
-        height: 60px;
         border-radius: 8px;
-        justify-content: center;
-        font-size: 1.1rem;
+        font-size: 14px;
+        font-weight: bold;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .sp-nav .sp-nav-cta::after {
@@ -1656,8 +1664,6 @@ body {
         background: #ffebeb;
     }
 }
-
-@media (min-width: 769px) {}
 
 @media (max-width: 768px) {
 

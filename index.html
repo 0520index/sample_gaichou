@@ -11,12 +11,16 @@
     <meta name="description"
         content="仲介手数料ゼロで業界最安水準を実現。ハト、カラス、ムクドリ等の被害にお悩みなら「害鳥レスキュー侍」へ。最短30分で現場へ急行！現地調査・見積りは完全無料です。プロの技術で再発を徹底防止。強引な営業は一切なし、相見積もりも大歓迎です。">
     <meta name="format-detection" content="address=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css?ver=1.49">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link rel="preconnect" href="https://cdn.jsdelivr.net"> -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="css/style.min.css?ver=1.50">
 
     <link rel="icon" href="images/favicon.ico?v=2.11" sizes="any">
     <link rel="icon" type="image/png" href="images/android-chrome-192×192.png?v=2.11" sizes="192x192">
@@ -29,11 +33,12 @@
             <div class="header-logo-area">
                 <h1 class="logo">
                     <a href="index.html" class="logo-main-link">
-                        <img src="images/logo-title.svg" alt="害鳥レスキュー侍" fetchpriority="high">
+                        <img src="images/logo-title.svg" alt="害鳥レスキュー侍" width="500" height="136" fetchpriority="high">
                     </a>
 
                     <a href="tel:050-8895-4505" class="logo-tel-link">
-                        <img src="images/logo-subtitle.svg" alt="050-8895-4505に電話する" fetchpriority="high">
+                        <img src="images/logo-subtitle.svg" alt="050-8895-4505に電話する" width="500" height="136"
+                            fetchpriority="high">
                     </a>
                 </h1>
             </div>
@@ -45,7 +50,7 @@
                     <li><a href="#faq">よくある質問</a></li>
                     <li><a href="#contact" class="pc-nav-cta">無料相談する</a></li>
                 </ul>
-                <button class="menu-btn" id="menu-btn">
+                <button class="menu-btn" id="menu-btn" aria-label="メニューを開く">
                     <span></span><span></span><span></span>
                 </button>
                 <div class="sp-nav" id="sp-nav">
@@ -61,658 +66,660 @@
             </nav>
         </div>
     </header>
-    <section class="hero top-main">
-        <img src="images/hero.webp" alt="ベランダや屋上の鳥被害を即解決！害鳥レスキュー侍" class="hero-img-bg" fetchpriority="high">
-        <div class="container main_cnt">
-            <div class="cnt flex">
-                <div class="left">
-                    <h2 class="hero-title-img">
-                        <span class="problem-text">しつこい鳥の<br class="sp-only">被害トラブル</span>
-                        <span class="solve-text">即解決！</span>
-                    </h2>
-                    <ul class="target-places flex">
-                        <li><span>ベランダ</span></li>
-                        <li><span>屋上</span></li>
-                        <li><span>工場</span></li>
-                        <li><span>倉庫</span></li>
-                    </ul>
-                    <span class="sub-tagline">仲介手数料0円！直接施工だから安い！</span>
-                    <div class="kingaku-box flex">
-                        <div class="sagyou-label">作業料金</div>
-                        <div class="en-price">
-                            <span class="price-num">3,000</span>
-                            <span class="price-unit">円〜</span>
+    <main>
+        <section class="hero top-main">
+            <img src="images/hero.webp" alt="ベランダや屋上の鳥被害を即解決！害鳥レスキュー侍" class="hero-img-bg" fetchpriority="high">
+            <div class="container main_cnt">
+                <div class="cnt flex">
+                    <div class="left">
+                        <h2 class="hero-title-img">
+                            <span class="problem-text">しつこい鳥の<br class="sp-only">被害トラブル</span>
+                            <span class="solve-text">即解決！</span>
+                        </h2>
+                        <ul class="target-places flex">
+                            <li><span>ベランダ</span></li>
+                            <li><span>屋上</span></li>
+                            <li><span>工場</span></li>
+                            <li><span>倉庫</span></li>
+                        </ul>
+                        <span class="sub-tagline">仲介手数料0円！直接施工だから安い！</span>
+                        <div class="kingaku-box flex">
+                            <div class="sagyou-label">作業料金</div>
+                            <div class="en-price">
+                                <span class="price-num">3,000</span>
+                                <span class="price-unit">円〜</span>
+                            </div>
+                        </div>
+                        <div class="muryou-banner">
+                            <span class="check-icon">✔</span> 現地調査・お見積もりは<span>完全無料</span>
                         </div>
                     </div>
-                    <div class="muryou-banner">
-                        <span class="check-icon">✔</span> 現地調査・お見積もりは<span>完全無料</span>
-                    </div>
-                </div>
-                <div class="right">
+                    <div class="right">
 
+                    </div>
+                </div>
+                <div class="hero-cta-area">
+                    <a href="#contact" class="cta-button pulse">今すぐ無料で相談する</a>
                 </div>
             </div>
-            <div class="hero-cta-area">
-                <a href="#contact" class="cta-button pulse">今すぐ無料で相談する</a>
+        </section>
+        <section id="onayami" class="onayami-section section-whole-wrapper">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-sub">まずは現状のご相談を</span>
+                    <span class="bird-types">ハト・カラス・スズメ・コウモリの</span>
+                    こんな被害でお困りではありませんか？
+                </h2>
+                <div class="onayami-grid capture-block">
+                    <div class="onayami-item">
+                        <div class="onayami-card target-card">
+                            <div class="animal-name">鳩（ハト）</div>
+                            <div class="animal-img">
+                                <img src="images/hato.webp" alt="鳩の被害" width="340" height="300" loading="lazy">
+                            </div>
+                            <div class="card-content">
+                                <dl class="target-info">
+                                    <dt>被害特徴</dt>
+                                    <dd>執拗な糞害、鳴き声の騒音、ダニ等の二次被害</dd>
+                                    <dt>作業内容</dt>
+                                    <dd>清掃・消毒、防鳥ネット、忌避剤設置</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="onayami-item">
+                        <div class="onayami-card target-card">
+                            <div class="animal-name">スズメ</div>
+                            <div class="animal-img">
+                                <img src="images/suzume.webp" alt="スズメの被害" width="340" height="300" loading="lazy">
+                            </div>
+                            <div class="card-content">
+                                <dl class="target-info">
+                                    <dt>被害特徴</dt>
+                                    <dd>換気扇や軒先への巣作り、大量の藁の蓄積、ダニの発生</dd>
+                                    <dt>作業内容</dt>
+                                    <dd>巣の撤去・清掃、侵入口へのネット施工、除菌・消臭処理</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="onayami-item">
+                        <div class="onayami-card target-card">
+                            <div class="animal-name">ムクドリ</div>
+                            <div class="animal-img">
+                                <img src="images/mukudori.webp" alt="ムクドリの被害" width="340" height="300" loading="lazy">
+                            </div>
+                            <div class="card-content">
+                                <dl class="target-info">
+                                    <dt>被害特徴</dt>
+                                    <dd>集団での騒音被害、ベランダへの大量の糞害、異臭</dd>
+                                    <dt>作業内容</dt>
+                                    <dd>忌避剤の設置、防鳥ワイヤーの展張、高圧洗浄清掃</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="onayami-item">
+                        <div class="onayami-card target-card">
+                            <div class="animal-name">カラス</div>
+                            <div class="animal-img">
+                                <img src="images/karasu.webp" alt="カラスの被害" width="340" height="300" loading="lazy">
+                            </div>
+                            <div class="card-content">
+                                <dl class="target-info">
+                                    <dt>被害特徴</dt>
+                                    <dd>ゴミの散乱、威嚇・攻撃行動、屋上への巣作り</dd>
+                                    <dt>作業内容</dt>
+                                    <dd>巣の撤去（卵・雛対応）、防鳥ネット施工、物理的遮断</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="onayami-item">
+                        <div class="onayami-card target-card">
+                            <div class="animal-name">コウモリ</div>
+                            <div class="animal-img">
+                                <img src="images/koumori.webp" alt="コウモリの被害" width="340" height="300" loading="lazy">
+                            </div>
+                            <div class="card-content">
+                                <dl class="target-info">
+                                    <dt>被害特徴</dt>
+                                    <dd>屋根裏の騒音、独特の異臭、壁の隙間からの侵入</dd>
+                                    <dt>作業内容</dt>
+                                    <dd>追い出し処理、侵入口の封鎖工事、除菌消臭</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="corr-footer-text">※上記以外の特殊な害鳥も、お気軽にご相談ください。</p>
             </div>
-        </div>
-    </section>
-    <section id="onayami" class="onayami-section section-whole-wrapper">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-sub">まずは現状のご相談を</span>
-                <span class="bird-types">ハト・カラス・スズメ・コウモリの</span>
-                こんな被害でお困りではありませんか？
-            </h2>
-            <div class="onayami-grid capture-block">
-                <div class="onayami-item">
-                    <div class="onayami-card target-card">
-                        <div class="animal-name">鳩（ハト）</div>
-                        <div class="animal-img">
-                            <img src="images/hato.webp" alt="鳩の被害">
+        </section>
+        <section id="correspondence" class="correspondence-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-sub">あらゆる場所の害鳥対策に対応</span>
+                    <span>戸建てから大規模施設まで</span><span>建物の構造に合わせた最適な施工をご提案します</span>
+                </h2>
+                <div class="correspondence-grid">
+                    <div class="corr-item">
+                        <div class="corr-image"><img src="images/house.webp" alt="戸建て・マンション" loading="lazy"></div>
+                        <div class="corr-content">
+                            <h3>戸建て・マンション</h3>
+                            <p>ベランダの糞害や屋根裏の浸入など、住まいの美観を損なわない施工を行います。</p>
                         </div>
-                        <div class="card-content">
-                            <dl class="target-info">
-                                <dt>被害特徴</dt>
-                                <dd>執拗な糞害、鳴き声の騒音、ダニ等の二次被害</dd>
-                                <dt>作業内容</dt>
-                                <dd>清掃・消毒、防鳥ネット、忌避剤設置</dd>
-                            </dl>
+                    </div>
+                    <div class="corr-item">
+                        <div class="corr-image"><img src="images/building.webp" alt="店舗・公共施設" loading="lazy"></div>
+                        <div class="corr-content">
+                            <h3>店舗・オフィス・公共施設・駅</h3>
+                            <p>お客様の出入りを妨げず、施設の衛生環境とブランドイメージを徹底的に守ります。</p>
+                        </div>
+                    </div>
+                    <div class="corr-item">
+                        <div class="corr-image"><img src="images/factory.webp" alt="工場・倉庫" loading="lazy"></div>
+                        <div class="corr-content">
+                            <h3>工場・倉庫・大規模施設</h3>
+                            <p>高所作業や広範囲のネット展張など、特殊な環境下での防除も熟練の技術で完遂します。</p>
                         </div>
                     </div>
                 </div>
-                <div class="onayami-item">
-                    <div class="onayami-card target-card">
-                        <div class="animal-name">スズメ</div>
-                        <div class="animal-img">
-                            <img src="images/suzume.webp" alt="スズメの被害" loading="lazy">
-                        </div>
-                        <div class="card-content">
-                            <dl class="target-info">
-                                <dt>被害特徴</dt>
-                                <dd>換気扇や軒先への巣作り、大量の藁の蓄積、ダニの発生</dd>
-                                <dt>作業内容</dt>
-                                <dd>巣の撤去・清掃、侵入口へのネット施工、除菌・消臭処理</dd>
-                            </dl>
-                        </div>
+                <p class="corr-footer-text">※上記以外(畑、農園、看板、電波塔など)の特殊な場所も、お気軽にご相談ください。</p>
+            </div>
+        </section>
+        <section id="measures" class="measures-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-sub">状況に合わせた最適な防除手法の提案</span>
+                    鳥の生態に基づいた「再発させない」対策プラン
+                </h2>
+                <div class="measures-grid">
+                    <div class="measure-item">
+                        <div class="measure-tag">独自の配合</div>
+                        <div class="measure-img"><img src="images/kihi.webp" alt="植物性忌避剤" loading="lazy"></div>
+                        <h3>植物性忌避剤</h3>
+                        <p>鳥が嫌がる特殊な成分を設置。視覚・嗅覚・触覚に訴えかけ、自然に寄り付かない環境を作ります。</p>
+                    </div>
+                    <div class="measure-item">
+                        <div class="measure-tag">美観を維持</div>
+                        <div class="measure-img"><img src="images/net.webp" alt="高耐久防鳥ネット" loading="lazy"></div>
+                        <h3>高耐久防鳥ネット</h3>
+                        <p>目立ちにくい素材を使用し、建物の美観を損なわず物理的に侵入を100%遮断します。</p>
+                    </div>
+                    <div class="measure-item">
+                        <div class="measure-tag">着地を防止</div>
+                        <div class="measure-img"><img src="images/spike.webp" alt="防鳥スパイク" loading="lazy"></div>
+                        <h3>防鳥スパイク(剣山)</h3>
+                        <p>手すりや梁など、鳥が止まりやすい場所に設置。着地を物理的に防ぎ、休憩場所を与えません。</p>
+                    </div>
+                    <div class="measure-item">
+                        <div class="measure-tag">低コスト</div>
+                        <div class="measure-img"><img src="images/wire.webp" alt="防鳥ワイヤー" loading="lazy"></div>
+                        <h3>防鳥ワイヤー</h3>
+                        <p>マンションのベランダ手すり等に最適。細いワイヤーで着地を不安定にさせ、飛来を防止します。</p>
                     </div>
                 </div>
-                <div class="onayami-item">
-                    <div class="onayami-card target-card">
-                        <div class="animal-name">ムクドリ</div>
-                        <div class="animal-img">
-                            <img src="images/mukudori.webp" alt="ムクドリの被害" loading="lazy">
-                        </div>
-                        <div class="card-content">
-                            <dl class="target-info">
-                                <dt>被害特徴</dt>
-                                <dd>集団での騒音被害、ベランダへの大量の糞害、異臭</dd>
-                                <dt>作業内容</dt>
-                                <dd>忌避剤の設置、防鳥ワイヤーの展張、高圧洗浄清掃</dd>
-                            </dl>
-                        </div>
-                    </div>
-                </div>
-                <div class="onayami-item">
-                    <div class="onayami-card target-card">
-                        <div class="animal-name">カラス</div>
-                        <div class="animal-img">
-                            <img src="images/karasu.webp" alt="カラスの被害" loading="lazy">
-                        </div>
-                        <div class="card-content">
-                            <dl class="target-info">
-                                <dt>被害特徴</dt>
-                                <dd>ゴミの散乱、威嚇・攻撃行動、屋上への巣作り</dd>
-                                <dt>作業内容</dt>
-                                <dd>巣の撤去（卵・雛対応）、防鳥ネット施工、物理的遮断</dd>
-                            </dl>
-                        </div>
-                    </div>
-                </div>
-                <div class="onayami-item">
-                    <div class="onayami-card target-card">
-                        <div class="animal-name">コウモリ</div>
-                        <div class="animal-img">
-                            <img src="images/koumori.webp" alt="コウモリの被害" loading="lazy">
-                        </div>
-                        <div class="card-content">
-                            <dl class="target-info">
-                                <dt>被害特徴</dt>
-                                <dd>屋根裏の騒音、独特の異臭、壁の隙間からの侵入</dd>
-                                <dt>作業内容</dt>
-                                <dd>追い出し処理、侵入口の封鎖工事、除菌消臭</dd>
-                            </dl>
-                        </div>
-                    </div>
+                <div class="measures-note">
+                    <p>※被害のレベル(休憩・待機・巣作り)に合わせて、これらを組み合わせた<strong>「オーダーメイドの防除設計」</strong>を行います。</p>
                 </div>
             </div>
-            <p class="corr-footer-text">※上記以外の特殊な害鳥も、お気軽にご相談ください。</p>
-        </div>
-    </section>
-    <section id="correspondence" class="correspondence-section">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-sub">あらゆる場所の害鳥対策に対応</span>
-                <span>戸建てから大規模施設まで</span><span>建物の構造に合わせた最適な施工をご提案します</span>
-            </h2>
-            <div class="correspondence-grid">
-                <div class="corr-item">
-                    <div class="corr-image"><img src="images/house.webp" alt="戸建て・マンション" loading="lazy"></div>
-                    <div class="corr-content">
-                        <h3>戸建て・マンション</h3>
-                        <p>ベランダの糞害や屋根裏の浸入など、住まいの美観を損なわない施工を行います。</p>
-                    </div>
-                </div>
-                <div class="corr-item">
-                    <div class="corr-image"><img src="images/building.webp" alt="店舗・公共施設" loading="lazy"></div>
-                    <div class="corr-content">
-                        <h3>店舗・オフィス・公共施設・駅</h3>
-                        <p>お客様の出入りを妨げず、施設の衛生環境とブランドイメージを徹底的に守ります。</p>
-                    </div>
-                </div>
-                <div class="corr-item">
-                    <div class="corr-image"><img src="images/factory.webp" alt="工場・倉庫" loading="lazy"></div>
-                    <div class="corr-content">
-                        <h3>工場・倉庫・大規模施設</h3>
-                        <p>高所作業や広範囲のネット展張など、特殊な環境下での防除も熟練の技術で完遂します。</p>
-                    </div>
-                </div>
-            </div>
-            <p class="corr-footer-text">※上記以外(畑、農園、看板、電波塔など)の特殊な場所も、お気軽にご相談ください。</p>
-        </div>
-    </section>
-    <section id="measures" class="measures-section">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-sub">状況に合わせた最適な防除手法の提案</span>
-                鳥の生態に基づいた「再発させない」対策プラン
-            </h2>
-            <div class="measures-grid">
-                <div class="measure-item">
-                    <div class="measure-tag">独自の配合</div>
-                    <div class="measure-img"><img src="images/kihi.webp" alt="植物性忌避剤" loading="lazy"></div>
-                    <h3>植物性忌避剤</h3>
-                    <p>鳥が嫌がる特殊な成分を設置。視覚・嗅覚・触覚に訴えかけ、自然に寄り付かない環境を作ります。</p>
-                </div>
-                <div class="measure-item">
-                    <div class="measure-tag">美観を維持</div>
-                    <div class="measure-img"><img src="images/net.webp" alt="高耐久防鳥ネット" loading="lazy"></div>
-                    <h3>高耐久防鳥ネット</h3>
-                    <p>目立ちにくい素材を使用し、建物の美観を損なわず物理的に侵入を100%遮断します。</p>
-                </div>
-                <div class="measure-item">
-                    <div class="measure-tag">着地を防止</div>
-                    <div class="measure-img"><img src="images/spike.webp" alt="防鳥スパイク" loading="lazy"></div>
-                    <h3>防鳥スパイク(剣山)</h3>
-                    <p>手すりや梁など、鳥が止まりやすい場所に設置。着地を物理的に防ぎ、休憩場所を与えません。</p>
-                </div>
-                <div class="measure-item">
-                    <div class="measure-tag">低コスト</div>
-                    <div class="measure-img"><img src="images/wire.webp" alt="防鳥ワイヤー" loading="lazy"></div>
-                    <h3>防鳥ワイヤー</h3>
-                    <p>マンションのベランダ手すり等に最適。細いワイヤーで着地を不安定にさせ、飛来を防止します。</p>
-                </div>
-            </div>
-            <div class="measures-note">
-                <p>※被害のレベル(休憩・待機・巣作り)に合わせて、これらを組み合わせた<strong>「オーダーメイドの防除設計」</strong>を行います。</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="comparison" class="comparison-section">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-sub">レスキュー侍が選ばれる理由</span>
-                侍が他を圧倒する「四つの証」
-            </h2>
-            <div class="table-wrapper">
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>比較項目</th>
-                            <th class="samurai-column-head">害鳥レスキュー侍</th>
-                            <th>他社（仲介サイト）</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>施工価格</td>
-                            <td class="samurai-column-body price">業界最安水準 3,000円〜</td>
-                            <td>33,000円〜（仲介料込）</td>
-                        </tr>
-                        <tr>
-                            <td>施工担当</td>
-                            <td class="samurai-column-body bold">熟練の自社職人</td>
-                            <td>下請け業者（誰が来るか不明）</td>
-                        </tr>
-                        <tr>
-                            <td>広告・紹介料</td>
-                            <td class="samurai-column-body price">0円（自社集客）</td>
-                            <td>施工代金の30%〜40%</td>
-                        </tr>
-                        <tr>
-                            <td>アフター保証</td>
-                            <td class="samurai-column-body bold">最大5年保証</td>
-                            <td>保証なし or 別途有料</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <section id="comparison" class="comparison-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-sub">レスキュー侍が選ばれる理由</span>
+                    侍が他を圧倒する「四つの証」
+                </h2>
+                <div class="table-wrapper">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>比較項目</th>
+                                <th class="samurai-column-head">害鳥レスキュー侍</th>
+                                <th>他社（仲介サイト）</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>施工価格</td>
+                                <td class="samurai-column-body price">業界最安水準 3,000円〜</td>
+                                <td>33,000円〜（仲介料込）</td>
+                            </tr>
+                            <tr>
+                                <td>施工担当</td>
+                                <td class="samurai-column-body bold">熟練の自社職人</td>
+                                <td>下請け業者（誰が来るか不明）</td>
+                            </tr>
+                            <tr>
+                                <td>広告・紹介料</td>
+                                <td class="samurai-column-body price">0円（自社集客）</td>
+                                <td>施工代金の30%〜40%</td>
+                            </tr>
+                            <tr>
+                                <td>アフター保証</td>
+                                <td class="samurai-column-body bold">最大5年保証</td>
+                                <td>保証なし or 別途有料</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="comparison-note">
+                    ※仲介業者や無駄な広告費をカットすることで、その分をお客様への施工品質と価格に還元しています。
+                </p>
             </div>
-            <p class="comparison-note">
-                ※仲介業者や無駄な広告費をカットすることで、その分をお客様への施工品質と価格に還元しています。
-            </p>
-        </div>
-    </section>
-    <section id="cases" class="cases-section">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-sub">解決の記録</span>
-                施工事例と参考費用
-            </h2>
-            <p class="section-desc">「害鳥レスキュー侍」による、実際の解決実績の一部をご紹介します。</p>
-            <div class="case-grid">
-                <div class="case-card">
-                    <div class="case-images">
-                        <div class="before">
-                            <!-- 
+        </section>
+        <section id="cases" class="cases-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-sub">解決の記録</span>
+                    施工事例と参考費用
+                </h2>
+                <p class="section-desc">「害鳥レスキュー侍」による、実際の解決実績の一部をご紹介します。</p>
+                <div class="case-grid">
+                    <div class="case-card">
+                        <div class="case-images">
+                            <div class="before">
+                                <!-- 
                             <span>Before</span>
                         -->
-                            <img src="images/sekou clean1.webp" alt="鳩の糞害を清掃" loading="lazy">
-                        </div>
-                        <!-- 
+                                <img src="images/sekou clean1.webp" alt="鳩の糞害を清掃" loading="lazy">
+                            </div>
+                            <!-- 
                         <div class="after">
                             <span>After</span>
                             <img src="images/case1_after.jpeg" alt="施工後：清掃とネット設置" loading="lazy">
                         </div>
                         -->
-                    </div>
-                    <div class="case-body">
-                        <div class="case-header">
-                            <span class="area-tag">東京都世田谷区</span>
-                            <span class="bird-tag">ハト対策(ネット設置・糞害清掃)</span>
                         </div>
-                        <h4>マンションベランダの深刻な糞害を解決</h4>
-                        <p class="case-text">長年放置された糞の清掃・消毒後、目立たない高耐久ネットを設置。景観を損なわずに100%の防鳥を実現。</p>
-                        <div class="case-footer">
-                            <span class="price-label">施工費用(税込)</span>
-                            <span class="price-value">19,000円</span>
+                        <div class="case-body">
+                            <div class="case-header">
+                                <span class="area-tag">東京都世田谷区</span>
+                                <span class="bird-tag">ハト対策(ネット設置・糞害清掃)</span>
+                            </div>
+                            <h4>マンションベランダの深刻な糞害を解決</h4>
+                            <p class="case-text">長年放置された糞の清掃・消毒後、目立たない高耐久ネットを設置。景観を損なわずに100%の防鳥を実現。</p>
+                            <div class="case-footer">
+                                <span class="price-label">施工費用(税込)</span>
+                                <span class="price-value">19,000円</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="case-card">
-                    <div class="case-images">
-                        <div class="before">
-                            <!--
+                    <div class="case-card">
+                        <div class="case-images">
+                            <div class="before">
+                                <!--
                             <span>Before</span>
                         -->
-                            <img src="images/sekou clean2.webp" alt="ベランダの糞害を清掃" loading="lazy">
-                        </div>
-                        <!-- 
+                                <img src="images/sekou clean2.webp" alt="ベランダの糞害を清掃" loading="lazy">
+                            </div>
+                            <!-- 
                         <div class="after">
                             <span>After</span>
                             <img src="images/case1_after.jpeg" alt="施工後：防鳥剣山と清掃" loading="lazy">
                         </div>
                         -->
-                    </div>
-                    <div class="case-body">
-                        <div class="case-header">
-                            <span class="area-tag">埼玉県さいたま市</span>
-                            <span class="bird-tag">ハト対策(巣撤去・糞害清掃)</span>
                         </div>
-                        <h4>ベランダの天井に作られた巣の撤去と再発防止</h4>
-                        <p class="case-text">ベランダの隙間に作られた巣を撤去。糞害による深刻な汚れを完全清掃。</p>
-                        <div class="case-footer">
-                            <span class="price-label">施工費用(税込)</span>
-                            <span class="price-value">25,500円</span>
+                        <div class="case-body">
+                            <div class="case-header">
+                                <span class="area-tag">埼玉県さいたま市</span>
+                                <span class="bird-tag">ハト対策(巣撤去・糞害清掃)</span>
+                            </div>
+                            <h4>ベランダの天井に作られた巣の撤去と再発防止</h4>
+                            <p class="case-text">ベランダの隙間に作られた巣を撤去。糞害による深刻な汚れを完全清掃。</p>
+                            <div class="case-footer">
+                                <span class="price-label">施工費用(税込)</span>
+                                <span class="price-value">25,500円</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="case-card extra-case">
-                    <div class="case-images">
-                        <div class="before">
-                            <!--    
+                    <div class="case-card extra-case">
+                        <div class="case-images">
+                            <div class="before">
+                                <!--    
                             <span>Before</span>
                         -->
-                            <img src="images/sekou net1.webp" alt="鳩の糞害" loading="lazy">
-                        </div>
-                        <!--
+                                <img src="images/sekou net1.webp" alt="鳩の糞害" loading="lazy">
+                            </div>
+                            <!--
                         <div class="after">
                             <span>After</span>
                             <img src="images/case1_after.jpeg" alt="施工後：清掃とネット設置" loading="lazy">
                         </div>
                         -->
-                    </div>
-                    <div class="case-body">
-                        <div class="case-header">
-                            <span class="area-tag">東京都中野区</span>
-                            <span class="bird-tag">ハト対策(ネット設置・糞害清掃)</span>
                         </div>
-                        <h4>賃貸マンションのベランダで発生していた糞害を解決</h4>
-                        <p class="case-text">東京都内の賃貸マンションにて被害が発生。糞害を清掃・消毒後、目立たない高耐久ネットを設置し被害を一掃。</p>
-                        <div class="case-footer">
-                            <span class="price-label">施工費用(税込)</span>
-                            <span class="price-value">18,000円</span>
+                        <div class="case-body">
+                            <div class="case-header">
+                                <span class="area-tag">東京都中野区</span>
+                                <span class="bird-tag">ハト対策(ネット設置・糞害清掃)</span>
+                            </div>
+                            <h4>賃貸マンションのベランダで発生していた糞害を解決</h4>
+                            <p class="case-text">東京都内の賃貸マンションにて被害が発生。糞害を清掃・消毒後、目立たない高耐久ネットを設置し被害を一掃。</p>
+                            <div class="case-footer">
+                                <span class="price-label">施工費用(税込)</span>
+                                <span class="price-value">18,000円</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="case-card extra-case">
-                    <div class="case-images">
-                        <div class="before">
-                            <!--    
+                    <div class="case-card extra-case">
+                        <div class="case-images">
+                            <div class="before">
+                                <!--    
                             <span>Before</span>
                         -->
-                            <img src="images/sekou net2.webp" alt="施工前：鳩の糞害" loading="lazy">
-                        </div>
-                        <!--
+                                <img src="images/sekou net2.webp" alt="施工前：鳩の糞害" loading="lazy">
+                            </div>
+                            <!--
                         <div class="after">
                             <span>After</span>
                             <img src="images/case1_after.jpeg" alt="施工後：清掃とネット設置" loading="lazy">
                         </div>
                         -->
-                    </div>
-                    <div class="case-body">
-                        <div class="case-header">
-                            <span class="area-tag">神奈川県川崎市</span>
-                            <span class="bird-tag">ハト対策(ネット設置)</span>
                         </div>
-                        <h4>マンションベランダへの巣作り及び帰巣に対策</h4>
-                        <p class="case-text">毎年、鳩の巣作りが確認されていたため高耐久ネットを設置。ネットを設置することで帰巣本能による継続被害も完全に解決。</p>
-                        <div class="case-footer">
-                            <span class="price-label">施工費用(税込)</span>
-                            <span class="price-value">15,000円</span>
+                        <div class="case-body">
+                            <div class="case-header">
+                                <span class="area-tag">神奈川県川崎市</span>
+                                <span class="bird-tag">ハト対策(ネット設置)</span>
+                            </div>
+                            <h4>マンションベランダへの巣作り及び帰巣に対策</h4>
+                            <p class="case-text">毎年、鳩の巣作りが確認されていたため高耐久ネットを設置。ネットを設置することで帰巣本能による継続被害も完全に解決。</p>
+                            <div class="case-footer">
+                                <span class="price-label">施工費用(税込)</span>
+                                <span class="price-value">15,000円</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="case-card extra-case">
-                    <div class="case-images">
-                        <div class="before">
-                            <!--    
+                    <div class="case-card extra-case">
+                        <div class="case-images">
+                            <div class="before">
+                                <!--    
                             <span>Before</span>
                         -->
-                            <img src="images/sekou repair1.webp" alt="施工前：鳩の糞害" loading="lazy">
-                        </div>
-                        <!--
+                                <img src="images/sekou repair1.webp" alt="施工前：鳩の糞害" loading="lazy">
+                            </div>
+                            <!--
                         <div class="after">
                             <span>After</span>
                             <img src="images/case1_after.jpeg" alt="施工後：清掃とネット設置" loading="lazy">
                         </div>
                         -->
-                    </div>
-                    <div class="case-body">
-                        <div class="case-header">
-                            <span class="area-tag">東京都西東京市</span>
-                            <span class="bird-tag">ムクドリ対策(窓枠補修)</span>
                         </div>
-                        <h4>住居(窓枠)への巣作り及び帰巣に対策</h4>
-                        <p class="case-text">毎年、椋鳥(むくどり)の巣作りが確認されていた窓枠に補修材を取り付け。隙間を埋めることで帰巣本能による継続被害も完全に解決。</p>
-                        <div class="case-footer">
-                            <span class="price-label">施工費用(税込)</span>
-                            <span class="price-value">30,000円</span>
+                        <div class="case-body">
+                            <div class="case-header">
+                                <span class="area-tag">東京都西東京市</span>
+                                <span class="bird-tag">ムクドリ対策(窓枠補修)</span>
+                            </div>
+                            <h4>住居(窓枠)への巣作り及び帰巣に対策</h4>
+                            <p class="case-text">毎年、椋鳥(むくどり)の巣作りが確認されていた窓枠に補修材を取り付け。隙間を埋めることで帰巣本能による継続被害も完全に解決。</p>
+                            <div class="case-footer">
+                                <span class="price-label">施工費用(税込)</span>
+                                <span class="price-value">30,000円</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-cta">
+                    <button id="toggle-cases-btn" class="btn-sub-cta">もっと施工事例を見る</button>
+                </div>
+            </div>
+        </section>
+        <section id="step" class="step-section">
+            <div class="step-container">
+                <div class="container">
+                    <h2 class="section-title">
+                        <span class="title-sub">ご依頼の流れ</span>
+                        解決までの「四段構え」
+                    </h2>
+                    <div class="step-grid">
+                        <div class="step-item">
+                            <div class="step-number">ステップ１</div>
+                            <img src="images/flow1.webp" alt="丁寧なオペレーター対応" loading="lazy">
+                            <h4>無料相談</h4>
+                            <p>LINE・電話・フォームより、現在の状況やご相談内容をお伝えください。</p>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">ステップ２</div>
+                            <img src="images/flow2.webp" alt="安全安心の現地調査" loading="lazy">
+                            <h4>現地調査・見積</h4>
+                            <p>作業員が現場へ急行。被害状況を調べ、その場で明朗な御見積書を提示します。</p>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">ステップ３</div>
+                            <img src="images/flow3.webp" alt="熟練の職人による施工技術" loading="lazy">
+                            <h4>各種施工</h4>
+                            <p>熟練の技で、鳩をはじめとする害鳥を二度と寄せ付けない施工をします。</p>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">ステップ４</div>
+                            <img src="images/flow4.webp" alt="安心の長期保証" loading="lazy">
+                            <h4>安心保証</h4>
+                            <p>施工後、万が一鳥が戻れば無償で再施工。最長で5年保証いたします。</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="case-cta">
-                <button id="toggle-cases-btn" class="btn-sub-cta">もっと施工事例を見る</button>
+        </section>
+        <section id="reviews" class="reviews-section">
+            <div class="container">
+                <div class="reviews-header">
+                    <h2 class="section-title">
+                        <span class="title-sub">レビュー</span>
+                        利用者様からの高評価
+                    </h2>
+                </div>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-user">
+                            <div class="user-info">
+                                <strong>S.K 様</strong>
+                                <span>神奈川県川崎市</span>
+                            </div>
+                            <div class="stars-active">★★★★★</div>
+                        </div>
+                        <p class="review-text">
+                            ベランダの鳩の糞でノイローゼ気味でしたが、見積もり当日にすぐ作業してくれました。他の大手より3万円近く安くて驚きました。職人さんも丁寧で安心しました。
+                        </p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-user">
+                            <div class="user-info">
+                                <strong>T.M 様</strong>
+                                <span>神奈川県川崎市</span>
+                            </div>
+                            <div class="stars-active">★★★★★</div>
+                        </div>
+                        <p class="review-text">
+                            ソーラーパネルの隙間に巣を作られて困っていました。ネット設置だけでなく、パネルの洗浄までやっていただき感謝です。侍さんにお願いして本当に良かったです！
+                        </p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-user">
+                            <div class="user-info">
+                                <strong>株式会社 O様</strong>
+                                <span>神奈川県川崎市</span>
+                            </div>
+                            <div class="stars-active">★★★★★</div>
+                        </div>
+                        <p class="review-text">倉庫のムクドリ被害で相談。ワンストップ運営というだけあってレスポンスが非常に速い。コストも予算内に収まり、法人としても非常に助かりました。
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-    <section id="step" class="step-section">
-        <div class="step-container">
+        </section>
+
+        <section id="faq" class="faq-section">
             <div class="container">
                 <h2 class="section-title">
-                    <span class="title-sub">ご依頼の流れ</span>
-                    解決までの「四段構え」
+                    <span class="title-sub">FAQ</span>
+                    よくあるご質問
                 </h2>
-                <div class="step-grid">
-                    <div class="step-item">
-                        <div class="step-number">ステップ１</div>
-                        <img src="images/flow1.webp" alt="丁寧なオペレーター対応" loading="lazy">
-                        <h4>無料相談</h4>
-                        <p>LINE・電話・フォームより、現在の状況やご相談内容をお伝えください。</p>
-                    </div>
-                    <div class="step-item">
-                        <div class="step-number">ステップ２</div>
-                        <img src="images/flow2.webp" alt="安全安心の現地調査" loading="lazy">
-                        <h4>現地調査・見積</h4>
-                        <p>作業員が現場へ急行。被害状況を調べ、その場で明朗な御見積書を提示します。</p>
-                    </div>
-                    <div class="step-item">
-                        <div class="step-number">ステップ３</div>
-                        <img src="images/flow3.webp" alt="熟練の職人による施工技術" loading="lazy">
-                        <h4>各種施工</h4>
-                        <p>熟練の技で、鳩をはじめとする害鳥を二度と寄せ付けない施工をします。</p>
-                    </div>
-                    <div class="step-item">
-                        <div class="step-number">ステップ４</div>
-                        <img src="images/flow4.webp" alt="安心の長期保証" loading="lazy">
-                        <h4>安心保証</h4>
-                        <p>施工後、万が一鳥が戻れば無償で再施工。最長で5年保証いたします。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="reviews" class="reviews-section">
-        <div class="container">
-            <div class="reviews-header">
-                <h2 class="section-title">
-                    <span class="title-sub">レビュー</span>
-                    利用者様からの高評価
-                </h2>
-            </div>
-            <div class="reviews-grid">
-                <div class="review-card">
-                    <div class="review-user">
-                        <div class="user-info">
-                            <strong>S.K 様</strong>
-                            <span>神奈川県川崎市</span>
+                <p class="section-desc">お問い合わせ前によくいただくご質問をまとめました。</p>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">見積もり後に追加料金が発生することはありますか？</button>
+                        <div class="faq-answer">
+                            <p>いいえ、ございません。「害鳥レスキュー侍」では現地調査に基づいた詳細な見積書を提示し、ご納得いただいた上で施工を開始します。作業後にお見積り以上の金額を請求することは一切ありませんのでご安心ください。
+                            </p>
                         </div>
-                        <div class="stars-active">★★★★★</div>
                     </div>
-                    <p class="review-text">
-                        ベランダの鳩の糞でノイローゼ気味でしたが、見積もり当日にすぐ作業してくれました。他の大手より3万円近く安くて驚きました。職人さんも丁寧で安心しました。
-                    </p>
-                </div>
-                <div class="review-card">
-                    <div class="review-user">
-                        <div class="user-info">
-                            <strong>T.M 様</strong>
-                            <span>神奈川県川崎市</span>
+                    <div class="faq-item">
+                        <button class="faq-question">なぜ他の業者よりも駆除費用が安いのですか？</button>
+                        <div class="faq-answer">
+                            <p>大手集客サイトのような「仲介手数料（施工代金の30〜40%）」が発生しない直営店であること、そして過度な広告費をカットしているためです。浮いたコストをすべてお客様への施工価格と品質に還元しています。
+                            </p>
                         </div>
-                        <div class="stars-active">★★★★★</div>
                     </div>
-                    <p class="review-text">
-                        ソーラーパネルの隙間に巣を作られて困っていました。ネット設置だけでなく、パネルの洗浄までやっていただき感謝です。侍さんにお願いして本当に良かったです！
-                    </p>
-                </div>
-                <div class="review-card">
-                    <div class="review-user">
-                        <div class="user-info">
-                            <strong>株式会社 O様</strong>
-                            <span>神奈川県川崎市</span>
-                        </div>
-                        <div class="stars-active">★★★★★</div>
-                    </div>
-                    <p class="review-text">倉庫のムクドリ被害で相談。ワンストップ運営というだけあってレスポンスが非常に速い。コストも予算内に収まり、法人としても非常に助かりました。
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="faq" class="faq-section">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-sub">FAQ</span>
-                よくあるご質問
-            </h2>
-            <p class="section-desc">お問い合わせ前によくいただくご質問をまとめました。</p>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <button class="faq-question">見積もり後に追加料金が発生することはありますか？</button>
-                    <div class="faq-answer">
-                        <p>いいえ、ございません。「害鳥レスキュー侍」では現地調査に基づいた詳細な見積書を提示し、ご納得いただいた上で施工を開始します。作業後にお見積り以上の金額を請求することは一切ありませんのでご安心ください。
-                        </p>
+                    <div class="faq-item">
+                        <button class="faq-question">マンションのベランダ1箇所だけでも依頼できますか？</button>
+                        <div class="faq-answer">
+                            <p>もちろんです。ベランダの鳩の糞清掃から、ネット設置による再発防止まで1箇所から承ります。お隣の住戸に迷惑をかけないよう、細心の注意を払って施工いたします。</p>
+                        </div>
                     </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">なぜ他の業者よりも駆除費用が安いのですか？</button>
-                    <div class="faq-answer">
-                        <p>大手集客サイトのような「仲介手数料（施工代金の30〜40%）」が発生しない直営店であること、そして過度な広告費をカットしているためです。浮いたコストをすべてお客様への施工価格と品質に還元しています。
-                        </p>
+                    <div class="faq-item">
+                        <button class="faq-question">屋根のソーラーパネルに鳥が住み着いているのですが…？</button>
+                        <div class="faq-answer">
+                            <p>ソーラーパネルの隙間は鳩にとって絶好の営巣場所です。パネルを傷つけない専用の防鳥具の設置と、パネル下に溜まった糞の洗浄・消毒まで一貫して対応可能です。放っておくと故障の原因にもなるため、早めの対策をお勧めします。
+                            </p>
+                        </div>
                     </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">マンションのベランダ1箇所だけでも依頼できますか？</button>
-                    <div class="faq-answer">
-                        <p>もちろんです。ベランダの鳩の糞清掃から、ネット設置による再発防止まで1箇所から承ります。お隣の住戸に迷惑をかけないよう、細心の注意を払って施工いたします。</p>
+                    <div class="faq-item">
+                        <button class="faq-question">小さな子供やペットがいても駆除薬剤は安全ですか？</button>
+                        <div class="faq-answer">
+                            <p>はい、安全です。当社で使用する忌避剤（鳥が嫌がるジェル等）は、人体や動物に無害な天然成分由来のものを選定しております。施工場所や状況に合わせ、最適な安全対策をご説明いたします。
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">屋根のソーラーパネルに鳥が住み着いているのですが…？</button>
-                    <div class="faq-answer">
-                        <p>ソーラーパネルの隙間は鳩にとって絶好の営巣場所です。パネルを傷つけない専用の防鳥具の設置と、パネル下に溜まった糞の洗浄・消毒まで一貫して対応可能です。放っておくと故障の原因にもなるため、早めの対策をお勧めします。
-                        </p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">小さな子供やペットがいても駆除薬剤は安全ですか？</button>
-                    <div class="faq-answer">
-                        <p>はい、安全です。当社で使用する忌避剤（鳥が嫌がるジェル等）は、人体や動物に無害な天然成分由来のものを選定しております。施工場所や状況に合わせ、最適な安全対策をご説明いたします。
-                        </p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">現地調査に来てもらった後、お断りしても大丈夫ですか？</button>
-                    <div class="faq-answer">
-                        <p>はい、全く問題ございません。お見積り内容にご納得いただけない場合は、その場でお断りいただいて構いません。もちろん、出張費やキャンセル料をいただくこともございませんので、お気軽にご相談ください。
-                        </p>
+                    <div class="faq-item">
+                        <button class="faq-question">現地調査に来てもらった後、お断りしても大丈夫ですか？</button>
+                        <div class="faq-answer">
+                            <p>はい、全く問題ございません。お見積り内容にご納得いただけない場合は、その場でお断りいただいて構いません。もちろん、出張費やキャンセル料をいただくこともございませんので、お気軽にご相談ください。
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="policy" class="policy-section">
-        <div class="container">
-            <div class="section-title">
-                <span class="title-sub">5つの安心約束</span>
-                お客様と交わす「5つの約束」
-            </div>
-            <div class="policy-grid">
-                <div class="policy-card">
-                    <strong>01. 明朗会計</strong>
-                    <span>ご提示したお見積り以上の追加料金は一切いただきません。</span>
+        </section>
+        <section id="policy" class="policy-section">
+            <div class="container">
+                <div class="section-title">
+                    <span class="title-sub">5つの安心約束</span>
+                    お客様と交わす「5つの約束」
                 </div>
-                <div class="policy-card">
-                    <strong>02. 迅速対応</strong>
-                    <span>地域密着のネットワークで、最短30分で現地へ駆けつけます。</span>
-                </div>
-                <div class="policy-card">
-                    <strong>03. 再発防止</strong>
-                    <span>徹底した調査に基づき、二度と鳥を寄せ付けない確実な施工にこだわります。</span>
-                </div>
-                <div class="policy-card">
-                    <strong>04. 徹底したマナー</strong>
-                    <span>近隣の方々への配慮はもちろん、丁寧な説明と挨拶を徹底いたします。</span>
-                </div>
-                <div class="policy-card">
-                    <strong>05. 長期アフター保証</strong>
-                    <span>施工後もご安心いただけるよう、最長5年間の再発保証を付帯いたします。</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <h2 class="contact-title">
-                        <span class="title-sub">無料相談・見積り</span>
-                        お急ぎの方はお電話で！
-                    </h2>
-                    <p class="contact-desc">最短30分で現場へ駆けつけます。<br>相談・現地調査・見積りは<span class="txt-red">完全無料</span>です。
-                    </p>
-                    <div class="tel-card">
-                        <p class="tel-label">24時間365日受付中</p>
-                        <a href="tel:050-8895-4505" class="tel-btn">
-                            <span class="icon-phone">📞</span> 050-8895-4505
-                        </a>
+                <div class="policy-grid">
+                    <div class="policy-card">
+                        <strong>01. 明朗会計</strong>
+                        <span>ご提示したお見積り以上の追加料金は一切いただきません。</span>
                     </div>
-                    <ul class="contact-points">
-                        <li>強引な営業は一切いたしません</li>
-                        <li>他社との相見積もりも大歓迎です</li>
-                        <li>最短、本日中に解決可能です</li>
-                    </ul>
-                    <div class="line-banner">
-                        <div class="line-content">
-                            <h4>LINEで被害写真を送るだけ！</h4>
-                            <p>「この鳥は何？」「いくらかかる？」がすぐ分かります</p>
-                            <a href="https://lin.ee/7VDFFxR" class="btn-line-large">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg"
-                                    alt="LINEで相談する">
-                                LINEで相談する
+                    <div class="policy-card">
+                        <strong>02. 迅速対応</strong>
+                        <span>地域密着のネットワークで、最短30分で現地へ駆けつけます。</span>
+                    </div>
+                    <div class="policy-card">
+                        <strong>03. 再発防止</strong>
+                        <span>徹底した調査に基づき、二度と鳥を寄せ付けない確実な施工にこだわります。</span>
+                    </div>
+                    <div class="policy-card">
+                        <strong>04. 徹底したマナー</strong>
+                        <span>近隣の方々への配慮はもちろん、丁寧な説明と挨拶を徹底いたします。</span>
+                    </div>
+                    <div class="policy-card">
+                        <strong>05. 長期アフター保証</strong>
+                        <span>施工後もご安心いただけるよう、最長5年間の再発保証を付帯いたします。</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h2 class="contact-title">
+                            <span class="title-sub">無料相談・見積り</span>
+                            お急ぎの方はお電話で！
+                        </h2>
+                        <p class="contact-desc">最短30分で現場へ駆けつけます。<br>相談・現地調査・見積りは<span class="txt-red">完全無料</span>です。
+                        </p>
+                        <div class="tel-card">
+                            <p class="tel-label">24時間365日受付中</p>
+                            <a href="tel:050-8895-4505" class="tel-btn">
+                                <span class="icon-phone">📞</span> 050-8895-4505
                             </a>
                         </div>
+                        <ul class="contact-points">
+                            <li>強引な営業は一切いたしません</li>
+                            <li>他社との相見積もりも大歓迎です</li>
+                            <li>最短、本日中に解決可能です</li>
+                        </ul>
+                        <div class="line-banner">
+                            <div class="line-content">
+                                <h3>LINEで被害写真を送るだけ！</h3>
+                                <p>「この鳥は何？」「いくらかかる？」など、お気軽にお問い合わせください。</p>
+                                <a href="https://lin.ee/7VDFFxR" class="btn-line-large">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg"
+                                        width="30" height="30" alt="LINEで相談する">
+                                    LINEで相談する
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <h3 class="form-title">無料相談窓口</h3>
+                        <form action="confirm.php" method="post" class="contact-form h-adr">
+                            <span class="p-country-name" style="display:none;">Japan</span>
+                            <div class="form-group">
+                                <label for="name">お名前 <span class="required">必須</span></label>
+                                <input type="text" id="name" name="name" placeholder="例：害鳥 太郎" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="tel">お電話番号 <span class="required">必須</span></label>
+                                <input id="tel" type="tel" pattern="\d{2,4}-?\d{2,4}-?\d{3,4}" name="tel"
+                                    placeholder="例：090-1234-5678" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">メールアドレス <span class="required">必須</span></label>
+                                <input id="email" type="email" name="email" placeholder="例：abcdef123@example.com"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label>郵便番号<span class="required">必須</span></label>
+                                <span class="zip-note">※入力すると住所を自動で補完します</span>
+                                <input type="tel" name="zip" class="p-postal-code" size="8" maxlength="8"
+                                    placeholder="123-4567" required>
+                            </div>
+                            <div class="form-group">
+                                <label>都道府県<span class="required">必須</span></label>
+                                <input type="text" name="pref" class="p-region" placeholder="東京都" required>
+                            </div>
+                            <div class="form-group">
+                                <label>市区町村・番地</label>
+                                <input type="text" name="addr" class="p-locality p-street-address p-extended-address"
+                                    placeholder="千代田区麹町1-2-3" required>
+                            </div>
+                            <div class="form-group">
+                                <label>被害状況・鳥の種類</label>
+                                <select name="type">
+                                    <option value="">選択してください▾</option>
+                                    <option value="鳩">鳩（ハト）</option>
+                                    <option value="カラス">カラス</option>
+                                    <option value="ムクドリ">ムクドリ</option>
+                                    <option value="スズメ">スズメ</option>
+                                    <option value="コウモリ">コウモリ</option>
+                                    <option value="その他">その他・わからない</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>備考（任意）</label>
+                                <textarea name="message" placeholder="ベランダに巣がある、など"></textarea>
+                            </div>
+                            <button type="submit" class="form-submit-btn">入力した内容を送信</button>
+                            <p class="privacy-text">※送信により<a href="#">プライバシーポリシー</a>に同意したことになります。</p>
+                        </form>
                     </div>
                 </div>
-                <div class="contact-form-container">
-                    <h3 class="form-title">無料相談窓口</h3>
-                    <form action="confirm.php" method="post" class="contact-form h-adr">
-                        <span class="p-country-name" style="display:none;">Japan</span>
-                        <div class="form-group">
-                            <label for="name">お名前 <span class="required">必須</span></label>
-                            <input type="text" id="name" name="name" placeholder="例：害鳥 太郎" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="tel">お電話番号 <span class="required">必須</span></label>
-                            <input id="tel" type="tel" pattern="\d{2,4}-?\d{2,4}-?\d{3,4}" name="tel"
-                                placeholder="例：090-1234-5678" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">メールアドレス <span class="required">必須</span></label>
-                            <input id="email" type="email" name="email" placeholder="例：abcdef123@example.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label>郵便番号<span class="required">必須</span></label>
-                            <span class="zip-note">※入力すると住所を自動で補完します</span>
-                            <input type="tel" name="zip" class="p-postal-code" size="8" maxlength="8"
-                                placeholder="123-4567" required>
-                        </div>
-                        <div class="form-group">
-                            <label>都道府県<span class="required">必須</span></label>
-                            <input type="text" name="pref" class="p-region" placeholder="東京都" required>
-                        </div>
-                        <div class="form-group">
-                            <label>市区町村・番地</label>
-                            <input type="text" name="addr" class="p-locality p-street-address p-extended-address"
-                                placeholder="千代田区麹町1-2-3" required>
-                        </div>
-                        <div class="form-group">
-                            <label>被害状況・鳥の種類</label>
-                            <select name="type">
-                                <option value="">選択してください▾</option>
-                                <option value="鳩">鳩（ハト）</option>
-                                <option value="カラス">カラス</option>
-                                <option value="ムクドリ">ムクドリ</option>
-                                <option value="スズメ">スズメ</option>
-                                <option value="コウモリ">コウモリ</option>
-                                <option value="その他">その他・わからない</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>備考（任意）</label>
-                            <textarea name="message" placeholder="ベランダに巣がある、など"></textarea>
-                        </div>
-                        <button type="submit" class="form-submit-btn">入力した内容を送信</button>
-                        <p class="privacy-text">※送信により<a href="#">プライバシーポリシー</a>に同意したことになります。</p>
-                    </form>
-                </div>
             </div>
-        </div>
-    </section>
-    <!--
+        </section>
+        <!--
     <section id="intro-section" class="intro-section container">
         <div class="section-title">
             <span class="title-sub">私たちの想い</span>
@@ -725,23 +732,25 @@
         </p>
     </section>
     -->
-    <div class="bottom-cta-bar">
-        <a href="tel:050-8895-4505" class="btn-tel">
-            <span class="icon">📞</span>電話で相談
-        </a>
-        <a href="#contact" class="btn-line">
-            <span class="icon">✉</span>
-            <span>メール・LINE</span>
-        </a>
-    </div>
+        <div class="bottom-cta-bar">
+            <a href="tel:050-8895-4505" class="btn-tel">
+                <span class="icon">📞</span>電話で相談
+            </a>
+            <a href="#contact" class="btn-line">
+                <span class="icon">✉</span>
+                <span>メール・LINE</span>
+            </a>
+        </div>
+
+    </main>
     <footer class="main-footer">
         <div class="container">
             <p class="footer-logo">害鳥レスキュー侍</p>
             <p class="copyright">&copy; 2026 害鳥レスキュー侍 All Rights Reserved.</p>
         </div>
     </footer>
-    <script src="js/script.js"></script>
-    <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>
+    <script src="js/script.js" defer></script>
+    <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" defer="UTF-8"></script>
 
     <script type="application/ld+json">
 {

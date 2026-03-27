@@ -149,8 +149,9 @@ body {
 
 .logo-main-link img {
     height: auto;
-    max-height: 90px;
     display: block;
+    max-height: none;
+    width: 329px;
 }
 
 .logo-tel-link {
@@ -165,8 +166,9 @@ body {
 
 .logo-tel-link img {
     height: auto;
-    max-height: 50px;
     display: block;
+    max-height: none;
+    width: 183px;
     margin-top: 40px;
 }
 
@@ -1388,8 +1390,8 @@ body {
     margin-top: 30px;
 }
 
-.line-banner h4 {
-    color: #06C755;
+.line-banner h3 {
+    color: #333;
     margin-bottom: 10px;
     font-size: 1.2rem;
 }
@@ -1403,7 +1405,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background: #06C755;
+    background: #07dd60;
     color: #fff;
     padding: 15px 30px;
     border-radius: 50px;
@@ -1705,11 +1707,10 @@ body {
     }
 
     .logo-main-link img {
-        max-height: 60px;
+        max-width: 220px;
     }
 
     .logo-tel-link img {
-        max-height: 40px;
         margin-top: 0px;
     }
 

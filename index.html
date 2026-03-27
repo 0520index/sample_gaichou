@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="害鳥駆除, 鳩, カラス, ムクドリ, スズメ, コウモリ, 関東, 害鳥レスキュー侍">
+    <link rel="canonical" href="https://rescue-samurai.com/">
     <title>害鳥レスキュー侍 | 業界最安水準の鳩・害鳥駆除ならお任せ</title>
     <meta name="description"
         content="仲介手数料ゼロで業界最安水準を実現。ハト、カラス、ムクドリ等の被害にお悩みなら「害鳥レスキュー侍」へ。最短30分で現場へ急行！現地調査・見積りは完全無料です。プロの技術で再発を徹底防止。強引な営業は一切なし、相見積もりも大歓迎です。">
@@ -31,7 +34,6 @@
 
                     <a href="tel:050-8895-4505" class="logo-tel-link">
                         <img src="images/logo-subtitle.svg" alt="050-8895-4505に電話する" fetchpriority="high">
-                    </a>
                     </a>
                 </h1>
             </div>
@@ -365,7 +367,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="case-card extra-case" style="display: none;">
+                <div class="case-card extra-case">
                     <div class="case-images">
                         <div class="before">
                             <!--    
@@ -393,7 +395,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="case-card extra-case" style="display: none;">
+                <div class="case-card extra-case">
                     <div class="case-images">
                         <div class="before">
                             <!--    
@@ -421,7 +423,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="case-card extra-case" style="display: none;">
+                <div class="case-card extra-case">
                     <div class="case-images">
                         <div class="before">
                             <!--    
@@ -660,17 +662,17 @@
                     <form action="confirm.php" method="post" class="contact-form h-adr">
                         <span class="p-country-name" style="display:none;">Japan</span>
                         <div class="form-group">
-                            <label>お名前 <span class="required">必須</span></label>
-                            <input type="text" name="name" placeholder="例：害鳥 太郎" required>
+                            <label for="name">お名前 <span class="required">必須</span></label>
+                            <input type="text" id="name" name="name" placeholder="例：害鳥 太郎" required>
                         </div>
                         <div class="form-group">
-                            <label>お電話番号 <span class="required">必須</span></label>
-                            <input type="tel" pattern="\d{2,4}-?\d{2,4}-?\d{3,4}" name="tel"
+                            <label for="tel">お電話番号 <span class="required">必須</span></label>
+                            <input id="tel" type="tel" pattern="\d{2,4}-?\d{2,4}-?\d{3,4}" name="tel"
                                 placeholder="例：090-1234-5678" required>
                         </div>
                         <div class="form-group">
-                            <label>メールアドレス <span class="required">必須</span></label>
-                            <input type="text" name="mail" placeholder="例：abcdef123@example.com" required>
+                            <label for="email">メールアドレス <span class="required">必須</span></label>
+                            <input id="email" type="email" name="email" placeholder="例：abcdef123@example.com" required>
                         </div>
                         <div class="form-group">
                             <label>郵便番号<span class="required">必須</span></label>

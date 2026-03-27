@@ -4,10 +4,17 @@
 document.addEventListener('DOMContentLoaded', () => {
     const faqQuestions = document.querySelectorAll('.faq-question');
 
-    faqQuestions.forEach(button => {
+    faqQuestions.forEach((button, index) => {
+        const faqItem = button.parentElement;
+        const faqAnswer = faqItem.querySelector('.faq-answer');
+        const answerId = `faq-answer-${index + 1}`;
+
+        button.setAttribute('aria-expanded', 'false');
+        button.setAttribute('aria-controls', answerId);
+        faqAnswer.setAttribute('id', answerId);
+        faqAnswer.setAttribute('aria-hidden', 'true');
+
         button.addEventListener('click', () => {
-            const faqItem = button.parentElement;
-            const faqAnswer = faqItem.querySelector('.faq-answer');
             const isOpen = faqItem.classList.contains('is-open');
 
             // --- 他の開いている項目を閉じたい場合はここから ---
@@ -26,11 +33,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 faqItem.classList.add('is-open');
                 faqAnswer.style.display = 'block';
                 button.setAttribute('aria-expanded', 'true');
+                faqAnswer.setAttribute('aria-hidden', 'false');
             } else {
                 // 閉じる処理
                 faqItem.classList.remove('is-open');
                 faqAnswer.style.display = 'none';
                 button.setAttribute('aria-expanded', 'false');
+                faqAnswer.setAttribute('aria-hidden', 'true');
             }
         });
     });

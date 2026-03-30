@@ -1218,11 +1218,27 @@ body {
 }
 
 .contact-section .contact-title {
+    position: relative;
     display: block;
     font-size: 2.2rem;
     color: #ffeb3b;
     text-align: center;
     margin-bottom: 30px;
+    padding-bottom: 20px;
+    font-weight: 900;
+}
+
+.contact-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #b32d2d, transparent);
+    margin-top: 15px;
+    border-radius: 2px;
 }
 
 .contact-section .title-sub {
@@ -1231,10 +1247,11 @@ body {
     font-size: 1rem;
     font-weight: bold;
     display: block;
-    width: fit-content;
-    margin: 0 auto 10px;
+    margin-bottom: 10px;
     border-left: 4px solid #b32d2d;
     padding-left: 10px;
+    width: max-content;
+    margin: 0 auto 10px;
 }
 
 .contact-wrapper {
@@ -1254,8 +1271,12 @@ body {
 
 .contact-desc {
     margin-bottom: 30px;
-    font-size: 1.15rem;
     line-height: 1.8;
+}
+
+.txt-red {
+    color: #e65e5e;
+    font-weight: bold;
 }
 
 .contact-form-container {
@@ -1269,7 +1290,6 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* 電話カード */
 .tel-card {
     background: #fff;
     padding: 30px;
@@ -1293,12 +1313,30 @@ body {
 }
 
 .contact-points {
+    display: inline-block;
+    text-align: left;
     list-style: none;
+    padding: 0;
+    margin: 20px auto;
+}
+
+.contact-points-wrapper {
+    text-align: center;
+}
+
+.contact-points li {
+    position: relative;
+    padding-left: 1.5em;
+    line-height: 2;
+    font-weight: 500;
 }
 
 .contact-points li::before {
-    content: "🛡️";
-    margin-right: 10px;
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #b32d2d;
+    font-weight: bold;
 }
 
 .contact-form-container {
@@ -1939,15 +1977,18 @@ body {
     }
 
     .contact-section .contact-title {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         overflow-wrap: normal;
         line-height: 1.4;
-        padding: 0 10px;
     }
 
     .contact-wrapper {
         flex-direction: column;
         gap: 40px;
+    }
+
+    .contact-desc {
+        font-size: 0.95rem;
     }
 
     .tel-card {

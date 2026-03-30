@@ -71,6 +71,29 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /**
+ * レビューの表示・非表示切り替え
+ */
+document.addEventListener('DOMContentLoaded', () => {
+    const reviewBtn = document.getElementById('toggle-reviews-btn');
+    const extraReviews = document.querySelectorAll('.extra-review');
+    const reviewsSection = document.querySelector('.reviews-section');
+
+    if (reviewBtn && extraReviews.length > 0) {
+        reviewBtn.addEventListener('click', () => {
+            const isHidden = extraReviews[0].style.display === 'none' || extraReviews[0].style.display === '';
+            if (isHidden) {
+                extraReviews.forEach(el => el.style.display = 'block');
+                reviewBtn.textContent = '閉じる';
+            } else {
+                extraReviews.forEach(el => el.style.display = 'none');
+                reviewBtn.textContent = 'もっとお客様の声を見る';
+                reviewsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    }
+});
+
+/**
  * ハンバーガーメニュー
  */
 const menuBtn = document.getElementById('menu-btn');

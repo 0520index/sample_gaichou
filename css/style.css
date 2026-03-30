@@ -1089,7 +1089,7 @@ body {
     flex-grow: 1;
 }
 
-/* 其の六 のポリシーカード */
+/* ポリシーカード */
 .policy-section {
     padding: 60px 0;
     background: #fcfcfc;
@@ -1207,6 +1207,52 @@ body {
 .faq-item {
     border-bottom: 1px solid #eee;
     margin-bottom: 10px;
+}
+
+/* 対応エリアセクション */
+.area-section {
+    padding: 60px 0;
+    background-color: #f0f2f5;
+    border-top: 1px solid #eee;
+}
+
+.area-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.area-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 4px solid #b32d2d;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.area-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+.pref-tag {
+    background: #b32d2d;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.city-list {
+    font-size: 0.85rem;
+    color: #777;
+    line-height: 1.8;
+    text-align: justify;
 }
 
 /* --- 問合せ --- */
@@ -1506,7 +1552,6 @@ body {
     margin-bottom: 2px;
 }
 
-/* フッター */
 .main-footer {
     padding: 40px 0;
     background: #111;
@@ -1725,6 +1770,9 @@ body {
 }
 
 @media (max-width: 768px) {
+    body {
+        padding-bottom: 70px;
+    }
 
     .hero.top-main {
         min-height: 600px;
@@ -1752,7 +1800,6 @@ body {
         margin-top: 0px;
     }
 
-    /* ボタンを表示 */
     .header-cta-btn,
     .tel-info {
         display: none;
@@ -1968,8 +2015,13 @@ body {
         display: flex;
     }
 
-    body {
-        padding-bottom: 70px;
+    .area-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .area-card {
+        padding: 20px;
     }
 
     .contact-section {

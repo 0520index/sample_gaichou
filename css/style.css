@@ -510,15 +510,10 @@ body {
     }
 }
 
-.intro-section {
-    padding: 60px 0;
-    background: #f0f2f5;
-}
-
 /* お悩みセクション全体 */
 .onayami-section {
     padding: 60px 0;
-    background-color: #fcfcfc;
+    background: linear-gradient(180deg, #fcfcfc 0%, #f8f2ee 100%);
 }
 
 .bird-types {
@@ -612,7 +607,7 @@ body {
 /* 対応場所セクション */
 .correspondence-section {
     padding: 60px 0;
-    background-color: #f0f2f5;
+    background: linear-gradient(180deg, #fcfcfc 0%, #f0f2f5 100%);
 }
 
 .correspondence-grid {
@@ -668,7 +663,7 @@ body {
 /* 対策セクション */
 .measures-section {
     padding: 60px 0;
-    background-color: #fcfcfc;
+    background: linear-gradient(180deg, #fcfcfc 0%, #f8f2ee 100%);
 }
 
 .measures-grid {
@@ -732,7 +727,7 @@ body {
 /* --- 比較セクション --- */
 .comparison-section {
     padding: 60px 0;
-    background: #f0f2f5;
+    background: linear-gradient(180deg, #fcfcfc 0%, #f0f2f5 100%);
 }
 
 .table-wrapper {
@@ -826,6 +821,10 @@ body {
 }
 
 .extra-case {
+    display: none;
+}
+
+.extra-review {
     display: none;
 }
 
@@ -1012,7 +1011,7 @@ body {
 /* --- 解決ステップ --- */
 .step-section {
     padding: 60px 0;
-    background: #f0f2f5;
+    background: linear-gradient(180deg, #fcfcfc 0%, #f0f2f5 100%);
 }
 
 .step-container {
@@ -1075,7 +1074,7 @@ body {
 /* --- レビュー --- */
 .reviews-section {
     padding: 60px 0;
-    background: #fcfcfc;
+    background: linear-gradient(180deg, #fcfcfc 0%, #f8f2ee 100%);
 }
 
 .reviews-header {
@@ -1132,7 +1131,7 @@ body {
 /* ポリシーカード */
 .policy-section {
     padding: 60px 0;
-    background: #fcfcfc;
+    background: linear-gradient(180deg, #fcfcfc 0%, #f8f2ee 100%);
 }
 
 .policy-grid {
@@ -1176,7 +1175,7 @@ body {
 /* --- よくある質問 --- */
 .faq-section {
     padding: 60px 0;
-    background: #f0f2f5;
+    background: linear-gradient(180deg, #fcfcfc 0%, #f0f2f5 100%);
 }
 
 .faq-question {
@@ -1252,7 +1251,7 @@ body {
 /* 対応エリアセクション */
 .area-section {
     padding: 60px 0;
-    background-color: #f0f2f5;
+    background: linear-gradient(180deg, #fcfcfc 0%, #f0f2f5 100%);
     border-top: 1px solid #eee;
 }
 
@@ -1425,12 +1424,6 @@ body {
     font-weight: bold;
 }
 
-.contact-form-container {
-    background: #fff;
-    padding: 40px;
-    border-radius: 15px;
-    color: #333;
-}
 
 .form-title {
     white-space: nowrap;

@@ -301,6 +301,16 @@ body {
     flex-wrap: wrap;
 }
 
+.area-badge {
+    display: inline-block;
+    background: #b32d2d;
+    color: #fff;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 50px;
+    font-size: 0.9rem;
+}
+
 .hero.top-main {
     position: relative;
     z-index: 1;
@@ -349,9 +359,37 @@ body {
 .hero-title-img {
     font-size: 2.5rem;
     font-weight: 900;
-    line-height: 1.2;
+    line-height: 1.1;
     color: #333;
+    margin: 20px 0;
+}
+
+.hero-description {
+    max-width: 720px;
+    margin-bottom: 24px;
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #333;
+}
+
+.problem-intro {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.intro-badge {
+    display: inline-block;
+    background: #ffeb3bc5;
+    color: #333;
+    font-weight: 900;
+    font-size: 1.2rem;
+    padding: 8px 24px;
+    border-radius: 50px;
     margin-bottom: 20px;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    line-height: 1.6;
+    text-align: center;
 }
 
 .sub-tagline {
@@ -395,7 +433,7 @@ body {
 .target-places span {
     background: #1a2a40;
     color: #fff;
-    padding: 6px 15px;
+    padding: 6px 8px;
     border-radius: 4px;
     font-size: 1rem;
     font-weight: bold;
@@ -412,7 +450,7 @@ body {
     box-shadow: 0 5px 0 #b32d2d;
     position: relative;
     min-width: 280px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .kingaku-box.flex {
@@ -430,10 +468,6 @@ body {
     justify-content: center;
     white-space: nowrap;
     margin-left: 20px;
-}
-
-.muryou-banner {
-    margin-top: 10px;
 }
 
 .sagyou-label {
@@ -463,6 +497,10 @@ body {
     margin-left: 5px;
 }
 
+.muryou-banner {
+    margin-bottom: 10px;
+}
+
 /* CTAボタン */
 .cta-button {
     display: flex;
@@ -485,7 +523,7 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .hero-cta-area a {
@@ -1761,12 +1799,6 @@ body {
         flex: 1.2;
     }
 
-    .sub-tagline {
-        font-size: 1.2rem;
-        padding: 5px 15px;
-        margin-bottom: 20px;
-    }
-
     .hero-title-img {
         font-size: 4rem;
         line-height: 1.2;
@@ -1873,11 +1905,15 @@ body {
         display: none;
     }
 
-    .target-places {
-        gap: 10px;
+    .sub-tagline {
+        font-size: 0.95rem;
+        padding: 6px 12px;
+        margin-bottom: 15px;
+        white-space: normal;
+        line-height: 1.4;
     }
 
-    .sub-tagline {
+    .intro-badge {
         font-size: 0.95rem;
         padding: 6px 12px;
         margin-bottom: 15px;

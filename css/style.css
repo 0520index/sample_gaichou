@@ -617,7 +617,7 @@ body {
 
 .correspondence-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;
     margin-top: 40px;
 }
@@ -793,13 +793,13 @@ body {
 /* --- 事例セクション --- */
 .cases-section {
     padding: 60px 0;
-    background: #fcfcfc;
+    background: linear-gradient(180deg, #fcfcfc 0%, #f8f2ee 100%);
 }
 
 .section-desc {
     max-width: 700px;
-    margin: 0 auto;
-    line-height: 2;
+    margin: 0 auto 30px;
+    line-height: 1.9;
     font-weight: 500;
     text-align: center;
     color: #666;
@@ -807,21 +807,22 @@ body {
 
 .case-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
 }
 
 .case-card {
     background: #fff;
-    border: 1px solid #eee;
-    border-radius: 12px;
+    border: 1px solid rgba(179, 45, 45, 0.15);
+    border-radius: 22px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .case-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 26px 55px rgba(0, 0, 0, 0.14);
 }
 
 .extra-case {
@@ -832,7 +833,30 @@ body {
 .case-images {
     display: flex;
     position: relative;
-    background: #eee;
+    background: #faf6f2;
+    gap: 10px;
+    padding: 12px;
+}
+
+.case-images::after {
+    content: "→";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #fff;
+    color: #b32d2d;
+    font-size: 1.35rem;
+    font-weight: 900;
+    border: 2px solid #b32d2d;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    z-index: 2;
 }
 
 .case-images .before,
@@ -840,25 +864,38 @@ body {
     flex: 1;
     position: relative;
     overflow: hidden;
+    border-radius: 18px;
+    background: #fff;
+    border: 1px solid #ece8e4;
+}
+
+.case-images .before {
+    border-right: none;
+}
+
+.case-images .after {
+    border-left: none;
 }
 
 .case-images img {
     width: 100%;
-    height: 200px;
+    height: 260px;
     object-fit: cover;
     display: block;
 }
 
 .case-images span {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    background: rgba(0, 0, 0, 0.6);
+    top: 14px;
+    left: 14px;
+    background: rgba(0, 0, 0, 0.72);
     color: #fff;
-    font-size: 0.7rem;
-    padding: 2px 8px;
-    border-radius: 4px;
-    z-index: 1;
+    font-size: 0.75rem;
+    padding: 6px 10px;
+    border-radius: 999px;
+    z-index: 3;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
 }
 
 .case-images .after span {
@@ -870,15 +907,18 @@ body {
 }
 
 .case-header {
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 14px;
 }
 
 .area-tag,
 .bird-tag {
+    display: inline-block;
     font-size: 0.75rem;
-    padding: 2px 8px;
-    border-radius: 4px;
-    margin-right: 5px;
+    padding: 4px 10px;
+    border-radius: 6px;
     background: #f0f0f0;
     color: #666;
 }
@@ -1843,17 +1883,6 @@ body {
         display: none;
     }
 
-    .onayami-grid {
-        grid-template-columns: 1fr;
-        gap: 25px;
-        margin-top: 30px;
-        padding: 0 10px;
-    }
-
-    .animal-name {
-        font-size: 1.3rem;
-    }
-
     .price-value {
         font-size: 1.8rem;
     }
@@ -2092,6 +2121,37 @@ body {
 
     .cta-button {
         font-size: 1.2rem;
+    }
+
+    .onayami-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-top: 30px;
+        padding: 0 10px;
+    }
+
+    .animal-name {
+        font-size: 1.3rem;
+    }
+
+    .case-images {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .case-images::after {
+        content: "↓";
+        top: 50%;
+        left: 50%;
+        bottom: auto;
+        transform: translate(-50%, -50%);
+        width: 42px;
+        height: 42px;
+        font-size: 1.3rem;
+    }
+
+    .case-images img {
+        height: 220px;
     }
 }
 

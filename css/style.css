@@ -876,22 +876,22 @@ body {
 }
 
 .case-images::after {
-    content: "→";
+    content: "➡";
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 56px;
-    height: 56px;
+    width: 35px;
+    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    background: #fff;
-    color: #b32d2d;
+    border-radius: 40%;
+    background: #ffffffa4;
+    color: #a80202;
     font-size: 1.35rem;
     font-weight: 900;
-    border: 2px solid #b32d2d;
+    border: 2px solid #ffffff10;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     z-index: 2;
 }
@@ -2244,13 +2244,13 @@ body {
     }
 
     .case-images::after {
-        content: "↓";
+        content: "▼";
         top: 50%;
         left: 50%;
         bottom: auto;
         transform: translate(-50%, -50%);
-        width: 42px;
-        height: 42px;
+        width: 35px;
+        height: 35px;
         font-size: 1.3rem;
     }
 

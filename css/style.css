@@ -858,14 +858,6 @@ body {
     box-shadow: 0 26px 55px rgba(0, 0, 0, 0.14);
 }
 
-.extra-case {
-    display: none;
-}
-
-.extra-review {
-    display: none;
-}
-
 /* ビフォーアフター画像エリア */
 .case-images {
     display: flex;

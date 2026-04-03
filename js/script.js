@@ -54,6 +54,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const casesSection = document.querySelector('.cases-section'); // 戻る位置
 
     if (toggleBtn) {
+        // 初期状態で非表示に設定
+        extraCases.forEach(el => el.style.display = 'none');
+
         toggleBtn.addEventListener('click', () => {
             const isHidden = extraCases[0].style.display === 'none' || extraCases[0].style.display === '';
 
@@ -79,6 +82,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const reviewsSection = document.querySelector('.reviews-section');
 
     if (reviewBtn && extraReviews.length > 0) {
+        // 初期状態で非表示に設定
+        extraReviews.forEach(el => el.style.display = 'none');
+
         reviewBtn.addEventListener('click', () => {
             const isHidden = extraReviews[0].style.display === 'none' || extraReviews[0].style.display === '';
             if (isHidden) {

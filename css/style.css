@@ -1791,10 +1791,6 @@ body {
         gap: 40px;
     }
 
-    .hero .left {
-        flex: 1.2;
-    }
-
     .hero-title-img {
         font-size: 4rem;
         line-height: 1.2;

@@ -646,6 +646,29 @@ body {
     color: #444;
 }
 
+.card-btn-area {
+    padding: 0 15px 20px;
+    text-align: center;
+}
+
+.detail-btn {
+    display: block;
+    background: #1a2a40;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 0;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.detail-btn:hover {
+    background: #b32d2d;
+    /* 侍レッドに変化 */
+    transform: translateY(-2px);
+}
+
 /* 対応場所セクション */
 .correspondence-section {
     padding: 60px 0;

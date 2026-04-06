@@ -116,7 +116,7 @@ body {
 
 .header-flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -124,7 +124,7 @@ body {
 }
 
 .header-logo-area {
-    flex: 1;
+    flex: 0 0 auto;
     min-width: 0;
 }
 
@@ -362,6 +362,10 @@ body {
     line-height: 1.1;
     color: #333;
     margin: 20px 0;
+}
+
+.problem-text {
+    white-space: nowrap;
 }
 
 .hero-description {
@@ -1774,6 +1778,12 @@ body {
 }
 
 @media (min-width: 900px) {
+
+    .header-nav {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
 
     .container.main_cnt {
         max-width: 1200px;

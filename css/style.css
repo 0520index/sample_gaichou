@@ -184,7 +184,7 @@ body {
 .pc-nav-list {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 15px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -362,6 +362,10 @@ body {
     line-height: 1.1;
     color: #333;
     margin: 20px 0;
+}
+
+.problem-text {
+    white-space: nowrap;
 }
 
 .hero-description {
@@ -1653,7 +1657,7 @@ body {
     margin-bottom: 10px;
 }
 
-@media (max-width: 1060px) {
+@media (max-width: 1100px) {
     .pc-nav-list {
         display: none;
     }

@@ -1721,7 +1721,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        padding-top: 60px;
+        padding-top: 30px;
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
     }
 
@@ -1760,7 +1760,6 @@ body {
 
     .sp-nav li:last-child {
         border-bottom: none;
-        padding: 20px;
     }
 
     .sp-nav .sp-nav-cta {

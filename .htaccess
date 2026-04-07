@@ -2,6 +2,10 @@
 # 1. 基本設定（SSL化 & URLの正規化）
 # ----------------------------------------------------------------------
 RewriteEngine On
+RewriteBase /
+
+# MultiViewsをオフにする（拡張子なしアクセスとの干渉を防ぐ）
+Options -MultiViews
 
 # httpをhttpsに強制リダイレクト
 RewriteCond %{HTTPS} off
@@ -12,38 +16,14 @@ RewriteCond %{THE_REQUEST} ^.*/index.html
 RewriteRule ^(.*)index.html$ https://%{HTTP_HOST}/$1 [R=301,L]
 
 # ----------------------------------------------------------------------
-# 2. ファイル管理を楽にする魔法（.htmlを隠してスラッシュ止めにする）
-# ----------------------------------------------------------------------
-
-# ① 外部から「tokyo.html」にアクセスがあったら「/tokyo/」にリダイレクト
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*\.html\ HTTP/
-RewriteRule ^(.*)\.html$ /$1/ [R=301,L]
-
-# ② 末尾にスラッシュがない場合（/tokyo）、スラッシュを付与（/tokyo/）
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_URI} !(.*)/$
-RewriteRule ^(.*)$ /$1/ [R=301,L]
-
-# ③ 内部的に「/tokyo/」というリクエストを「tokyo.html」として処理する
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^(.*)/$ $1.html [L]
-
-# ----------------------------------------------------------------------
-# 3. ブラウザキャッシュの設定 (Expires Headers)
+# 3. ブラウザキャッシュ (Expires Headers)
 # ----------------------------------------------------------------------
 <IfModule mod_expires.c>
     ExpiresActive On
     ExpiresDefault "access plus 1 month"
-
-    # HTMLはキャッシュさせない（更新を即座に反映させるため）
     ExpiresByType text/html "access plus 0 seconds"
-
-    # CSS / JS (更新時は ?ver=1.1 等で対応)
     ExpiresByType text/css "access plus 1 week"
     ExpiresByType application/javascript "access plus 1 week"
-
-    # 画像・フォント（1年）
     ExpiresByType image/gif "access plus 1 year"
     ExpiresByType image/png "access plus 1 year"
     ExpiresByType image/jpeg "access plus 1 year"
@@ -52,7 +32,7 @@ RewriteRule ^(.*)/$ $1.html [L]
 </IfModule>
 
 # ----------------------------------------------------------------------
-# 4. Gzip圧縮の設定
+# 4. Gzip圧縮
 # ----------------------------------------------------------------------
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json

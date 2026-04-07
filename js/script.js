@@ -110,6 +110,7 @@ function toggleMenu() {
     menuBtn.classList.toggle('open');
     spNav.classList.toggle('active');
     overlay.classList.toggle('active');
+    document.body.classList.toggle('menu-open');
 }
 
 menuBtn.addEventListener('click', toggleMenu);

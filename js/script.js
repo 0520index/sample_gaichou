@@ -105,6 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const menuBtn = document.getElementById('menu-btn');
 const spNav = document.getElementById('sp-nav');
 const overlay = document.getElementById('nav-overlay');
+const header = document.querySelector('.header'); // ヘッダーを取得
 
 function toggleMenu() {
     menuBtn.classList.toggle('open');
@@ -118,4 +119,24 @@ overlay.addEventListener('click', toggleMenu);
 
 document.querySelectorAll('.sp-nav a').forEach(link => {
     link.addEventListener('click', toggleMenu);
+});
+
+/**
+ * スクロールによるヘッダーの出し入れ
+ */
+let lastScrollY = 0;
+
+window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+    const isMenuOpen = menuBtn.classList.contains('open');
+
+    if (!isMenuOpen) {
+        if (currentScrollY > lastScrollY && currentScrollY > 100) {
+            header.classList.add('is-hide');
+        } else {
+            header.classList.remove('is-hide');
+        }
+    }
+
+    lastScrollY = currentScrollY;
 });

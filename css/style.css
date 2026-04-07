@@ -1905,6 +1905,24 @@ body {
         margin-top: 0px;
     }
 
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: transform 0.3s ease;
+        background: #fff;
+    }
+
+    .header.is-hide {
+        transform: translateY(-100%);
+    }
+
+    .header.is-open {
+        transform: translateY(0) !important;
+    }
+
     .header-cta-btn,
     .tel-info {
         display: none;

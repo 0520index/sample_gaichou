@@ -1679,6 +1679,21 @@ body {
     margin-bottom: 10px;
 }
 
+.onayami-section,
+.correspondence-section,
+.measures-section,
+.comparison-section,
+.cases-section,
+.step-section,
+.reviews-section,
+.policy-section,
+.faq-section,
+.area-section {
+    background-image: url('../images/bg-washi-ultra-light.webp');
+    background-repeat: repeat;
+    background-blend-mode: overlay;
+}
+
 @media (max-width: 1100px) {
 
     .pc-nav-list {

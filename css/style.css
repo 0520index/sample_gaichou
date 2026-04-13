@@ -1890,6 +1890,7 @@ body {
 
 @media (max-width: 768px) {
     body {
+        padding-top: 70px;
         padding-bottom: 70px;
     }
 

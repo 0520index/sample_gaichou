@@ -204,15 +204,25 @@ body {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 350px;
-    max-width: 80%;
+    width: 320px;
+    max-width: 85%;
     height: 100vh;
     background: #fff;
     z-index: 10000;
     transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 80px 0 40px;
-    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.15);
     overflow-y: auto;
+}
+
+.sp-nav::before {
+    content: "MENU";
+    display: block;
+    padding: 25px;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    color: #999;
+    border-bottom: 1px solid #eee;
 }
 
 .sp-nav.active {
@@ -222,7 +232,7 @@ body {
 .nav-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     opacity: 0;
     visibility: hidden;
     transition: 0.4s;
@@ -244,41 +254,56 @@ body {
 }
 
 .sp-nav li {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #f5f5f5;
+    position: relative;
 }
 
 .sp-nav a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 25px;
+    padding: 20px 25px;
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    font-size: 1.1rem;
-    min-height: 50px;
+    font-size: 1.05rem;
+    min-height: 60px;
+    transition: 0.3s;
+}
+
+.sp-nav a:active {
+    background-color: #fff5f5;
+}
+
+.sp-nav li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: #b32d2d;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.sp-nav li:hover::before,
+.has-child.active::before {
+    opacity: 1;
 }
 
 .sp-nav a::after {
     content: "〉";
-    color: #ccc;
-    font-size: 0.8rem;
-    transition: transform 0.3s;
-}
-
-.sub-menu {
-    display: none !important;
-    background: #f9f9f9;
-    padding: 0;
+    color: #b32d2d;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
 .has-child>.parent-link::after {
     content: "＋" !important;
-    display: block;
-    color: #ccc;
+    color: #b32d2d !important;
     font-size: 1.1rem;
     font-weight: bold;
-    transition: transform 0.3s;
 }
 
 .has-child.active>.sub-menu {
@@ -287,24 +312,61 @@ body {
 
 .has-child.active>.parent-link::after {
     transform: rotate(45deg);
-    color: #333;
+    color: #333 !important;
+}
+
+.sub-menu {
+    display: none;
+    background: #f2f2f2;
+    padding: 5px 0;
 }
 
 .sub-menu a {
-    padding-left: 45px !important;
+    padding: 15px 25px 15px 45px !important;
     font-weight: normal !important;
     font-size: 0.95rem !important;
+    color: #555;
+    min-height: 45px;
 }
 
 .sub-menu a::after {
     content: "〉" !important;
-    display: block !important;
-    color: #ddd;
-    font-size: 0.7rem;
+    color: #eee !important;
+}
+
+.sp-nav .sp-nav-cta {
+    background: #b32d2d !important;
+    color: #fff !important;
+    margin: 20px 25px !important;
+    padding: 18px !important;
+    border-radius: 6px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: 1.15rem !important;
+    box-shadow: 0 4px 15px rgba(179, 45, 45, 0.4) !important;
+    transition: transform 0.2s, background 0.3s !important;
+}
+
+.sp-nav .sp-nav-cta::after {
+    display: none !important;
+}
+
+.sp-nav .sp-nav-cta:active {
+    transform: scale(0.98);
+    background: #8e2424 !important;
+}
+
+.sp-nav li:last-child a::after {
+    display: none;
+}
+
+.sp-nav li:last-child::before {
+    display: none;
 }
 
 /* ==========================================
-   4. その他（既存のPCナビ非表示など）
+   4. その他
    ========================================== */
 .pc-nav-list {
     display: none !important;

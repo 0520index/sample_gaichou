@@ -1,8 +1,8 @@
 <?php
-$host     = 'mysql80.ez-tech.sakura.ne.jp'; // データベースサーバー名
-$dbname   = 'ez-tech_contact_db';       // データベース名
-$user     = 'ez-tech_contact_db';               // データベース ユーザ名
-$password = 'AdEkGJw6';       // 接続パスワード
+$host     = 'mysql80.ez-tech.sakura.ne.jp'; // サーバー
+$dbname   = 'ez-tech_contact_db';       // データベース
+$user     = 'ez-tech_contact_db';               //ユーザ
+$password = 'AdEkGJw6';       // 接続
 
 try {
     $dsn = "mysql:host={$host};dbname={$dbname};charset=utf8mb4";
@@ -10,13 +10,21 @@ try {
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
     ]);
 
-    $name    = $_POST['name']    ?? '';
-    $tel     = $_POST['tel']     ?? '';
-    $mail    = $_POST['mail']    ?? '';
-    $zip     = $_POST['zip']     ?? '';
-    $address = ($_POST['pref'] ?? '') . ($_POST['addr'] ?? '');
-    $type    = $_POST['type']    ?? '';
-    $message = $_POST['message'] ?? '';
+    $name = trim($_POST['name'] ?? '');
+    $tel = trim($_POST['tel'] ?? '');
+    $mail = trim($_POST['mail'] ?? '');
+    $zip = trim($_POST['zip'] ?? '');
+    $address = trim(($_POST['pref'] ?? '') . ($_POST['addr'] ?? ''));
+    $type = $_POST['type'] ?? '';
+    $message = trim($_POST['message'] ?? '');
+
+    if (empty($name) || empty($tel) || empty($mail) || empty($zip) || empty($address)) {
+        exit('必須項目が入力されていません。戻って入力してください。');
+    }
+
+    if (!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
+        exit('メールアドレスの形式が正しくありません。');
+    }
 
     $sql = "INSERT INTO contact_data (name, tel, mail, zip, address, bird_type, message) 
             VALUES (:name, :tel, :mail, :zip, :address, :type, :message)";
@@ -55,7 +63,7 @@ try {
 
 $from_email = "postmaster@rescue-samurai.com";
 $header  = "From: " . $from_email . "\r\n";
-$header .= "Cc: ezsvrl@gmail.com, 0520index@gmail.com\r\n"; // CC（2人）
+$header .= "Cc: ezsvrl@gmail.com, 0520index@gmail.com\r\n";
 $header .= "Reply-To: " . $mail . "\r\n";
 $header .= "X-Mailer: PHP/" . phpversion();
 

@@ -31,7 +31,7 @@
     <!-- <link rel="preconnect" href="https://cdn.jsdelivr.net"> -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="../../css/destyle.css">
-    <link rel="stylesheet" href="../../css/style-min.css?ver=1.70">
+    <link rel="stylesheet" href="../../css/style-min.css?ver=1.71">
     <!-- <link rel="stylesheet" href="../../css/style.css?ver=1.60"> -->
 
     <link rel="icon" href="../../images/favicon.ico?v=2.11" sizes="any">
@@ -55,29 +55,37 @@
                     </a>
                 </div>
             </div>
-            <nav class="header-nav">
-                <ul class="pc-nav-list">
+            <button class="menu-btn" id="menu-btn" aria-label="メニューを開く">
+                <span></span><span></span><span></span>
+            </button>
+
+            <div class="sp-nav" id="sp-nav">
+                <ul>
                     <li><a href="https://rescue-samurai.com/">Top</a></li>
+                    <li class="has-child">
+                        <a href="javascript:void(0)" class="parent-link">対応地域</a>
+                        <ul class="sub-menu">
+                            <li><a href="https://rescue-samurai.com/area/tokyo/">東京都</a></li>
+                            <!-- <li><a href="https://rescue-samurai.com/area/kanagawa/">神奈川県</a></li>
+                            <li><a href="https://rescue-samurai.com/area/chiba/">千葉県</a></li>
+                            <li><a href="https://rescue-samurai.com/area/saitama/">埼玉県</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="has-child">
+                        <a href="javascript:void(0)" class="parent-link">害鳥の種類</a>
+                        <ul class="sub-menu">
+                            <li><a href="https://rescue-samurai.com/gaichou/hato/">ハト対策</a></li>
+                            <!-- <li><a href="https://rescue-samurai.com/gaichou/mukudori/">ムクドリ対策</a></li>
+                            <li><a href="https://rescue-samurai.com/gaichou/karasu/">カラス対策</a></li> -->
+                        </ul>
+                    </li>
                     <li><a href="#onayami">被害例</a></li>
                     <li><a href="#comparison">選ばれる理由</a></li>
-                    <li><a href="#cases">施工事例</a></li>
                     <li><a href="#faq">よくある質問</a></li>
-                    <li><a href="#contact" class="pc-nav-cta">無料相談する</a></li>
+                    <li><a href="#contact" class="sp-nav-cta">お問い合わせフォーム</a></li>
                 </ul>
-                <button class="menu-btn" id="menu-btn" aria-label="メニューを開く">
-                    <span></span><span></span><span></span>
-                </button>
-                <div class="sp-nav" id="sp-nav">
-                    <ul>
-                        <li><a href="https://rescue-samurai.com/">Top</a></li>
-                        <li><a href="#onayami">被害例</a></li>
-                        <li><a href="#comparison">選ばれる理由</a></li>
-                        <li><a href="#cases">施工事例</a></li>
-                        <li><a href="#faq">よくある質問</a></li>
-                        <li><a href="#contact" class="sp-nav-cta">お問い合わせフォーム</a></li>
-                    </ul>
-                </div>
-                <div class="nav-overlay" id="nav-overlay"></div>
+            </div>
+            <div class="nav-overlay" id="nav-overlay"></div>
             </nav>
         </div>
     </header>
@@ -908,7 +916,7 @@
             <p class="copyright">&copy; 2026 害鳥レスキュー侍 All Rights Reserved.</p>
         </div>
     </footer>
-    <script src="../../js/script.js?ver=1.06" defer></script>
+    <script src="../../js/script.js?ver=1.07" defer></script>
     <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8" defer></script>
 
     <script type="application/ld+json">

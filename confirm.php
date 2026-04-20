@@ -12,7 +12,7 @@ try {
 
     $name = trim($_POST['name'] ?? '');
     $tel = trim($_POST['tel'] ?? '');
-    $mail = trim($_POST['mail'] ?? '');
+    $mail = trim($_POST['email'] ?? '');
     $zip = trim($_POST['zip'] ?? '');
     $address = trim(($_POST['pref'] ?? '') . ($_POST['addr'] ?? ''));
     $type = $_POST['type'] ?? '';

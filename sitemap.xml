@@ -5,17 +5,32 @@
 <url>
   <loc>https://rescue-samurai.com/</loc>
   <priority>1.0</priority>
-  <lastmod>2026-04-15T11:20:58+09:00</lastmod>
+  <lastmod>2026-04-20T11:45:39+09:00</lastmod>
 </url>
 <url>
   <loc>https://rescue-samurai.com/area/tokyo/</loc>
   <priority>0.8</priority>
-  <lastmod>2026-04-15T11:20:41+09:00</lastmod>
+  <lastmod>2026-04-20T11:46:08+09:00</lastmod>
+</url>
+<url>
+  <loc>https://rescue-samurai.com/area/kanagawa/</loc>
+  <priority>0.8</priority>
+  <lastmod>2026-04-20T11:46:03+09:00</lastmod>
 </url>
 <url>
   <loc>https://rescue-samurai.com/gaichou/hato/</loc>
   <priority>0.8</priority>
-  <lastmod>2026-04-15T11:20:30+09:00</lastmod>
+  <lastmod>2026-04-20T11:45:49+09:00</lastmod>
+</url>
+<url>
+  <loc>https://rescue-samurai.com/privacy/</loc>
+  <priority>0.8</priority>
+  <lastmod>2026-04-20T11:46:33+09:00</lastmod>
+</url>
+<url>
+  <loc>https://rescue-samurai.com/area/tokyo/nishitokyo/</loc>
+  <priority>0.7</priority>
+  <lastmod>2026-04-20T11:46:12+09:00</lastmod>
 </url>
 
 </urlset>

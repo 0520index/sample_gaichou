@@ -2383,7 +2383,7 @@ body.menu-open {
 .hero-mini-area .accent.orange {
   font-size: 1.25em;  
   background: linear-gradient(90deg, #ff2d2d, #ff9500);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 200% 200%;
   display: inline-block;
@@ -2394,9 +2394,25 @@ body.menu-open {
 .hero-mini-area .accent.blue {
   font-size: 1.25em; 
   background: linear-gradient(90deg, hsl(251, 83%, 49%), #0077ff);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  display: inline-block;
+  transform-origin: center bottom;
+  animation: shine 2s ease-in-out infinite;
 }
+
+@keyframes shine {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 75% 75%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
 
 .hero-mini-area .pop {
   display: inline-block;

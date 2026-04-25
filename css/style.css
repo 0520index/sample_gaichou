@@ -2376,7 +2376,7 @@ body.menu-open {
 .hero-mini-area .mini2,
 .hero-mini-area .mini3 {
   display: block;
-  font-size: clamp(26px, 4vw, 56px);
+  font-size: clamp(15px, 5vw, 60px);
   margin-bottom: 12px;
 }
 

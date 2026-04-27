@@ -566,6 +566,17 @@ body.menu-open {
     width: 70%;
 }
 
+.sagyou-label:after {
+  content: "";
+  width: 2px;
+  height: 3.5rem;
+  background-color: #464646;
+  border-left: 1px solid #464646;
+  position: absolute;
+  top: 0.275rem;
+  left: 1.85rem;
+}
+
 .en-price {
     display: flex;
     align-items: baseline;

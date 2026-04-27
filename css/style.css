@@ -2011,6 +2011,12 @@ body.menu-open {
         left: 1.65rem;
     }
 
+    .muryou-banner-mark {
+        background:linear-gradient(#ffffffbd);
+        border-radius: 8px;
+        font-size: 0.75rem;
+    }
+
     .right {
         display: none;
     }
@@ -2376,6 +2382,10 @@ body.menu-open {
         height: 3.25rem;
         top: -0.03rem;
         left: 1.5rem;
+    }
+
+    .muryou-banner-mark {
+        font-size: 0.7rem;
     }
 
     .target-info dd {

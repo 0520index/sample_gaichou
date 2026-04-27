@@ -569,11 +569,11 @@ body.menu-open {
 .sagyou-label:after {
   content: "";
   width: 2px;
-  height: 3.5rem;
+  height: 3.9rem;
   background-color: #464646;
   border-left: 1px solid #464646;
   position: absolute;
-  top: 0.275rem;
+  top: 0.125rem;
   left: 1.85rem;
 }
 
@@ -1976,17 +1976,11 @@ body.menu-open {
         font-size: 0.9rem;
         padding: 8px 3.25rem 8px 0.8rem;
         margin-bottom: 15px;
-        white-space: nowrap;
         line-height: 1.4;
     }
 
     .target-places span {
-    background: #1a2a40;
-    color: #fff;
-    padding: 6px 15px;
-    border-radius: 100px;
-    font-size: 0.8rem;
-    font-weight: bold;
+       font-size: 0.8rem;
     }
 
     .intro-badge {
@@ -2007,6 +2001,16 @@ body.menu-open {
 
     .price-num {
         font-size: 3rem;
+    }
+
+    .sagyou-label {
+        font-size: 0.9rem;
+    }
+    
+    .sagyou-label:after {
+        height: 3.5rem;
+        top: 0.15rem;
+        left: 1.65rem;
     }
 
     .right {
@@ -2353,12 +2357,8 @@ body.menu-open {
     }
 
     .target-places span {
-    background: #1a2a40;
-    color: #fff;
-    padding: 6px 8px;
-    border-radius: 100px;
-    font-size: 0.65rem;
-    font-weight: bold;
+        padding: 6px 8px;
+        font-size: 0.65rem;
     }
 
     .animal-name {
@@ -2368,6 +2368,16 @@ body.menu-open {
 
     .price-value {
         font-size: 1.3rem;
+    }
+
+    .sagyou-label {
+        font-size: 0.8rem;
+    }
+    
+    .sagyou-label:after {
+        height: 3.25rem;
+        top: -0.03rem;
+        left: 1.5rem;
     }
 
     .target-info dd {

@@ -1128,6 +1128,15 @@ body.menu-open {
     padding-top: 15px;
 }
 
+.price-box {
+    margin-top: auto;
+    background: #fff9f9;
+    border: 1px dashed #b32d2d;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
 .price-label {
     font-size: 0.85rem;
     font-weight: bold;
@@ -1137,6 +1146,11 @@ body.menu-open {
     font-size: 1.4rem;
     color: #b32d2d;
     font-weight: 900;
+}
+
+.price-value span {
+    font-size: 0.9rem;
+    margin-left: 2px;
 }
 
 .review-cta,

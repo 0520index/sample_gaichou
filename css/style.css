@@ -446,6 +446,7 @@ body.menu-open {
     object-position: center;
     z-index: 1;
 }
+
 .container.main_cnt {
     position: relative;
     z-index: 10;

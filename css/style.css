@@ -603,6 +603,13 @@ body.menu-open {
     margin-bottom: 18px;
 }
 
+.muryou-banner-mark {
+    background:linear-gradient(#d4f168da);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
 /* CTAボタン */
 .cta-button {
     display: flex;
@@ -1832,8 +1839,7 @@ body.menu-open {
     background-blend-mode: overlay;
 }
 
-@media (min-width: 900px) {
-
+@media (min-width: 900px) {   
     .container.main_cnt {
         max-width: 1200px;
         width: 95%;
@@ -1905,7 +1911,7 @@ body.menu-open {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
     body {
         padding-top: 70px;
         padding-bottom: 70px;
@@ -2013,9 +2019,7 @@ body.menu-open {
     }
 
     .muryou-banner-mark {
-        background:linear-gradient(#d4f168da);
-        border-radius: 8px;
-        font-size: 0.75rem;
+        font-size: 0.8rem;
         font-weight: bold;
     }
 
@@ -2301,7 +2305,6 @@ body.menu-open {
 }
 
 @media (max-width: 600px) {
-
     .measures-grid {
         grid-template-columns: 1fr;
     }
@@ -2387,7 +2390,7 @@ body.menu-open {
     }
 
     .muryou-banner-mark {
-        font-size: 0.7rem;
+        font-size: 0.725rem;
         font-weight: bold;
     }
 

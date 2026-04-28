@@ -54,6 +54,7 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f9f9f9;
+    font-family: "Noto Sans JP", sans-serif;
 }
 
 .container {
@@ -1908,7 +1909,6 @@ body.menu-open {
     body {
         padding-top: 70px;
         padding-bottom: 70px;
-        font-family: "Noto Sans JP", sans-serif;
     }
 
     .hero.top-main {
@@ -2403,7 +2403,6 @@ body.menu-open {
 .hero-mini-area {
   padding: 12px 6px;
   background: #ffffff00;
-  font-family: "Noto Sans JP", sans-serif;
 }
 
 .hero-mini-area .hero-mini-title {

@@ -1904,7 +1904,7 @@ body.menu-open {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 835px) {
     body {
         padding-top: 70px;
         padding-bottom: 70px;
@@ -2012,7 +2012,7 @@ body.menu-open {
     }
 
     .muryou-banner-mark {
-        background:linear-gradient(#d4f168da);
+        background:linear-gradient(#d8ffacda);
         border-radius: 8px;
         font-size: 0.8rem;
         font-weight: bold;

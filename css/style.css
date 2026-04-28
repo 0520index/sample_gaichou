@@ -2015,6 +2015,7 @@ body.menu-open {
         background:linear-gradient(#d4f168da);
         border-radius: 8px;
         font-size: 0.75rem;
+        font-weight: bold;
     }
 
     .right {
@@ -2386,6 +2387,7 @@ body.menu-open {
 
     .muryou-banner-mark {
         font-size: 0.7rem;
+        font-weight: bold;
     }
 
     .target-info dd {

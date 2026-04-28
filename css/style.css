@@ -1908,6 +1908,7 @@ body.menu-open {
     body {
         padding-top: 70px;
         padding-bottom: 70px;
+        font-family: "Noto Sans JP", sans-serif;
     }
 
     .hero.top-main {

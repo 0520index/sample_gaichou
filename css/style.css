@@ -2015,7 +2015,7 @@ body.menu-open {
         background-color:#defabeda !important;
         border-radius: 8px;
         font-size: 0.7rem;
-        padding: 4px 10px;
+        padding: 50.25px 14px;
     }
 
     .right {
@@ -2389,7 +2389,7 @@ body.menu-open {
         border-radius: 8px;
         font-size: 0.6rem;
         font-weight: bold;
-        padding: 3px 8px;
+        padding: 4px 10px;
     }
 
     .target-info dd {

@@ -2389,7 +2389,7 @@ body.menu-open {
         border-radius: 8px;
         font-size: 0.6rem;
         font-weight: bold;
-        padding: 0.35rem 12px 0.35rem 12px;
+        padding: 1.35rem 12px 1.35rem 12px;
     }
 
     .target-info dd {

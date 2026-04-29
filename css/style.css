@@ -2385,6 +2385,8 @@ body.menu-open {
     }
 
     .muryou-banner-mark {
+        background:linear-gradient(#d8ffacda);
+        border-radius: 8px;
         font-size: 0.725rem;
         font-weight: bold;
     }

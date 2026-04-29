@@ -2374,6 +2374,10 @@ body.menu-open {
         font-size: 1.3rem;
     }
 
+    .price-num {
+        font-size: 2.75rem;
+    }
+
     .sagyou-label {
         font-size: 0.8rem;
     }

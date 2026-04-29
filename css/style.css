@@ -2012,9 +2012,9 @@ body.menu-open {
     }
 
     .muryou-banner-mark {
-        background:linear-gradient(#defabeda);
+        background-color:#defabeda !important;
         border-radius: 8px;
-        font-size: 1.7rem;
+        font-size: 0.7rem;
         padding: 4px 10px;
     }
 
@@ -2385,7 +2385,7 @@ body.menu-open {
     }
 
     .muryou-banner-mark {
-        background:linear-gradient(#d8ffacda);
+        background-color:#defabeda !important;
         border-radius: 8px;
         font-size: 0.6rem;
         font-weight: bold;

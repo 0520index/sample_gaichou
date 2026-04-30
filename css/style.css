@@ -461,6 +461,94 @@ body.menu-open {
     margin: 20px 0;
 }
 
+.hero-mini-area {
+    padding: 12px 6px;
+    background: #ffffff00;
+}
+
+.hero-mini-area .hero-mini-title {
+    max-width: 900px;
+    margin: 0 auto;
+    font-weight: 900;
+    line-height: 1.15;
+    color: #111;
+}
+
+.hero-mini-area .mini1,
+.hero-mini-area .mini2,
+.hero-mini-area .mini3 {
+    display: block;
+    font-size: clamp(20px, 6vw, 50px);
+    margin-bottom: 12px;
+}
+
+.hero-mini-area .accent.orange {
+    font-size: 1.25em;
+    background: linear-gradient(90deg, #ff2d2d, #ff9500);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    display: inline-block;
+    transform-origin: center bottom;
+    animation: shine 2s ease-in-out infinite;
+}
+
+.hero-mini-area .accent.blue {
+    font-size: 1.25em;
+    background: linear-gradient(90deg, hsl(251, 83%, 49%), #0077ff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    display: inline-block;
+    transform-origin: center bottom;
+    animation: shine 2s ease-in-out infinite;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 75% 75%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.hero-mini-area .pop {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 14px;
+    background: linear-gradient(90deg, #ff2d2d, #ffb300);
+    color: #fff;
+    font-size: 1.05em;
+    animation: popJump 1.4s infinite;
+    box-shadow: 0 10px 24px rgba(255, 90, 0, 0.25);
+}
+
+@keyframes popJump {
+
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-0.5px) scale(1.01);
+    }
+}
+
+.hero-mini-area .brand {
+    font-size: 1.15em;
+    font-weight: 900;
+    padding: 1px 5px;
+    border-radius: 12px;
+    color: #bb0000;
+}
+
 .problem-text {
     white-space: nowrap;
 }
@@ -651,7 +739,7 @@ body.menu-open {
 
 /* お悩みセクション全体 */
 .onayami-section {
-    padding: 60px 0;
+    padding: 40px 0;
     background: linear-gradient(180deg, #fcfcfc 0%, #f8f2ee 100%);
 }
 
@@ -693,6 +781,7 @@ body.menu-open {
 }
 
 .animal-name {
+    border-radius: 0;
     background: #1a2a40;
     color: #fff;
     padding: 10px;
@@ -712,6 +801,7 @@ body.menu-open {
 .animal-img img {
     width: 100%;
     height: 100%;
+    border: #012f70cb solid 1.5px;
     object-fit: cover;
     object-position: center;
     transition: transform 0.5s;
@@ -782,7 +872,7 @@ body.menu-open {
 
 /* 対応場所セクション */
 .correspondence-section {
-    padding: 60px 0;
+    padding: 40px 0;
     background: linear-gradient(180deg, #fcfcfc 0%, #f0f2f5 100%);
 }
 
@@ -838,7 +928,7 @@ body.menu-open {
 
 /* 対策セクション */
 .measures-section {
-    padding: 60px 0;
+    padding: 40px 0;
     background: linear-gradient(180deg, #fcfcfc 0%, #f8f2ee 100%);
 }
 
@@ -902,7 +992,7 @@ body.menu-open {
 
 /* --- 比較セクション --- */
 .comparison-section {
-    padding: 60px 0;
+    padding: 40px 0;
     background: linear-gradient(180deg, #fcfcfc 0%, #f0f2f5 100%);
 }
 
@@ -963,7 +1053,7 @@ body.menu-open {
 
 /* --- 事例セクション --- */
 .cases-section {
-    padding: 60px 0;
+    padding: 40px 0;
     background: linear-gradient(180deg, #fcfcfc 0%, #f8f2ee 100%);
 }
 
@@ -1205,7 +1295,7 @@ body.menu-open {
 
 /* --- 解決ステップ --- */
 .step-section {
-    padding: 60px 0;
+    padding: 40px 0;
     background: linear-gradient(180deg, #fcfcfc 0%, #f0f2f5 100%);
 }
 
@@ -1268,7 +1358,7 @@ body.menu-open {
 
 /* --- レビュー --- */
 .reviews-section {
-    padding: 60px 0;
+    padding: 40px 0;
     background: linear-gradient(180deg, #fcfcfc 0%, #f8f2ee 100%);
 }
 
@@ -1325,7 +1415,7 @@ body.menu-open {
 
 /* ポリシーカード */
 .policy-section {
-    padding: 60px 0;
+    padding: 40px 0;
     background: linear-gradient(180deg, #fcfcfc 0%, #f8f2ee 100%);
 }
 
@@ -1369,7 +1459,7 @@ body.menu-open {
 
 /* --- よくある質問 --- */
 .faq-section {
-    padding: 60px 0;
+    padding: 40px 0;
     background: linear-gradient(180deg, #fcfcfc 0%, #f0f2f5 100%);
 }
 
@@ -1445,7 +1535,7 @@ body.menu-open {
 
 /* 対応エリアセクション */
 .area-section {
-    padding: 60px 0;
+    padding: 40px 0;
     background: linear-gradient(180deg, #fcfcfc 0%, #f0f2f5 100%);
     border-top: 1px solid #eee;
 }
@@ -1491,7 +1581,7 @@ body.menu-open {
 
 /* --- 問合せ --- */
 .contact-section {
-    padding: 60px 0;
+    padding: 40px 0;
     background: #1a2a40;
     color: #fff;
     text-align: center;
@@ -2254,10 +2344,6 @@ body.menu-open {
         padding: 20px;
     }
 
-    .contact-section {
-        padding: 60px 0;
-    }
-
     .contact-section .contact-title {
         font-size: 1.5rem;
         overflow-wrap: normal;
@@ -2422,92 +2508,4 @@ body.menu-open {
     .case-grid {
         grid-template-columns: 1fr;
     }
-}
-
-.hero-mini-area {
-    padding: 12px 6px;
-    background: #ffffff00;
-}
-
-.hero-mini-area .hero-mini-title {
-    max-width: 900px;
-    margin: 0 auto;
-    font-weight: 900;
-    line-height: 1.15;
-    color: #111;
-}
-
-.hero-mini-area .mini1,
-.hero-mini-area .mini2,
-.hero-mini-area .mini3 {
-    display: block;
-    font-size: clamp(20px, 6vw, 50px);
-    margin-bottom: 12px;
-}
-
-.hero-mini-area .accent.orange {
-    font-size: 1.25em;
-    background: linear-gradient(90deg, #ff2d2d, #ff9500);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% 200%;
-    display: inline-block;
-    transform-origin: center bottom;
-    animation: shine 2s ease-in-out infinite;
-}
-
-.hero-mini-area .accent.blue {
-    font-size: 1.25em;
-    background: linear-gradient(90deg, hsl(251, 83%, 49%), #0077ff);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% 200%;
-    display: inline-block;
-    transform-origin: center bottom;
-    animation: shine 2s ease-in-out infinite;
-}
-
-@keyframes shine {
-    0% {
-        background-position: 0% 0%;
-    }
-
-    50% {
-        background-position: 75% 75%;
-    }
-
-    100% {
-        background-position: 0% 0%;
-    }
-}
-
-.hero-mini-area .pop {
-    display: inline-block;
-    padding: 6px 14px;
-    border-radius: 14px;
-    background: linear-gradient(90deg, #ff2d2d, #ffb300);
-    color: #fff;
-    font-size: 1.05em;
-    animation: popJump 1.4s infinite;
-    box-shadow: 0 10px 24px rgba(255, 90, 0, 0.25);
-}
-
-@keyframes popJump {
-
-    0%,
-    100% {
-        transform: translateY(0) scale(1);
-    }
-
-    50% {
-        transform: translateY(-0.5px) scale(1.01);
-    }
-}
-
-.hero-mini-area .brand {
-    font-size: 1.15em;
-    font-weight: 900;
-    padding: 1px 5px;
-    border-radius: 12px;
-    color: #bb0000;
 }

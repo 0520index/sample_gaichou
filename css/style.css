@@ -566,21 +566,6 @@ body.menu-open {
     text-align: left;
 }
 
-.intro-badge {
-    display: inline-block;
-    background: #ffeb3bc5;
-    color: #333;
-    font-weight: 900;
-    font-size: 1.2rem;
-    padding: 8px 24px;
-    border-radius: 50px;
-    margin-bottom: 20px;
-    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
-    white-space: nowrap;
-    line-height: 1.6;
-    text-align: center;
-}
-
 .sub-tagline {
     display: inline-block;
     background: linear-gradient(90deg, #cfb062 0%, #ffecad 65%, #cfb062 100%);
@@ -2063,16 +2048,6 @@ body.menu-open {
         display: none;
     }
 
-    .contact-upper {
-        gap: 10px;
-    }
-
-    .tel-number {
-        font-size: 1.2rem;
-        margin: 0;
-        display: none;
-    }
-
     .sub-tagline {
         font-size: 0.9rem;
         padding: 8px 3.25rem 8px 0.8rem;
@@ -2114,13 +2089,6 @@ body.menu-open {
         left: 1.65rem;
     }
 
-    .muryou-banner-mark {
-        background-color: #def7c2b6 !important;
-        padding: 0.2rem 14px;
-        border-radius: 8px;
-        font-size: 0.85rem;
-    }
-
     .price-value {
         font-size: 1.8rem;
     }
@@ -2133,13 +2101,6 @@ body.menu-open {
     .step-item img {
         max-width: 200px;
         height: 140px;
-    }
-
-    .onayami-icon {
-        width: 60px;
-        height: 60px;
-        line-height: 60px;
-        font-size: 2rem;
     }
 
     .policy-grid {
@@ -2375,14 +2336,6 @@ body.menu-open {
         padding: 3px 8px;
     }
 
-    .rating-score {
-        font-size: 1.5rem;
-    }
-
-    .main-copy {
-        font-size: 1.8rem;
-    }
-
     .cta-button {
         font-size: 1.2rem;
     }
@@ -2463,14 +2416,6 @@ body.menu-open {
         height: 3.25rem;
         top: -0.03rem;
         left: 1.5rem;
-    }
-
-    .muryou-banner-mark {
-        background-color: #defabeda !important;
-        padding: 0.25rem 12px;
-        border-radius: 8px;
-        font-size: 0.65rem;
-        font-weight: bold;
     }
 
     .case-grid {

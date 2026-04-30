@@ -699,6 +699,7 @@ body.menu-open {
     font-weight: bold;
     font-size: 1.2rem;
     text-align: center;
+    margin: 0 0 10px;
 }
 
 .animal-img {
@@ -759,13 +760,12 @@ body.menu-open {
 }
 
 .card-btn-area {
-    padding: 0 15px 20px;
     text-align: center;
 }
 
 .detail-btn {
     display: block;
-    background: #1a2a40;
+    background: #002b68cb;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -777,7 +777,6 @@ body.menu-open {
 
 .detail-btn:hover {
     background: #b32d2d;
-    /* 侍レッドに変化 */
     transform: translateY(-2px);
 }
 
@@ -1121,26 +1120,39 @@ body.menu-open {
     line-height: 1.4;
 }
 
-.case-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px dashed #ddd;
-    padding-top: 15px;
-}
-
 .price-box {
-    margin-top: auto;
     background: #fff9f9;
-    border: 1px dashed #b32d2d;
-    padding: 10px;
+    border: 1px solid #b32d2d;
+    padding: 10px 10px 10px 45px;
     border-radius: 8px;
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .price-label {
-    font-size: 0.85rem;
+    writing-mode: vertical-rl;
     font-weight: bold;
+    color: #333;
+    font-size: 0.7rem;
+    white-space: nowrap;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 3.1rem;
+}
+
+.price-label:after {
+    content: "";
+    width: 2px;
+    height: 2.8rem;
+    background-color: #464646;
+    border-left: 1px solid #464646;
+    position: absolute;
+    top: 0.1rem;
+    left: 100%;
+    margin-left: 6px;
 }
 
 .price-value {
@@ -2036,10 +2048,6 @@ body.menu-open {
         height: 140px;
     }
 
-    .onayami-card {
-        padding: 15px 5px;
-    }
-
     .onayami-icon {
         width: 60px;
         height: 60px;
@@ -2316,6 +2324,11 @@ body.menu-open {
         font-size: 1.2rem;
     }
 
+    .card-content {
+        padding: 10px;
+    }
+
+
     .onayami-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
@@ -2368,10 +2381,12 @@ body.menu-open {
     .animal-name {
         font-size: 1rem;
         padding: 8px 5px;
+        margin: 0;
     }
 
     .price-value {
         font-size: 1.3rem;
+        white-space: nowrap;
     }
 
     .price-num {
@@ -2398,6 +2413,10 @@ body.menu-open {
 
     .target-info dd {
         font-size: 0.8rem;
+    }
+
+    .target-info {
+        display: none;
     }
 
     .case-grid {

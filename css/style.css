@@ -2181,7 +2181,7 @@ body.menu-open {
         }
 
         10% {
-            transform: translateY(3px);
+            transform: translateY(5px);
         }
 
         20% {
@@ -2189,7 +2189,7 @@ body.menu-open {
         }
 
         30% {
-            transform: translateY(3px);
+            transform: translateY(5px);
         }
 
         40% {

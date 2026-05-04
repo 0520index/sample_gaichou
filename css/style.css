@@ -1854,7 +1854,7 @@ body.menu-open {
     left: -60%;
     width: 60%;
     height: 100%;
-    background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.075) 50%, transparent 70%);
+    background: linear-gradient(135deg, transparent 30%, rgba(255, 255, 255, 0.075) 50%, transparent 70%);
     animation: shine-btn 2s infinite;
 }
 
@@ -2345,9 +2345,12 @@ body.menu-open {
     .measure-item p {
         font-size: 0.65rem;
         line-height: 1.4;
+        margin-left: 0.5rem;
     }
 
     .measure-tag {
+        top: 0;
+        left: 0;
         font-size: 0.65rem;
         padding: 3px 8px;
     }

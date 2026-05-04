@@ -69,7 +69,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 5px;
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     font-weight: 900;
     line-height: 1.5;
     margin-bottom: 40px;
@@ -94,7 +94,7 @@ body {
 .title-sub {
     display: block;
     width: fit-content;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #b32d2d;
     font-weight: 700;
     margin-inline: auto;
@@ -745,6 +745,14 @@ body.menu-open {
     justify-content: center
 }
 
+.onayami-item {
+    transition: 0.3s ease;
+}
+
+.onayami-item:hover {
+    transform: translateY(-1.5px);
+}
+
 .section-title:has(.bird-types) {
     display: block !important;
     line-height: 1.8;
@@ -760,14 +768,6 @@ body.menu-open {
     height: 100%;
     display: flex;
     flex-direction: column;
-}
-
-.target-card:hover img {
-    animation: puyon 1.0s linear 0s 1;
-}
-
-.target-card:hover .price-box {
-    background: #ffebeb;
 }
 
 .animal-name {
@@ -791,25 +791,10 @@ body.menu-open {
 .animal-img img {
     width: 100%;
     height: 100%;
-    border: #012f70cb solid 1.5px;
     object-fit: cover;
     object-position: center;
     transition: transform 0.5s;
     display: block;
-}
-
-@keyframes puyon {
-    0% {
-        transform: scale(1.0, 1.0) translate(0%, 0%);
-    }
-
-    50% {
-        transform: scale(0.95, 0.95) translate(0%, 0%);
-    }
-
-    100% {
-        transform: scale(1.0, 1.0) translate(0%, 0%);
-    }
 }
 
 .card-content {
@@ -841,7 +826,7 @@ body.menu-open {
 
 .detail-btn {
     display: block;
-    background: #002b68cb;
+    background: #003074;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -852,7 +837,7 @@ body.menu-open {
 }
 
 .detail-btn:hover {
-    background: #b32d2d;
+    background: #0046a8;
     transform: translateY(-2px);
 }
 
@@ -878,7 +863,7 @@ body.menu-open {
 }
 
 .corr-item:hover {
-    transform: translateY(-8px);
+    transform: translateY(-2.5px);
 }
 
 .corr-image img {
@@ -908,7 +893,7 @@ body.menu-open {
 .corr-footer-text {
     text-align: center;
     margin-top: 40px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #888;
 }
 
@@ -933,6 +918,11 @@ body.menu-open {
     position: relative;
     border-bottom: 5px solid #b32d2d;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+}
+
+.measure-item:hover {
+    transform: translateY(-2.5px);
 }
 
 .measure-tag {
@@ -1034,7 +1024,7 @@ body.menu-open {
     margin-top: 20px;
     text-align: center;
     color: #666;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 /* --- 事例セクション --- */
@@ -1048,6 +1038,7 @@ body.menu-open {
     margin: 0 auto 30px;
     line-height: 1.9;
     font-weight: 500;
+    font-size: 0.9rem;
     text-align: center;
     color: #666;
 }
@@ -1068,7 +1059,7 @@ body.menu-open {
 }
 
 .case-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-2.5px);
     box-shadow: 0 26px 55px rgba(0, 0, 0, 0.14);
 }
 
@@ -1221,9 +1212,7 @@ body.menu-open {
 
 .price-label:after {
     content: "";
-    width: 2px;
     height: 2.8rem;
-    background-color: #464646;
     border-left: 1px solid #464646;
     position: absolute;
     top: 0.1rem;
@@ -1858,6 +1847,23 @@ body.menu-open {
     border-radius: 8px;
 }
 
+.bottom-cta-bar a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.075) 50%, transparent 70%);
+    animation: shine-btn 2s infinite;
+}
+
+@keyframes shine-btn {
+    0% { left: -60%; }
+    75% { left: 120%; }
+    100% { left: 120%; }
+}
+
 .btn-tel {
     background: linear-gradient(135deg, #d32f2f 0%, #b32d2d 50%, #9a1f1f 100%);
     border-top: 1px solid #ff5252;
@@ -2004,7 +2010,11 @@ body.menu-open {
     }
 
     .section-title {
-        font-size: 1.8rem;
+        font-size: 1.25rem;
+    }
+
+    .title-sub {
+        font-size: 1rem;
     }
 
     .logo {
@@ -2171,7 +2181,7 @@ body.menu-open {
         }
 
         10% {
-            transform: translateY(5px);
+            transform: translateY(3px);
         }
 
         20% {
@@ -2179,7 +2189,7 @@ body.menu-open {
         }
 
         30% {
-            transform: translateY(5px);
+            transform: translateY(3px);
         }
 
         40% {
@@ -2277,6 +2287,14 @@ body.menu-open {
 }
 
 @media (max-width: 600px) {
+    .section-title {
+        font-size: 1rem;
+    }
+
+    .title-sub {
+        font-size: 0.8rem;
+    }
+
     .correspondence-grid {
         gap: 15px;
     }
@@ -2310,21 +2328,22 @@ body.menu-open {
     }
 
     .measure-item {
-        padding: 12px;
+        padding: 5px;
     }
 
     .measure-img img {
         height: 100px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     .measure-item h3 {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         margin-bottom: 6px;
+        padding: 8px 6px;
     }
 
     .measure-item p {
-        font-size: 0.75rem;
+        font-size: 0.65rem;
         line-height: 1.4;
     }
 
@@ -2375,8 +2394,11 @@ body.menu-open {
 
 @media (max-width: 480px) {
     .section-title {
-        line-height: 2.2;
-        font-size: 1.5rem;
+        font-size: 0.75rem;
+    }
+
+    .title-sub {
+        font-size: 0.65rem;
     }
 
     .sub-tagline {

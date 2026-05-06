@@ -94,7 +94,7 @@ body {
 .title-sub {
     display: block;
     width: fit-content;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #b32d2d;
     font-weight: 700;
     margin-inline: auto;
@@ -968,22 +968,19 @@ body.menu-open {
 
 /* --- 比較セクション --- */
 .comparison-section {
-    padding: 5px 0;
+    padding: 40px 0;
 }
 
 .comparison-table {
     display: flex;
-      border-radius: 8px; 
-    background-color: #70707041;
     justify-content: center;
     align-items: flex-start;
-    padding: 5px;
 }
 
 .column {
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 5px;
 }
 .cell {
     height: 60px;
@@ -998,24 +995,26 @@ body.menu-open {
 
 .header-gray-label {
     background-color: #1a2a40;
+    border-radius: 4px; 
     height: 60px;
     color: #fff;
-    font-size: 10px;
+    font-size: 16px;
     font-weight: bold;
 }
 .col-yellow {
-    width: 180px;
+    width: 200px;
     margin-top: 20px;
 }
 .item-label {
-    background-color: #e5ff00;
+    background-color: #eaff2fe8;
+    border-radius: 4px; 
     color: #000;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: bold;
 }
 
 .col-red {
-    width: 260px;
+    width: 400px;
     background: linear-gradient(30deg, #ffc400 0%, #ff1a1a 60%);
     border-radius: 8px;
     box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.7);
@@ -1036,12 +1035,12 @@ body.menu-open {
     background-color: #fff;
 }
 .text-sub {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
     color: #000000;
 }
 .text-main {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     color: #d60000;
     line-height: 1.1;
@@ -1049,20 +1048,22 @@ body.menu-open {
 }
 
 .col-gray {
-    width: 160px;
+    width: 250px;
     margin-top: 20px;
 }
 .header-gray {
     background-color: #1a2a40;
+    border-radius: 4px; 
     height: 60px;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
 }
 .content-gray {
     background-color: #ffffff;
+    border-radius: 4px; 
     color: #555;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -1635,7 +1636,7 @@ body.menu-open {
 .contact-section .title-sub {
     color: #ffeb3b;
     letter-spacing: 0.15em;
-    font-size: 1rem;
+    font-size: 1.rem;
     font-weight: bold;
     display: block;
     margin-bottom: 10px;
@@ -2056,11 +2057,11 @@ body.menu-open {
     }
 
     .section-title {
-        font-size: 1.25rem;
+        font-size: 1.3rem;
     }
 
     .title-sub {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .logo {
@@ -2205,10 +2206,15 @@ body.menu-open {
         padding: 10px 5px;
     }
 
+    .section-desc {
+        margin: 2.5px;
+        font-size: 0.75rem;
+    }
+
     .case-body h4 {
-        font-size: 1.15rem;
+        font-size: 0.9rem;
         line-height: 1.4;
-        margin-bottom: 10px;
+        margin-bottom: 2px;
         font-weight: bold;
         color: #333;
         word-break: break-all;
@@ -2341,11 +2347,11 @@ body.menu-open {
 
 @media (max-width: 600px) {
     .section-title {
-        font-size: 1rem;
+        font-size: 1.05rem;
     }
 
     .title-sub {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .correspondence-grid {
@@ -2450,11 +2456,11 @@ body.menu-open {
 
 @media (max-width: 480px) {
     .section-title {
-        font-size: 0.75rem;
+        font-size: 0.785rem;
     }
 
     .title-sub {
-        font-size: 0.65rem;
+        font-size: 0.9rem;
     }
 
     .sub-tagline {
@@ -2501,7 +2507,81 @@ body.menu-open {
         font-weight: bold;
     }
 
+
+    .corr-footer-text {
+        margin-top: 25px;
+        font-size: 0.75rem;
+    }
+
+    .measures-note {
+        font-size: 0.8rem;
+    }
+
+    .column {
+        gap: 3px;
+    }
+
+    .header-gray-label {
+        font-size: 10px;
+    }
+
+    .col-yellow {
+        width: 125px;
+    }
+
+    .item-label {
+        font-size: 10px;
+    }
+
+    .col-red {
+        width: 250px;
+    }
+
+    .text-sub {
+        font-size: 12px;
+    }
+
+    .text-main {
+        font-size: 20px;
+    }
+
+    .col-gray {
+        width: 160px;
+    }
+
+    .header-gray {
+        font-size: 15px;
+    }
+
+    .content-gray {
+        font-size: 12px;
+    }
+
     .case-grid {
         grid-template-columns: 1fr;
     }
+
+    .case-text {
+        font-size: 0.8rem;
+    }
+
+    .review-text {
+        font-size: 0.75rem;
+        line-height: 1.5;
+    }
+
+    .faq-question {
+        padding: 20px 30px 10px 15px;
+        font-size: 0.95rem;
+    }
+
+    .policy-grid {
+        font-size: 0.9rem;
+        gap: 10px;
+    }
+
+    .policy-card span {
+        font-size: 0.8rem;
+    }
+
 }

@@ -2575,6 +2575,11 @@ body.menu-open {
         font-size: 0.95rem;
     }
 
+    .faq-question::after {
+        bottom: 16px;
+        right: 10px;
+    }
+
     .policy-grid {
         font-size: 0.9rem;
         gap: 10px;

@@ -2599,4 +2599,18 @@ body.menu-open {
         font-size: 0.8rem;
     }
 
+    .pref-tag {
+        font-size: 0.7rem;
+        padding: 3px 6px;
+        margin-right: 7.5px
+    }
+
+    .area-card h3 {
+        font-size: 0.95rem;
+    }
+
+    .city-list {
+        font-size: 0.825rem;
+    }
+
 }

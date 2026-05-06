@@ -1601,6 +1601,18 @@ body.menu-open {
     text-align: justify;
 }
 
+.area-list li {
+  font-size: 0.75rem;
+  font-weight: 500;
+  background: #dadada;
+  color: #4e4e4e;
+  margin: 0;
+  padding: 0.015rem 0.15rem;
+  display: inline-grid;
+  column-gap: 0.1rem;
+  grid-template-columns: repeat(6, auto);
+}
+
 /* --- 問合せ --- */
 .contact-section {
     padding: 40px 0;
@@ -1730,7 +1742,6 @@ body.menu-open {
     color: #b32d2d;
     font-weight: bold;
 }
-
 
 .form-title {
     white-space: nowrap;
@@ -2611,6 +2622,11 @@ body.menu-open {
 
     .city-list {
         font-size: 0.825rem;
+    }
+
+    .area-list li {
+        font-size: 0.6rem;
+        column-gap: 0.075rem;
     }
 
 }

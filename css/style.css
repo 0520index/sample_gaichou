@@ -1584,7 +1584,7 @@ body.menu-open {
 
 .area-card {
     background: #fff;
-    padding: 25px;
+    padding: 12px 20px;
     border-radius: 8px;
     border-left: 4px solid #b32d2d;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
@@ -1627,7 +1627,7 @@ body.menu-open {
     margin: 0;
     padding: 0.015rem 0.15rem;
     display: inline-grid;
-    column-gap: 0.1rem;
+    column-gap: 0.075rem;
     grid-template-columns: repeat(6, auto);
 }
 
@@ -2330,7 +2330,7 @@ body.menu-open {
     }
 
     .area-card {
-        padding: 20px;
+        padding: 8px 16px;
     }
 
     .contact-section .contact-title {
@@ -2660,7 +2660,7 @@ body.menu-open {
 
     .area-list li {
         font-size: 0.6rem;
-        column-gap: 0.075rem;
+        column-gap: 0.0275rem;
     }
 
 }

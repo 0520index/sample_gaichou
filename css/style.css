@@ -673,7 +673,7 @@ body.menu-open {
 .muryou-banner {
     font-size: 0.8rem;
     font-weight: bold;
-    margin-bottom: 18px;
+    margin-bottom: 5px;
 }
 
 /* CTAボタン */
@@ -685,12 +685,12 @@ body.menu-open {
     max-width: 525px;
     padding: 22px;
     text-decoration: none;
-    background: #ffeb3b;
+    background: linear-gradient(to bottom, #fabb5c, #ff893a);
     color: #333;
     border-radius: 50px;
     font-weight: bold;
     font-size: 1.5rem;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(255, 102, 0, 0.4);
     transition: transform 0.3s ease;
 }
 
@@ -698,7 +698,6 @@ body.menu-open {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 10px;
 }
 
 .hero-cta-area a {
@@ -986,6 +985,7 @@ body.menu-open {
     flex-direction: column;
     gap: 5px;
 }
+
 .cell {
     height: 60px;
     display: flex;
@@ -999,19 +999,21 @@ body.menu-open {
 
 .header-gray-label {
     background-color: #1a2a40;
-    border-radius: 4px; 
+    border-radius: 4px;
     height: 60px;
     color: #fff;
     font-size: 16px;
     font-weight: bold;
 }
+
 .col-yellow {
     width: 200px;
     margin-top: 20px;
 }
+
 .item-label {
     background-color: #eaff2fe8;
-    border-radius: 4px; 
+    border-radius: 4px;
     color: #000;
     font-size: 14px;
     font-weight: bold;
@@ -1028,6 +1030,7 @@ body.menu-open {
     padding: 0 6px 24px 6px;
     overflow: hidden;
 }
+
 .header-red {
     height: 80px;
     color: #fff;
@@ -1035,14 +1038,17 @@ body.menu-open {
     font-weight: bold;
     gap: 5px;
 }
+
 .content-white {
     background-color: #fff;
 }
+
 .text-sub {
     font-size: 16px;
     font-weight: bold;
     color: #000000;
 }
+
 .text-main {
     font-size: 24px;
     font-weight: bold;
@@ -1055,17 +1061,19 @@ body.menu-open {
     width: 250px;
     margin-top: 20px;
 }
+
 .header-gray {
     background-color: #1a2a40;
-    border-radius: 4px; 
+    border-radius: 4px;
     height: 60px;
     color: #ffffff;
     font-size: 18px;
     font-weight: bold;
 }
+
 .content-gray {
     background-color: #ffffff;
-    border-radius: 4px; 
+    border-radius: 4px;
     color: #555;
     font-size: 14px;
     font-weight: bold;
@@ -1589,7 +1597,7 @@ body.menu-open {
     color: #333;
 }
 
-.area-grid-only h3{
+.area-grid-only h3 {
     font-size: 1rem;
     gap: 20px;
 }
@@ -1611,15 +1619,15 @@ body.menu-open {
 }
 
 .area-list li {
-  font-size: 0.75rem;
-  font-weight: 500;
-  background: #dadada;
-  color: #4e4e4e;
-  margin: 0;
-  padding: 0.015rem 0.15rem;
-  display: inline-grid;
-  column-gap: 0.1rem;
-  grid-template-columns: repeat(6, auto);
+    font-size: 0.75rem;
+    font-weight: 500;
+    background: #dadada;
+    color: #4e4e4e;
+    margin: 0;
+    padding: 0.015rem 0.15rem;
+    display: inline-grid;
+    column-gap: 0.1rem;
+    grid-template-columns: repeat(6, auto);
 }
 
 /* --- 問合せ --- */
@@ -1914,7 +1922,7 @@ body.menu-open {
     border-radius: 8px;
 }
 
-.bottom-cta-bar a::after{
+.bottom-cta-bar a::after {
     content: "";
     position: absolute;
     top: 0;
@@ -1926,9 +1934,17 @@ body.menu-open {
 }
 
 @keyframes shine-btn {
-    0% { left: -60%; }
-    75% { left: 120%; }
-    100% { left: 120%; }
+    0% {
+        left: -60%;
+    }
+
+    75% {
+        left: 120%;
+    }
+
+    100% {
+        left: 120%;
+    }
 }
 
 .btn-tel {
@@ -2374,7 +2390,7 @@ body.menu-open {
         font-size: 0.6rem;
     }
 
-.area-banner {
+    .area-banner {
         font-size: 0.75rem;
     }
 

@@ -671,9 +671,9 @@ body.menu-open {
 }
 
 .muryou-banner {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 18px;
 }
 
 /* CTAボタン */
@@ -698,6 +698,7 @@ body.menu-open {
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-top: 10px;
 }
 
 .hero-cta-area a {
@@ -2183,7 +2184,7 @@ body.menu-open {
         background-color: #def7c2b6 !important;
         padding: 0.2rem 14px;
         border-radius: 8px;
-        font-size: 0.85rem;
+        font-size: 0.75rem;
     }
 
     .price-value {

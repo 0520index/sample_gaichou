@@ -1394,7 +1394,7 @@ body.menu-open {
 }
 
 /* --- 決済方法 --- */
-.payment-area {
+.payment-section {
     padding: 60px 20px;
     text-align: center;
 }
@@ -2059,6 +2059,7 @@ body.menu-open {
 .comparison-section,
 .cases-section,
 .step-section,
+.payment-section,
 .reviews-section,
 .policy-section,
 .faq-section,

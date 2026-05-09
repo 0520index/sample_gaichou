@@ -1985,16 +1985,38 @@ body.menu-open {
 }
 
 .main-footer {
-    padding: 40px 0;
+    padding: 25px 35px 25px;
     background: #111;
     color: #888;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-logo {
     color: #fff;
     font-weight: 900;
     margin-bottom: 10px;
+}
+
+.footer-section {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.operation-box {
+    border: 1px solid #888;
+    padding: 4px 8px;
+    font-size: 10px;
+    align-self: center;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    margin-bottom: 15px;
 }
 
 .onayami-section,
@@ -2496,6 +2518,14 @@ body.menu-open {
 
     .case-images img {
         height: 220px;
+    }
+
+    .copyright {
+        font-size: 0.7rem;
+    }
+
+    .operation-box {
+        font-size: 9px;
     }
 }
 

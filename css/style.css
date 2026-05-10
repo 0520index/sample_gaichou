@@ -1395,13 +1395,14 @@ body.menu-open {
 
 /* --- 決済方法 --- */
 .payment-section {
-    padding: 60px 20px;
+    padding: 30px 0px;
     text-align: center;
 }
 
 .payment-lead {
-    font-size: 16px;
+    font-size: 0.9rem;
     line-height: 1.6;
+    font-weight: 500;
     margin: 0;
     color: #555;
 }
@@ -1423,7 +1424,7 @@ body.menu-open {
 
 .payment-notes {
     margin: 5px;
-    font-size: 12px;
+    font-size: 0.7rem;
     color: #888;
 }
 
@@ -2326,6 +2327,11 @@ body.menu-open {
         margin-bottom: 20px;
     }
 
+    .payment-lead {
+        margin: 2.5px;
+        font-size: 0.75rem;
+    }
+
     .bottom-cta-bar {
         display: flex;
     }
@@ -2553,6 +2559,21 @@ body.menu-open {
 
     .case-images img {
         height: 220px;
+    }
+
+    .payment-lead {
+        font-size: 0.65rem;
+    }
+
+    .payment-notes {
+    font-size: 0.6rem;
+    }
+
+    .payment-img {
+        width: 300px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .copyright {

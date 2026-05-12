@@ -896,8 +896,8 @@ body.menu-open {
 
 .corr-footer-text {
     text-align: center;
-    margin-top: 40px;
-    font-size: 0.85rem;
+    margin-top: 20px;
+    font-size: 0.9rem;
     color: #888;
 }
 
@@ -1084,7 +1084,7 @@ body.menu-open {
     margin-top: 20px;
     text-align: center;
     color: #666;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
 }
 
 /* --- 事例セクション --- */
@@ -1098,7 +1098,7 @@ body.menu-open {
     margin: 0 auto 30px;
     line-height: 1.9;
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-align: center;
     color: #666;
 }
@@ -1400,7 +1400,7 @@ body.menu-open {
 }
 
 .payment-lead {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.6;
     font-weight: 500;
     margin: 0;
@@ -1426,7 +1426,7 @@ body.menu-open {
 
 .payment-notes {
     margin: 5px;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     color: #888;
 }
 
@@ -2545,6 +2545,10 @@ body.menu-open {
         font-size: 1.3rem;
     }
 
+    .comparison-note {
+        font-size: 0.65rem;
+    }
+
     .case-images {
         gap: 8px;
     }
@@ -2564,11 +2568,11 @@ body.menu-open {
     }
 
     .payment-lead {
-        font-size: 0.65rem;
+        font-size: 0.75rem;
     }
 
     .payment-notes {
-    font-size: 0.6rem;
+    font-size: 0.65rem;
     }
 
     .payment-img {
@@ -2641,7 +2645,7 @@ body.menu-open {
 
     .corr-footer-text {
         margin-top: 25px;
-        font-size: 0.75rem;
+        font-size: 0.7rem;
     }
 
     .measures-note {

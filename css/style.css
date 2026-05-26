@@ -1670,6 +1670,91 @@ body.menu-open {
     grid-template-columns: repeat(6, auto);
 }
 
+/* 区・駅 2段階表示 */
+.area-card-small {
+    grid-column: 1 / -1;
+}
+
+.area-ward-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.area-ward {
+    border: 1px solid #bdbdbdbd;
+    border-radius: 6px;
+    background: #fafafa;
+    overflow: hidden;
+    align-self: start;
+}
+
+.area-ward[open] {
+    grid-column: 1 / -1;
+    border-color: #b32d2d;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(179, 45, 45, 0.08);
+}
+
+.area-ward_summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 8px 14px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #333;
+    position: relative;
+    padding-right: 2rem;
+}
+
+.area-ward_summary::-webkit-details-marker {
+    display: none;
+}
+
+.area-ward_summary::marker {
+    content: '';
+}
+
+.area-ward_summary::after {
+    content: '';
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid #b32d2d;
+    border-bottom: 2px solid #b32d2d;
+    transform: translateY(-70%) rotate(45deg);
+    transition: transform 0.2s;
+}
+
+.area-ward[open] .area-ward_summary::after {
+    transform: translateY(-30%) rotate(-135deg);
+}
+
+.area-stations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    list-style: none;
+    margin: 0;
+    padding: 0 14px 14px;
+}
+
+.area-stations li {
+    font-size: 0.75rem;
+    background: #dadada;
+    color: #4e4e4e;
+    padding: 0 0.5rem 0 0;
+}
+
+.area-ward-note {
+    margin-top: 14px;
+    font-size: 0.9rem;
+    color: #777;
+    line-height: 1.6;
+}
+
 /* --- 問合せ --- */
 .contact-section {
     padding: 40px 0;
@@ -2400,6 +2485,11 @@ body.menu-open {
         padding: 8px 16px;
     }
 
+    .area-ward-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+    }
+
     .contact-section .contact-title {
         font-size: 1.5rem;
         overflow-wrap: normal;
@@ -2752,4 +2842,26 @@ body.menu-open {
         column-gap: 0.0275rem;
     }
 
+    .area-ward-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4px;
+    }
+
+    .area-ward_summary {
+        font-size: 0.75rem;
+        padding: 5px 10px;
+        padding-right: 1.75rem;
+    }
+
+    .area-stations li {
+        font-size: 0.6rem;
+    }
+
+    .area-ward-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .area-ward-note {
+        font-size: 0.75rem;
+    }
 }

@@ -12,8 +12,8 @@ RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 # index.htmlをURLから消して / に統一
-RewriteCond %{THE_REQUEST} ^.*/index.html
-RewriteRule ^(.*)index.html$ https://%{HTTP_HOST}/$1 [R=301,L]
+RewriteCond %{REQUEST_URI} ^(.*)/index\.html$
+RewriteRule ^(.*)index\.html$ https://%{HTTP_HOST}%1/ [R=301,L]
 
 # ----------------------------------------------------------------------
 # 3. ブラウザキャッシュ (Expires Headers)

@@ -61,7 +61,7 @@ try {
     $body .= "--------------------------------------------------\n";
     $body .= "早めのご対応をお願いします。";
 
-$from_email = "postmaster@rescue-samurai.com";
+$from_email = "info@rescue-samurai.com";
 $header  = "From: " . $from_email . "\r\n";
 $header .= "Cc: ezsvrl@gmail.com, 0520index@gmail.com\r\n";
 $header .= "Reply-To: " . $mail . "\r\n";

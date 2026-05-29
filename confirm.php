@@ -41,38 +41,13 @@ try {
         ':message' => $message
     ]);
 
-    // --- ここから 管理者への通知メール送信 ---
-
     mb_language("Japanese");
     mb_internal_encoding("UTF-8");
 
-    $to      = "gisho.1011@gmail.com";
-    $subject = "【害鳥レスキュー侍】サイトからお問い合わせがありました";
-    
-    $body = "サイトから新しいお問い合わせがありました。\n\n";
-    $body .= "--------------------------------------------------\n";
-    $body .= "【お名前】: " . $name . "\n";
-    $body .= "【電話番号】: " . $tel . "\n";
-    $body .= "【メール】: " . $mail . "\n";
-    $body .= "【〒】: " . $zip . "\n";
-    $body .= "【住所】: " . $address . "\n";
-    $body .= "【鳥の種類】: " . $type . "\n";
-    $body .= "【内容】: \n" . $message . "\n";
-    $body .= "--------------------------------------------------\n";
-    $body .= "早めのご対応をお願いします。";
+    $to      = "info@rescue-samurai.com";
+    $additional_params = "-f " . "ezsvrl@gmail.com, 0520index@gmail.com";
 
-$from_email = "info@rescue-samurai.com";
-$header  = "From: " . $from_email . "\r\n";
-$header .= "Cc: ezsvrl@gmail.com, 0520index@gmail.com\r\n";
-$header .= "Reply-To: " . $mail . "\r\n";
-$header .= "X-Mailer: PHP/" . phpversion();
-
-$additional_params = "-f " . $from_email;
-
-mb_send_mail($to, $subject, $body, $header, $additional_params);
-    // --- ここまで ---
-
-// --- ここから お客様への自動返信メール送信（BCCに従業員） ---
+// --- お客様への自動返信メール送信（BCCに運営陣） ---
 
     $subject_user = "【害鳥レスキュー侍】お問い合わせを承りました";
     
@@ -81,13 +56,18 @@ mb_send_mail($to, $subject, $body, $header, $additional_params);
     $body_user .= "以下の内容で送信を承りました。担当者より改めてご連絡いたします。\n\n";
     $body_user .= "--------------------------------------------------\n";
     $body_user .= "【お名前】: " . $name . "\n";
-    $body_user .= "【お問い合わせ内容】: \n" . $message . "\n";
-    $body_user .= "--------------------------------------------------\n\n";
-    $body_user .= "※このメールは送信専用です。心当たりがない場合は破棄してください。";
+    $body_user .= "【電話番号】: " . $tel . "\n";
+    $body_user .= "【メール】: " . $mail . "\n";
+    $body_user .= "【〒】: " . $zip . "\n";
+    $body_user .= "【住所】: " . $address . "\n";
+    $body_user .= "【鳥の種類】: " . $type . "\n";
+    $body_user .= "【内容】: \n" . $message . "\n";
+    $body_user .= "--------------------------------------------------\n";
+    $body_user .= "※もしお心当たりがない場合は、恐れ入りますがこちらのメールは破棄してください。";
 
-    $header_user  = "From: " . $from_email . "\r\n";
-    $header_user .= "Bcc: gisho.1011@gmail.com, ezsvrl@gmail.com, 0520index@gmail.com\r\n"; // BCC
-    $header_user .= "Reply-To: " . $from_email . "\r\n";
+    $header_user  = "From: " . $to . "\r\n";
+    $header_user .= "Bcc: info@rescue-samurai.com, 31075hk@gmail.com\r\n"; // BCC
+    $header_user .= "Reply-To: " . $to . "\r\n";
     $header_user .= "X-Mailer: PHP/" . phpversion();
 
     mb_send_mail($mail, $subject_user, $body_user, $header_user, $additional_params);

@@ -16,6 +16,7 @@ try {
     $zip = trim($_POST['zip'] ?? '');
     $address = trim(($_POST['pref'] ?? '') . ($_POST['addr'] ?? ''));
     $type = $_POST['type'] ?? '';
+    $preferred_datetime = trim($_POST['preferred_datetime'] ?? '');
     $message = trim($_POST['message'] ?? '');
 
     if (empty($name) || empty($tel) || empty($mail) || empty($zip) || empty($address)) {
@@ -26,8 +27,8 @@ try {
         exit('メールアドレスの形式が正しくありません。');
     }
 
-    $sql = "INSERT INTO contact_data (name, tel, mail, zip, address, bird_type, message) 
-            VALUES (:name, :tel, :mail, :zip, :address, :type, :message)";
+    $sql = "INSERT INTO contact_data (name, tel, mail, zip, address, bird_type, preferred_datetime, message) 
+            VALUES (:name, :tel, :mail, :zip, :address, :type, :preferred_datetime, :message)";
     
     $stmt = $pdo->prepare($sql);
 
@@ -38,6 +39,7 @@ try {
         ':zip'     => $zip,
         ':address' => $address,
         ':type'    => $type,
+        ':preferred_datetime' => $preferred_datetime,
         ':message' => $message
     ]);
 
@@ -60,8 +62,9 @@ try {
     $body_user .= "【メール】: " . $mail . "\n";
     $body_user .= "【〒】: " . $zip . "\n";
     $body_user .= "【住所】: " . $address . "\n";
-    $body_user .= "【鳥の種類】: " . $type . "\n";
-    $body_user .= "【内容】: \n" . $message . "\n";
+    $body_user .= "【害鳥の種類】: " . $type . "\n";
+    $body_user .= "【希望日時】: " . $preferred_datetime . "\n";
+    $body_user .= "【内容】: " . $message . "\n";
     $body_user .= "--------------------------------------------------\n";
     $body_user .= "※もしお心当たりがない場合は、恐れ入りますがこちらのメールは破棄してください。";
 

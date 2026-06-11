@@ -119,7 +119,7 @@ function toggleMenu() {
 if (menuBtn) menuBtn.addEventListener('click', toggleMenu);
 if (overlay) overlay.addEventListener('click', toggleMenu);
 
-document.querySelectorAll('.sp-nav a').forEach(link => {
+document.querySelectorAll('.sp-nav a, .sp-nav button').forEach(link => {
     link.addEventListener('click', function (e) {
         if (this.classList.contains('parent-link')) {
             e.preventDefault();

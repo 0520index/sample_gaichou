@@ -160,10 +160,10 @@
   "areaServed": [
   { "@type": "State", "name": "埼玉県" },
   { "@type": "City", "name": "さいたま市" },
-  { "@type": "City", "name": "さいたま市大宮区" },
-  { "@type": "City", "name": "さいたま市見沼区" },
-  { "@type": "City", "name": "さいたま市中央区" },
-  { "@type": "City", "name": "さいたま市浦和区" }
+  { "@type": "City", "name": "さいたま市大宮区上小町" },
+  { "@type": "City", "name": "さいたま市北区日進町" },
+  { "@type": "City", "name": "さいたま市中央区本町西" },
+  { "@type": "City", "name": "さいたま市浦和区大原" }
   ],
   "openingHoursSpecification": [
     {
@@ -601,7 +601,7 @@
                         </div>
                         <div class="case-body">
                             <div class="case-header">
-                                <strong class="area-tag">さいたま市大宮区</strong>
+                                <strong class="area-tag">さいたま市大宮区大成町</strong>
                                 <strong class="bird-tag">ハト対策(忌避剤設置・簡易清掃)</strong>
                             </div>
                             <h4>ベランダの手すりに居座るハト対策</h4>
@@ -627,7 +627,7 @@
                         </div>
                         <div class="case-body">
                             <div class="case-header">
-                                <strong class="area-tag">さいたま市浦和区</strong>
+                                <strong class="area-tag">さいたま市浦和区常盤</strong>
                                 <strong class="bird-tag">ムクドリ対策(窓枠補修)</strong>
                             </div>
                             <h4>住居(窓枠)への巣作り及び帰巣に対策</h4>
@@ -653,7 +653,7 @@
                         </div>
                         <div class="case-body">
                             <div class="case-header">
-                                <strong class="area-tag">さいたま市岩槻区</strong>
+                                <strong class="area-tag">さいたま市南区鹿手袋</strong>
                                 <strong class="bird-tag">ハト対策(巣撤去・糞害清掃)</strong>
                             </div>
                             <h4>天井に作られた巣の撤去と再発防止</h4>
@@ -679,7 +679,7 @@
                         </div>
                         <div class="case-body">
                             <div class="case-header">
-                                <strong class="area-tag">さいたま市見沼区</strong>
+                                <strong class="area-tag">さいたま市見沼区卸町</strong>
                                 <strong class="bird-tag">ハト対策(ネット設置)</strong>
                             </div>
                             <h4>マンションへの巣作り及び帰巣に対策</h4>
@@ -769,8 +769,8 @@
                     <div class="review-card">
                         <div class="review-user">
                             <div class="user-info">
-                                <strong>M.K 様</strong>
-                                <span>さいたま市北区</span>
+                                <strong>R.K 様</strong>
+                                <span>さいたま市北区宮原町</span>
                             </div>
                             <div class="stars-active">★★★★★</div>
                         </div>
@@ -781,8 +781,8 @@
                     <div class="review-card">
                         <div class="review-user">
                             <div class="user-info">
-                                <strong>A.U 様</strong>
-                                <span>さいたま市南区</span>
+                                <strong>M.A 様</strong>
+                                <span>さいたま市南区文蔵</span>
                             </div>
                             <div class="stars-active">★★★★★</div>
                         </div>
@@ -794,7 +794,7 @@
                         <div class="review-user">
                             <div class="user-info">
                                 <strong>J.A 様</strong>
-                                <span>さいたま市緑区</span>
+                                <span>さいたま市緑区代山</span>
                             </div>
                             <div class="stars-active">★★★★★</div>
                         </div>
@@ -938,22 +938,93 @@
 
                 <div class="area-grid">
 
-                    <div class="area-card">
+                    <div class="area-card area-card-small">
                         <h3><span class="pref-tag">さいたまの対応エリア</span> <a
                                 href="https://rescue-samurai.com/area/saitama/saitama/">さいたま市</a></h3>
-                        <ul class="area-list">
-                            <li>西区</li>
-                            <li>北区</li>
-                            <li>大宮区</li>
-                            <li>見沼区</li>
-                            <li>中央区</li>
-                            <li>桜区</li>
-                            <li>浦和区</li>
-                            <li>南区</li>
-                            <li>緑区</li>
-                            <li>岩槻区</li>
-                            <li>その他 (各町村)</li>
-                        </ul>
+                        <div class="area-ward-grid">
+                            <details class="area-ward" id="ward-tsurumi">
+                                <summary class="area-ward_summary">西区</summary>
+                                <ul class="area-stations">
+                                    <li>西大宮</li>
+                                    <li>指扇</li>
+                                </ul>
+                            </details>
+                            <details class="area-ward" id="ward-nishi">
+                                <summary class="area-ward_summary">北区</summary>
+                                <ul class="area-stations">
+                                    <li>宮原</li>
+                                    <li>日進</li>
+                                    <li>土呂</li>
+                                    <li>加茂宮</li>
+                                    <li>今羽</li>
+                                    <li>東宮原</li>
+                                    <li>吉野原</li>
+                                </ul>
+                            </details>
+                            <details class="area-ward" id="ward-minami">
+                                <summary class="area-ward_summary">大宮区</summary>
+                                <ul class="area-stations">
+                                    <li>さいたま新都心</li>
+                                    <li>大宮</li>
+                                    <li>大宮公園</li>
+                                    <li>鉄道博物館</li>
+                                    <li>北大宮</li>
+                                </ul>
+                            </details>
+                            <details class="area-ward" id="ward-hodogaya">
+                                <summary class="area-ward_summary">見沼区</summary>
+                                <ul class="area-stations">
+                                    <li>東大宮</li>
+                                    <li>七里</li>
+                                    <li>大和田</li>
+                                </ul>
+                            </details>
+                            <details class="area-ward" id="ward-totsuka">
+                                <summary class="area-ward_summary">中央区</summary>
+                                <ul class="area-stations">
+                                    <li>南与野</li>
+                                    <li>与野本町</li>
+                                    <li>北与野</li>
+                                </ul>
+                            </details>
+                            <details class="area-ward" id="ward-konan">
+                                <summary class="area-ward_summary">桜区</summary>
+                                <ul class="area-stations">
+                                    <li>西浦和</li>
+                                </ul>
+                            </details>
+                            <details class="area-ward" id="ward-asahi">
+                                <summary class="area-ward_summary">浦和区</summary>
+                                <ul class="area-stations">
+                                    <li>浦和</li>
+                                    <li>与野</li>
+                                    <li>北浦和</li>
+                                </ul>
+                            </details>
+                            <details class="area-ward" id="ward-midori">
+                                <summary class="area-ward_summary">南区</summary>
+                                <ul class="area-stations">
+                                    <li>南浦和</li>
+                                    <li>武蔵浦和</li>
+                                    <li>中浦和</li>
+                                </ul>
+                            </details>
+                            <details class="area-ward" id="ward-seya">
+                                <summary class="area-ward_summary">緑区</summary>
+                                <ul class="area-stations">
+                                    <li>東浦和</li>
+                                    <li>浦和美園</li>
+                                </ul>
+                            </details>
+                            <details class="area-ward" id="ward-tsuzuki">
+                                <summary class="area-ward_summary">岩槻区</summary>
+                                <ul class="area-stations">
+                                    <li>岩槻</li>
+                                    <li>東岩槻</li>
+                                </ul>
+                            </details>
+                        </div>
+                        <p class="area-ward-note">※その他（各町村）もお気軽にお問い合わせください。</p>
                     </div>
                     <div class="area-card">
                         <h3><span class="pref-tag">駆除対象</span> 害鳥一覧</h3>

@@ -7,15 +7,18 @@ RewriteBase /
 # MultiViewsをオフにする（拡張子なしアクセスとの干渉を防ぐ）
 Options -MultiViews
 
-# httpをhttpsに強制リダイレクト
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+# 古いURLから新しいURLへ301リダイレクト（wwwなしへ転送）
+RewriteCond %{REQUEST_URI} ^/saitama/moroyama/?$
+RewriteRule ^(.*)$ https://rescue-samurai.com/saitama/moroyamamachi/ [R=301,L]
 
-# index.htmlをURLから消して / に統一
+# httpをhttpsに強制リダイレクト（同時に「wwwなし」に統一）
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\.rescue-samurai\.com$ [NC]
+RewriteRule ^(.*)$ https://rescue-samurai.com/%{REQUEST_URI} [R=301,L]
+
+# index.htmlをURLから消して / に統一（wwwなし）
 RewriteCond %{REQUEST_URI} ^(.*)/index\.html$
-RewriteRule ^(.*)index\.html$ https://%{HTTP_HOST}%1/ [R=301,L]
-
-Redirect 301 /saitama/moroyama/ https://rescue-samurai.com/saitama/moroyamamachi/
+RewriteRule ^(.*)index\.html$ https://rescue-samurai.com%1/ [ [R=301,L] ]
 
 # ----------------------------------------------------------------------
 # 3. ブラウザキャッシュ (Expires Headers)

@@ -15,6 +15,8 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 RewriteCond %{REQUEST_URI} ^(.*)/index\.html$
 RewriteRule ^(.*)index\.html$ https://%{HTTP_HOST}%1/ [R=301,L]
 
+Redirect 301 /saitama/moroyama/ https://rescue-samurai.com/saitama/moroyamamachi/
+
 # ----------------------------------------------------------------------
 # 3. ブラウザキャッシュ (Expires Headers)
 # ----------------------------------------------------------------------

@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
-h4,
 h1,
 h2,
-h3 {
+h3,
+h4 {
     text-rendering: geometricPrecision;
     font-variant-ligatures: none;
 }
@@ -55,7 +55,7 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    gap: 0px;
+    gap: 0;
     margin: 0;
 }
 
@@ -113,6 +113,21 @@ body {
     margin-bottom: 10px;
 }
 
+.operation-box {
+    margin-top: 24px;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+.operation-box a {
+    color: #ccc;
+    text-decoration: underline;
+}
+
+.operation-box a:hover {
+    color: #fff;
+}
+
 .footer-links {
     display: flex;
     justify-content: center;
@@ -132,56 +147,238 @@ body {
     text-decoration: underline;
 }
 
-.operation-box {
-    margin-top: 24px;
-    font-size: 0.9rem;
-    line-height: 1.8;
+/* ===== Company page ===== */
+.company-page {
+    padding: 0 0 80px;
 }
 
-.operation-box a {
-    color: #ccc;
+.company-hero {
+    background: linear-gradient(160deg, #fff 0%, #f7f0f0 55%, #f3e8e8 100%);
+    border-bottom: 1px solid #ead9d9;
+    padding: 56px 0 48px;
+    text-align: center;
+}
+
+.company-eyebrow {
+    display: inline-block;
+    font-size: 0.75rem;
+    letter-spacing: 0.22em;
+    color: #b32d2d;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.company-hero h1 {
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    font-weight: 900;
+    color: #1a1a1a;
+    margin-bottom: 14px;
+}
+
+.company-hero-lead {
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: 0.98rem;
+    color: #555;
+}
+
+.company-section {
+    padding: 56px 0 0;
+}
+
+.section-label {
+    display: block;
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    color: #b32d2d;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.company-section h2 {
+    font-size: clamp(1.35rem, 3vw, 1.75rem);
+    font-weight: 900;
+    line-height: 1.45;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.company-section p {
+    font-size: 0.98rem;
+    color: #444;
+    margin-bottom: 14px;
+    line-height: 1.85;
+}
+
+.company-mission {
+    background: #fff;
+    border: 1px solid #eadfdf;
+    border-left: 4px solid #b32d2d;
+    border-radius: 0 10px 10px 0;
+    padding: 28px 28px 24px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+}
+
+.company-table-wrap {
+    overflow-x: auto;
+    background: #fff;
+    border: 1px solid #e8e0e0;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+}
+
+.company-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 520px;
+}
+
+.company-table th,
+.company-table td {
+    padding: 18px 22px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    vertical-align: top;
+    font-size: 0.95rem;
+}
+
+.company-table tr:last-child th,
+.company-table tr:last-child td {
+    border-bottom: none;
+}
+
+.company-table th {
+    width: 28%;
+    background: #faf6f6;
+    color: #555;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.company-table td {
+    color: #333;
+}
+
+.company-table a {
+    color: #b32d2d;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.company-table a:hover {
     text-decoration: underline;
 }
 
-.operation-box a:hover {
+.history-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-left: 2px solid #e5cfcf;
+    margin-left: 10px;
+}
+
+.history-list li {
+    position: relative;
+    padding: 0 0 28px 28px;
+}
+
+.history-list li:last-child {
+    padding-bottom: 0;
+}
+
+.history-list li::before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #b32d2d;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px #e5cfcf;
+}
+
+.history-title {
+    display: block;
+    font-weight: 800;
+    font-size: 1.05rem;
+    color: #1a1a1a;
+    margin-bottom: 6px;
+}
+
+.history-list p {
+    margin-bottom: 0;
+    color: #555;
+}
+
+.history-note {
+    margin-top: 20px !important;
+    font-size: 0.88rem !important;
+    color: #777 !important;
+}
+
+.company-cta {
+    margin-top: 56px;
+    background: #1a1a1a;
+    color: #fff;
+    border-radius: 12px;
+    padding: 36px 28px;
+    text-align: center;
+}
+
+.company-cta h2 {
+    color: #fff;
+    font-size: 1.35rem;
+    margin-bottom: 10px;
+}
+
+.company-cta p {
+    color: #ccc;
+    margin-bottom: 24px;
+}
+
+.company-cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.cta-primary,
+.cta-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0 24px;
+    border-radius: 6px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.cta-primary {
+    background: #b32d2d;
     color: #fff;
 }
 
-.privacy-policy {
-    padding: 60px 0;
-    line-height: 1.8;
+.cta-primary:hover {
+    background: #8e2424;
+    transform: translateY(-1px);
 }
 
-.privacy-policy h1 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 1.8rem;
+.cta-secondary {
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.35);
 }
 
-.privacy-policy h2 {
-    border-left: 4px solid #b32d2d;
-    padding-left: 15px;
-    margin: 40px 0 20px;
-    font-size: 1.3rem;
+.cta-secondary:hover {
+    background: rgba(255, 255, 255, 0.08);
 }
 
-.privacy-policy p,
-.privacy-policy li {
-    font-size: 0.95rem;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.contact-box {
-    background: #dddddd;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 20px;
-}
-
-/* ==========================================
-   1. ハンバーガーボタン（三本線）
-   ========================================== */
+/* ===== Menu (same as privacy) ===== */
 .menu-btn {
     display: flex !important;
     flex-direction: column !important;
@@ -231,9 +428,6 @@ body {
     transform: rotate(-45deg) !important;
 }
 
-/* ==========================================
-   2. メニュー本体（スライドパネル）
-   ========================================== */
 .sp-nav {
     position: fixed;
     top: 0;
@@ -278,9 +472,6 @@ body {
     visibility: visible;
 }
 
-/* ==========================================
-   3. メニュー内リンク & アコーディオン
-   ========================================== */
 .sp-nav ul {
     list-style: none;
     padding: 0;
@@ -333,6 +524,23 @@ body {
     font-weight: bold;
 }
 
+.has-child>.parent-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 25px;
+    background: none;
+    border: none;
+    font: inherit;
+    font-weight: bold;
+    font-size: 1.05rem;
+    color: #333;
+    cursor: pointer;
+    min-height: 60px;
+    text-align: left;
+}
+
 .has-child>.parent-link::after {
     content: "＋" !important;
     color: #b32d2d !important;
@@ -365,7 +573,7 @@ body {
 
 .sub-menu a::after {
     content: "〉" !important;
-    color: #eee !important;
+    color: #ccc !important;
 }
 
 .sp-nav .sp-nav-cta {
@@ -379,16 +587,10 @@ body {
     align-items: center !important;
     font-size: 1.15rem !important;
     box-shadow: 0 4px 15px rgba(179, 45, 45, 0.4) !important;
-    transition: transform 0.2s, background 0.3s !important;
 }
 
 .sp-nav .sp-nav-cta::after {
     display: none !important;
-}
-
-.sp-nav .sp-nav-cta:active {
-    transform: scale(0.98);
-    background: #8e2424 !important;
 }
 
 .sp-nav li:last-child a::after {
@@ -397,13 +599,6 @@ body {
 
 .sp-nav li:last-child::before {
     display: none;
-}
-
-/* ==========================================
-   4. その他
-   ========================================== */
-.pc-nav-list {
-    display: none !important;
 }
 
 body.menu-open {
@@ -418,7 +613,7 @@ body.menu-open {
     .logo {
         flex-direction: column;
         align-items: flex-start;
-        gap: 0px;
+        gap: 0;
     }
 
     .logo-main-link img {
@@ -427,7 +622,7 @@ body.menu-open {
     }
 
     .logo-tel-link img {
-        margin-top: 0px;
+        margin-top: 0;
     }
 
     .header {
@@ -448,8 +643,17 @@ body.menu-open {
         transform: translateY(0) !important;
     }
 
-    .header-cta-btn,
-    .tel-info {
-        display: none;
+    .company-hero {
+        padding: 40px 0 36px;
+    }
+
+    .company-mission,
+    .company-cta {
+        padding: 22px 18px;
+    }
+
+    .company-table th,
+    .company-table td {
+        padding: 14px 16px;
     }
 }

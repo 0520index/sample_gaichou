@@ -308,6 +308,10 @@ body {
     font-family: inherit;
 }
 
+.sp-nav button.parent-link {
+    width: 100%;
+}
+
 .sp-nav a:active,
 .sp-nav button.parent-link:active {
     background-color: #fff5f5;

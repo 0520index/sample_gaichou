@@ -298,7 +298,8 @@ body {
     position: relative;
 }
 
-.sp-nav a {
+.sp-nav a,
+.sp-nav button.parent-link {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -309,9 +310,19 @@ body {
     font-size: 1.05rem;
     min-height: 60px;
     transition: 0.3s;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-family: inherit;
 }
 
-.sp-nav a:active {
+.sp-nav button.parent-link {
+    width: 100%;
+}
+
+.sp-nav a:active,
+.sp-nav button.parent-link:active {
     background-color: #fff5f5;
 }
 

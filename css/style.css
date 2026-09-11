@@ -2114,12 +2114,10 @@ body.menu-open {
 }
 
 .main-footer {
-    padding: 25px 35px 25px;
+    padding: 40px 0;
     background: #111;
     color: #888;
     text-align: center;
-    display: flex;
-    flex-direction: column;
 }
 
 .footer-logo {
@@ -2133,7 +2131,7 @@ body.menu-open {
     justify-content: center;
     flex-wrap: wrap;
     gap: 8px 20px;
-    margin: 0 0 12px;
+    margin: 16px 0 8px;
     font-size: 0.9rem;
 }
 
@@ -2147,19 +2145,25 @@ body.menu-open {
     text-decoration: underline;
 }
 
-.footer-section {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 20px 20px;
-    display: flex;
-    flex-direction: column;
+.operation-box {
+    display: inline-block;
+    width: fit-content;
+    max-width: 90%;
+    margin: 2px auto 0;
+    padding: 12px 20px;
+    border: 1px solid #888;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    text-align: left;
 }
 
-.operation-box {
-    border: 1px solid #888;
-    padding: 4px 8px;
-    font-size: 10px;
-    align-self: center;
+.operation-box a {
+    color: #ccc;
+    text-decoration: underline;
+}
+
+.operation-box a:hover {
+    color: #fff;
 }
 
 .copyright {
@@ -2697,10 +2701,6 @@ body.menu-open {
 
     .copyright {
         font-size: 0.7rem;
-    }
-
-    .operation-box {
-        font-size: 9px;
     }
 }
 

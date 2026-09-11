@@ -133,9 +133,15 @@ body {
 }
 
 .operation-box {
-    margin-top: 24px;
+    display: inline-block;
+    width: fit-content;
+    max-width: 90%;
+    margin: 2px auto 0;
+    padding: 12px 20px;
+    border: 1px solid #888;
     font-size: 0.9rem;
     line-height: 1.8;
+    text-align: left;
 }
 
 .operation-box a {

@@ -669,8 +669,25 @@ body.menu-open {
         padding: 22px 18px;
     }
 
+    .company-table-wrap {
+        overflow-x: visible;
+    }
+
+    .company-table {
+        min-width: 0;
+        table-layout: fixed;
+    }
+
     .company-table th,
     .company-table td {
-        padding: 14px 16px;
+        padding: 12px 14px;
+        font-size: 0.88rem;
+        word-break: break-word;
+        overflow-wrap: anywhere;
+    }
+
+    .company-table th {
+        width: 34%;
+        white-space: normal;
     }
 }

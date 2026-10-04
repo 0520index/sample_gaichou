@@ -217,7 +217,7 @@ body.menu-open .floating-cta {
 .pc-nav .nav-tel {
     background: var(--red);
     color: #fff;
-    padding: 8px 16px;
+    padding: 4px 16px;
     border-radius: 6px;
     font-size: 15px;
     box-shadow: 0 3px 0 var(--dark-red);
@@ -388,6 +388,7 @@ body.menu-open .floating-cta {
 }
 
 .section-visual--flush img {
+    margin-bottom: -15px;
     width: 100%;
     height: auto;
     display: block;

@@ -419,42 +419,57 @@
               </svg>
               電話で相談する（無料）
             </a>
-            <a href="https://lin.ee/" class="btn-line" target="_blank">
+            <a href="https://lin.ee/7VDFFxR" class="btn-line" target="_blank">
               💬 LINEで相談する
             </a>
           </div>
         </div>
         <div class="contact-form">
           <h3>✉ メールでのお問い合わせ</h3>
-          <form action="#" method="post" onsubmit="handleSubmit(event)">
+          <form action="../confirm.php" method="post" class="h-adr" id="lp-contact-form">
+            <span class="p-country-name" style="display:none;">Japan</span>
             <div class="form-group">
               <label>お名前 <span class="required">必須</span></label>
               <input type="text" name="name" placeholder="例：山田 太郎" required>
             </div>
             <div class="form-group">
               <label>お電話番号 <span class="required">必須</span></label>
-              <input type="tel" name="tel" placeholder="例：090-1234-5678" required>
+              <input type="tel" name="tel" pattern="\d{2,4}-?\d{2,4}-?\d{3,4}" placeholder="例：090-1234-5678" required>
             </div>
             <div class="form-group">
               <label>メールアドレス <span class="required">必須</span></label>
               <input type="email" name="email" placeholder="例：info@example.com" required>
             </div>
             <div class="form-group">
-              <label>ご住所・エリア</label>
-              <input type="text" name="address" placeholder="例：東京都新宿区">
+              <label>郵便番号 <span class="required">必須</span></label>
+              <input type="tel" name="zip" class="p-postal-code" size="8" maxlength="8" placeholder="例：160-0023"
+                required>
+            </div>
+            <div class="form-group">
+              <label>都道府県 <span class="required">必須</span></label>
+              <input type="text" name="pref" class="p-region" placeholder="例：東京都" required>
+            </div>
+            <div class="form-group">
+              <label>市区町村・番地 <span class="required">必須</span></label>
+              <input type="text" name="addr" class="p-locality p-street-address p-extended-address"
+                placeholder="例：新宿区西新宿3-3-13" required>
             </div>
             <div class="form-group">
               <label>被害状況・鳥の種類</label>
-              <select name="bird_type">
+              <select name="type">
                 <option value="">選択してください</option>
-                <option>鳩（ハト）</option>
-                <option>ムクドリ</option>
-                <option>スズメ</option>
-                <option>ツバメ</option>
-                <option>カラス</option>
-                <option>コウモリ</option>
-                <option>その他・わからない</option>
+                <option value="鳩">鳩（ハト）</option>
+                <option value="ムクドリ">ムクドリ</option>
+                <option value="スズメ">スズメ</option>
+                <option value="ツバメ">ツバメ</option>
+                <option value="カラス">カラス</option>
+                <option value="コウモリ">コウモリ</option>
+                <option value="その他">その他・わからない</option>
               </select>
+            </div>
+            <div class="form-group">
+              <label>希望日時</label>
+              <input type="text" name="preferred_datetime" placeholder="例：○月○日、午後、平日18時以降 など">
             </div>
             <div class="form-group">
               <label>お困りごと</label>
@@ -488,7 +503,8 @@
     </div>
   </footer>
 
-  <script src="lp-js/lp-main.js?v=1.0.2"></script>
+  <script src="lp-js/lp-main.js?v=1.0.3"></script>
+  <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8" defer></script>
 </body>
 
 </html>

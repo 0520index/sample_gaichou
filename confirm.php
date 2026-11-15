@@ -114,15 +114,16 @@ try {
         };
         document.getElementsByTagName('head')[0].appendChild(script);
         }
+
         loadScriptRTCV(function(){
-        _rt.sid = 広告主様 ID(固定値);
-        _rt.pid = 案件 ID(固定値);
-        _rt.price = 売上金額(定率案件:動的値 定額案件時:0 固定);
-        _rt.reward = -1(固定値);
-        _rt.cname = '任意 備考 1 (UTF8 で URL エンコードが必要です)';
-        _rt.ctel = '任意 備考 2 (UTF8 で URL エンコードが必要です)';
-        _rt.cemail = '任意 備考 3 (UTF8 で URL エンコードが必要です)';
-        _rt.cinfo = '必須 備考 4、成果番号等、成果に関する固有の値をご指定ください (UTF8 で URL エンコードが必要です)';
+        _rt.sid = 11721;
+        _rt.pid = 16687;
+        _rt.price = 0;
+        _rt.reward = -1;
+        _rt.cname = '';
+        _rt.ctel = '';
+        _rt.cemail = '';
+        _rt.cinfo = '771';
         rt_tracktag();
         });
         }(function(){}));

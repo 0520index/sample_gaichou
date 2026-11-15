@@ -81,15 +81,57 @@ try {
     $header_user .= "X-Mailer: PHP/" . phpversion();
 
     mb_send_mail($mail, $subject_user, $body_user, $header_user, $additional_params);
-
-    // --- ここまで ---
-
-    echo "<h1>送信完了</h1>";
-    echo "<p>お問い合わせいただきありがとうございます。
-担当者よりご連絡いたしますので、少々お待ちいただけますと幸いです。</p>";
-    echo "<a href='index.html'>トップページに戻る</a>";
-
 } catch (PDOException $e) {
     exit('エラーが発生しました：' . $e->getMessage());
 }
 ?>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>送信完了｜害鳥レスキュー侍</title>
+</head>
+<body>
+    <!-- ITP Tag -->
+    <script type="text/javascript">
+        (function(){
+        function loadScriptRTCV(callback){
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'https://www.rentracks.jp/js/itp/rt.track.js?t=' + (new Date()).getTime();
+        if ( script.readyState ) {
+        script.onreadystatechange = function() {
+        if ( script.readyState === 'loaded' || script.readyState === 'complete' ) {
+        script.onreadystatechange = null;
+        callback();
+        };
+        };
+        } else {
+        script.onload = function() {
+        callback();
+        };
+        };
+        document.getElementsByTagName('head')[0].appendChild(script);
+        }
+        loadScriptRTCV(function(){
+        _rt.sid = 広告主様 ID(固定値);
+        _rt.pid = 案件 ID(固定値);
+        _rt.price = 売上金額(定率案件:動的値 定額案件時:0 固定);
+        _rt.reward = -1(固定値);
+        _rt.cname = '任意 備考 1 (UTF8 で URL エンコードが必要です)';
+        _rt.ctel = '任意 備考 2 (UTF8 で URL エンコードが必要です)';
+        _rt.cemail = '任意 備考 3 (UTF8 で URL エンコードが必要です)';
+        _rt.cinfo = '必須 備考 4、成果番号等、成果に関する固有の値をご指定ください (UTF8 で URL エンコードが必要です)';
+        rt_tracktag();
+        });
+        }(function(){}));
+    </script>
+    <!-- End ITP Tag -->
+
+  <h1>送信完了</h1>
+  <p>お問い合わせいただきありがとうございます。<br>
+    担当者よりご連絡いたしますので、少々お待ちいただけますと幸いです。</p>
+  <p><a href="index.html">トップページに戻る</a></p>
+</body>
+</html>

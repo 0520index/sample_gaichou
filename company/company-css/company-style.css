@@ -225,6 +225,59 @@ body {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
 }
 
+.company-message {
+    background: #fff;
+    border: 1px solid #e8e0e0;
+    border-radius: 10px;
+    padding: 32px 28px 28px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+}
+
+.company-message-catch {
+    font-size: clamp(1.15rem, 2.5vw, 1.4rem);
+    font-weight: 900;
+    color: #b32d2d;
+    line-height: 1.6;
+    margin: 0 0 24px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #eadfdf;
+}
+
+.company-message-body p {
+    font-size: 0.98rem;
+    color: #444;
+    margin-bottom: 1em;
+    line-height: 1.9;
+}
+
+.company-message-body p:last-child {
+    margin-bottom: 0;
+}
+
+.company-message-sign {
+    margin: 28px 0 0;
+    padding-top: 20px;
+    border-top: 1px solid #eadfdf;
+    text-align: right;
+    line-height: 1.7;
+}
+
+.company-message-org,
+.company-message-role {
+    display: block;
+    color: #333;
+    font-weight: 700;
+}
+
+.company-message-org {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+}
+
+.company-message-role {
+    font-size: 1rem;
+}
+
 .company-table-wrap {
     overflow-x: auto;
     background: #fff;
@@ -665,8 +718,19 @@ body.menu-open {
     }
 
     .company-mission,
+    .company-message,
     .company-cta {
         padding: 22px 18px;
+    }
+
+    .company-message-catch {
+        margin-bottom: 18px;
+        padding-bottom: 14px;
+    }
+
+    .company-message-sign {
+        margin-top: 22px;
+        padding-top: 16px;
     }
 
     .company-table-wrap {

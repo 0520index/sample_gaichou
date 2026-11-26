@@ -2117,6 +2117,60 @@ body.menu-open {
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.3);
 }
 
+/* --- アクセス --- */
+.access-section {
+    padding: 40px 0;
+    background: linear-gradient(180deg, #fcfcfc 0%, #f0f2f5 100%);
+    border-top: 1px solid #eee;
+}
+
+.access-address {
+    text-align: center;
+    font-size: 0.98rem;
+    color: #444;
+    margin: 0 0 20px;
+    line-height: 1.7;
+}
+
+.access-map {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #e8e0e0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+    background: #fff;
+    aspect-ratio: 16 / 9;
+}
+
+.access-map iframe {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.access-map-link {
+    margin-top: 14px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 0.92rem;
+}
+
+.access-map-link a {
+    color: #b32d2d;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.access-map-link a:hover {
+    text-decoration: underline;
+}
+
 .main-footer {
     padding: 40px 0;
     background: #111;
@@ -2185,7 +2239,8 @@ body.menu-open {
 .reviews-section,
 .policy-section,
 .faq-section,
-.area-section {
+.area-section,
+.access-section {
     background-image: url('../images/bg-washi-ultra-light.webp');
     background-repeat: repeat;
     background-blend-mode: overlay;
@@ -2451,6 +2506,15 @@ body.menu-open {
     .payment-lead {
         margin: 2.5px;
         font-size: 0.75rem;
+    }
+
+    .access-map {
+        aspect-ratio: 4 / 3;
+    }
+
+    .access-address {
+        font-size: 0.9rem;
+        text-align: left;
     }
 
     .bottom-cta-bar {
